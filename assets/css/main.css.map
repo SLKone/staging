@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/_variables.scss",
+		"_sass/_base.scss",
+		"_sass/_layout.scss",
+		"_sass/_components.scss"
+	],
+	"sourcesContent": [
+		"// Custom imports\n@import \"variables\";\n@import \"base\";\n@import \"layout\";\n@import \"components\";",
+		"// Add your SASS variables here",
+		"// Add your base styles here",
+		"// Add your layout styles here",
+		"// Add your component styles here"
+	],
+	"names": [],
+	"mappings": ""
+}
