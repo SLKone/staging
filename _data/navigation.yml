@@ -1,0 +1,56 @@
+main:
+  - title: Home
+    url: /
+
+  - title: Services
+    url: /services/
+    submenu:
+      - title: Operational Excellence
+        url: /services/operational-excellence/
+      - title: Corporate Finance & Revenue Management
+        url: /services/corporate-finance-revenue-management/
+      - title: M&A
+        url: /services/m-and-a/
+      - title: Digital
+        url: /services/digital/
+      - title: Organizational Design & Alignment
+        url: /services/organizational-design-alignment/
+      - title: Strategy
+        url: /services/strategy/
+      - title: Data & Advanced Analytics
+        url: /services/data-advanced-analytics/
+      - title: New Business Support
+        url: /services/new-business-support/
+
+  - title: Industries
+    url: /industries/
+    submenu:
+      - title: Healthcare
+        url: /industries/healthcare/
+      - title: Manufacturing
+        url: /industries/manufacturing/
+      - title: Technology
+        url: /industries/technology/
+      - title: Retail & Consumer Goods
+        url: /industries/retail-consumer-goods/
+      - title: Private Equity
+        url: /industries/private-equity/
+      - title: Energy & Resources
+        url: /industries/energy-resources/
+
+  - title: Insights
+    url: /insights/
+
+  - title: Culture
+    url: /culture/
+
+  - title: Careers
+    url: /careers/
+
+footer:
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Terms of Use
+    url: /terms-of-use/
+  - title: Contact Us
+    url: /contact/

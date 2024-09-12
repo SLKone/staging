@@ -1,5 +1,23 @@
-<header>
-    <nav>
-        <!-- Add your navigation menu items here -->
-    </nav>
+<header class="bg-white shadow-md">
+  <nav class="container mx-auto px-4 py-4">
+    <ul class="flex items-center justify-between">
+      <li>
+        <a href="{{ '/' | relative_url }}" class="text-xl font-bold">{{ site.title }}</a>
+      </li>
+      {% for item in site.data.navigation.main %}
+        <li class="relative group">
+          <a href="{{ item.url | relative_url }}" class="px-3 py-2 hover:text-blue-600">{{ item.title }}</a>
+          {% if item.submenu %}
+            <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2">
+              {% for subitem in item.submenu %}
+                <li>
+                  <a href="{{ subitem.url | relative_url }}" class="block px-4 py-2 hover:bg-gray-100">{{ subitem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
