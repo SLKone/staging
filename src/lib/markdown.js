@@ -1,8 +1,13 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
+import { remark } from 'remark';
+import html from 'remark-html';
+
+export async function markdownToHtml(markdown) {
+  const result = await remark().use(html).process(markdown);
+  return result.toString();
+}
 
 export function getMarkdownData(filename, directory) {
   const fullPath = path.join(process.cwd(), directory, filename)
