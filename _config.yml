@@ -4,7 +4,7 @@ email: hello@slkone.com
 description: >-
   SLKone is a bespoke management consulting firm bridging Strategy, Leadership, and Knowledge to build lasting solutions.
 baseurl: "" # Leave this empty for GitHub Pages
-url: "https://staging.slkone.com"
+url: "https://SLKone.github.io/staging/"
 github_username: SLKone
 
 # Build settings
