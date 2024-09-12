@@ -1,7 +1,6 @@
 {
   "scripts": {
     "build": "next build && next export",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true",
-    "postinstall": "npm install"
+    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
   }
 }
