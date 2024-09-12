@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Build Tailwind CSS
+    - name: Build CSS
       run: npm run build:css
       
     - name: Build the site in the jekyll/builder container
@@ -29,7 +29,7 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-        
+    
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
