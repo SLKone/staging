@@ -15,20 +15,7 @@ layout: default
 <p>{{ page.approach }}</p>
 {% endif %}
 
-{% if page.impact %}
-<h3>Our Impact</h3>
-{% if page.impact_intro %}
-<p>{{ page.impact_intro }}</p>
-{% endif %}
-<ul>
-{% for impact_item in page.impact %}
-  <li>{{ impact_item }}</li>
-{% endfor %}
-</ul>
-{% if page.impact_conclusion %}
-<p>{{ page.impact_conclusion }}</p>
-{% endif %}
-{% endif %}
+{% include impact-section.html impact_intro=page.impact_intro impact=page.impact impact_conclusion=page.impact_conclusion %}
 
 {% assign sub_services = site.pages | where: "layout", "sub-service" | where: "parent", page.title %}
 {% if sub_services.size > 0 %}
@@ -40,12 +27,7 @@ layout: default
 {% endif %}
 
 {% if page.why_choose %}
-<h3>Why Choose SLKone for {{ page.title }}?</h3>
-<ul>
-{% for reason in page.why_choose %}
-  <li>{{ reason }}</li>
-{% endfor %}
-</ul>
+  {% include why-choose-slkone.html title="Why Choose SLKone for {{ page.title }}?" points=page.why_choose %}
 {% endif %}
 
 {% if page.cta %}
