@@ -24,14 +24,6 @@ jobs:
           rm -f package-lock.json
           npm install
           
-      - name: Build
-        run: npm run build
-        
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
       - name: Deploy
         run: npm run deploy
         env:

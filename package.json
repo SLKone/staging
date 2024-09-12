@@ -1,9 +1,10 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
+    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "next": "^12.3.4",
