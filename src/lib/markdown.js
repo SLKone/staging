@@ -1,16 +1,16 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { remark } from 'remark';
-import html from 'remark-html';
+const fs = require('fs')
+const path = require('path')
+const matter = require('gray-matter')
+const remark = require('remark')
+const html = require('remark-html')
 
-export async function markdownToHtml(markdown) {
-  const result = await remark().use(html).process(markdown);
-  return result.toString();
+async function markdownToHtml(markdown) {
+  const result = await remark().use(html).process(markdown)
+  return result.toString()
 }
 
-export function getMarkdownData(filename, directory) {
-  const fullPath = path.join(process.cwd(), directory, filename)
+function getMarkdownData(filename, directory) {
+  const fullPath = path.join(process.cwd(), 'public', directory, filename)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
   
@@ -25,8 +25,8 @@ export function getMarkdownData(filename, directory) {
   }
 }
 
-export function getAllMarkdownData(directory) {
-  const fullPath = path.join(process.cwd(), directory)
+function getAllMarkdownData(directory) {
+  const fullPath = path.join(process.cwd(), 'public', directory)
   const filenames = fs.readdirSync(fullPath)
 
   const allData = filenames.map((filename) => {
@@ -35,4 +35,10 @@ export function getAllMarkdownData(directory) {
   })
 
   return allData
+}
+
+module.exports = {
+  markdownToHtml,
+  getMarkdownData,
+  getAllMarkdownData
 }
