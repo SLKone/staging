@@ -27,7 +27,8 @@ layout: default
 {% endif %}
 
 {% if page.why_choose %}
-  {% include why-choose-slkone.html title="Why Choose SLKone for {{ page.title }}" points=page.why_choose %}
+  {% capture why_choose_title %}Why Choose SLKone for {{ page.title }}{% endcapture %}
+  {% include why-choose-slkone.html title=why_choose_title points=page.why_choose %}
 {% endif %}
 
 {% if page.cta %}

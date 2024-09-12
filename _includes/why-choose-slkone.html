@@ -1,8 +1,10 @@
-{% if include.title %}
-  <h2>{{ include.title }}</h2>
-{% else %}
-  <h2>Why Choose SLKone</h2>
-{% endif %}
+<h2>
+  {% if include.title %}
+    {{ include.title }}
+  {% else %}
+    Why Choose SLKone
+  {% endif %}
+</h2>
 
 {% if include.points %}
   <ul>
