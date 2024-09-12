@@ -1,0 +1,11 @@
+---
+layout: page
+title: Our Services
+---
+
+<h1>Our Services</h1>
+
+{% for service in site.data.services %}
+  <h2><a href="{{ service.url | relative_url }}">{{ service.title }}</a></h2>
+  <p>{{ service.description }}</p>
+{% endfor %}

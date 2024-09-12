@@ -9,9 +9,19 @@
           <a href="{{ item.url | relative_url }}" class="px-3 py-2 hover:text-blue-600">{{ item.title }}</a>
           {% if item.submenu %}
             <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2">
-              {% for subitem in item.submenu %}
-                <li>
+              {% for subitem_file in site.data[item.submenu] %}
+                {% assign subitem = subitem_file[1] %}
+                <li class="relative group">
                   <a href="{{ subitem.url | relative_url }}" class="block px-4 py-2 hover:bg-gray-100">{{ subitem.title }}</a>
+                  {% if subitem.sub_services or subitem.sub_industries %}
+                    <ul class="absolute hidden group-hover:block bg-white shadow-md left-full top-0 mt-0 ml-1 py-2">
+                      {% for sub_subitem in subitem.sub_services | default: subitem.sub_industries %}
+                        <li>
+                          <a href="{{ sub_subitem.url | relative_url }}" class="block px-4 py-2 hover:bg-gray-100">{{ sub_subitem.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
                 </li>
               {% endfor %}
             </ul>

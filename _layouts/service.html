@@ -1,7 +1,53 @@
 ---
 layout: default
 ---
-<article class="service">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-</article>
+<h1>{{ page.title }}</h1>
+{% if page.subtitle %}
+<h2>{{ page.subtitle }}</h2>
+{% endif %}
+
+{% if page.description %}
+<p>{{ page.description }}</p>
+{% endif %}
+
+{% if page.approach %}
+<h3>Our Approach</h3>
+<p>{{ page.approach }}</p>
+{% endif %}
+
+{% if page.impact %}
+<h3>Our Impact</h3>
+{% if page.impact_intro %}
+<p>{{ page.impact_intro }}</p>
+{% endif %}
+<ul>
+{% for impact_item in page.impact %}
+  <li>{{ impact_item }}</li>
+{% endfor %}
+</ul>
+{% if page.impact_conclusion %}
+<p>{{ page.impact_conclusion }}</p>
+{% endif %}
+{% endif %}
+
+{% assign sub_services = site.pages | where: "layout", "sub-service" | where: "parent", page.title %}
+{% if sub_services.size > 0 %}
+<h3>Our Services</h3>
+{% for sub_service in sub_services %}
+  {% include sub-service-content.html sub_service=sub_service %}
+  <a href="{{ sub_service.url | relative_url }}">Learn more about {{ sub_service.title }}</a>
+{% endfor %}
+{% endif %}
+
+{% if page.why_choose %}
+<h3>Why Choose SLKone for {{ page.title }}?</h3>
+<ul>
+{% for reason in page.why_choose %}
+  <li>{{ reason }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if page.cta %}
+<p>{{ page.cta }}</p>
+{% endif %}
