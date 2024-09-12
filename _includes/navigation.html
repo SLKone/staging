@@ -1,39 +1,25 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li>
-      Services
-      <ul>
-        {% assign services = site.pages | where: "layout", "service" %}
-        {% for service in services %}
-          <li>
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            {% assign sub_services = site.pages | where: "layout", "sub-service" | where: "parent", service.title %}
-            {% if sub_services.size > 0 %}
-              <ul>
-                {% for sub_service in sub_services %}
-                  <li><a href="{{ sub_service.url | relative_url }}">{{ sub_service.title }}</a></li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      Industries
-      <ul>
-        {% assign industries = site.pages | where: "layout", "industry" %}
-        {% for industry in industries %}
-          <li>
-            <a href="{{ industry.url | relative_url }}">{{ industry.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li><a href="/insights">Insights</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/careers">Careers</a></li>
-    <li><a href="/contact">Contact</a></li>
+    {% for item in site.data.navigation.main %}
+      <li>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.subitems %}
+          <ul>
+            {% for subitem in item.subitems %}
+              <li>
+                <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
+                {% if subitem.subitems %}
+                  <ul>
+                    {% for subsubitem in subitem.subitems %}
+                      <li>{{ subsubitem.title }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 </nav>

@@ -21,8 +21,10 @@ layout: default
 {% if sub_services.size > 0 %}
 <h3>Our Services</h3>
 {% for sub_service in sub_services %}
-  {% include sub-service-content.html sub_service=sub_service %}
-  <a href="{{ sub_service.url | relative_url }}">Learn more about {{ sub_service.title }}</a>
+  <h4><a href="{{ sub_service.url | relative_url }}">{{ sub_service.title }}</a></h4>
+  {% if sub_service.description %}
+    <p>{{ sub_service.description }}</p>
+  {% endif %}
 {% endfor %}
 {% endif %}
 

@@ -3,21 +3,35 @@ main:
     url: /
 
   - title: Services
-    url: /services/
-    submenu: services
+    url: /services
+    subitems:
+      - title: Operational Excellence
+        url: /services/operational-excellence
+        subitems:
+          - title: Performance Improvement
+            url: /services/operational-excellence/performance-improvement
+          - title: Sales, Inventory, & Operations Planning (SIOP)
+            url: /services/operational-excellence/sales-inventory-operations-planning
+          - title: Supply Chain Network Optimization
+            url: /services/operational-excellence/supply-chain-network-optimization
+      # Add other services here
 
   - title: Industries
-    url: /industries/
-    submenu: industries
+    url: /industries
+    subitems:
+      # Add industries here
 
   - title: Insights
-    url: /insights/
+    url: /insights
 
-  - title: Culture
-    url: /culture/
+  - title: About
+    url: /about
 
   - title: Careers
-    url: /careers/
+    url: /careers
+
+  - title: Contact
+    url: /contact
 
 footer:
   - title: Privacy Policy
