@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-{% include page-header.html title=page.title subtitle=page.subtitle %}
+{% include page-header.html title=page.title subtitle=page.subtitle %} 
 
 {% assign services = site.pages | where: "layout", "service" %}
 {% for service in services %}
+  <p>Found {{ services.size }} services.</p>
   <section class="service">
     <h2><a href="{{ service.url | relative_url }}">{{ service.title }}</a></h2>
     {% if service.subtitle %}
