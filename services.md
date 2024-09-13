@@ -1,8 +1,8 @@
 ---
 layout: services
 title: Our Services
-subtitle: Delivering effective solutions to complex challenges
-intro_text: "At SLKone, we blend deep industry knowledge with cross-sector insights to uncover—and deliver—the most effective solutions to complex challenges. In today's rapidly evolving business landscape, the best answer is rarely the most conventional one."
+subtitle: "At SLKone, we blend deep industry knowledge with cross-sector insights to uncover—and deliver—the most effective solutions to complex challenges. In today's rapidly evolving business landscape, the best answer is rarely the most conventional one."
+paragraph: "Every business challenge is unique, and cookie-cutter solutions don't cut it. We dive deep into your specific context, using data and cross-industry insights to craft tailored strategies that work. Our services are designed to be integrated, allowing us to address complex challenges from multiple angles."
 why_choose_title: "What sets SLKone apart:"
 why_choose_points:
   - "Data-Backed Decisiveness: We turn complex data into clear, actionable strategies"
@@ -16,9 +16,3 @@ join_team_text: "At SLKone, we blend diverse expertise with a passion for solvin
 join_team_button_text: "Join Us"
 join_team_button_url: "/careers"
 ---
-
-{% include page-header.html title=page.title subtitle=page.subtitle %}
-
-{% if page.intro_text %}
-<p>{{ page.intro_text }}</p>
-{% endif %}

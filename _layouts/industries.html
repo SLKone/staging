@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-{% include page-header.html title=page.title subtitle=page.subtitle %}
+<h1>{{ page.title }}</h1>
+
+{% if page.intro_text %}
+<p>{{ page.intro_text }}</p>
+{% endif %}
 
 {% assign services = site.pages | where: "layout", "service" %}
 {% for service in services %}
