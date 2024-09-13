@@ -1,0 +1,15 @@
+<h2>
+  {% if include.title %}
+    {{ include.title }}
+  {% else %}
+    Why Choose SLKone
+  {% endif %}
+</h2>
+
+{% if include.points %}
+  <ul>
+    {% for point in include.points %}
+      <li>{{ point }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

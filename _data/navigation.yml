@@ -1,0 +1,39 @@
+main:
+  - title: Home
+    url: /
+
+  - title: Services
+    url: /services
+    subitems:
+      - title: Operational Excellence
+        url: /services/operational-excellence
+        subitems:
+          - title: Performance Improvement
+          - title: Sales, Inventory, & Operations Planning (SIOP)
+          - title: Supply Chain Network Optimization
+      # Add other services here
+
+  - title: Industries
+    url: /industries
+    subitems:
+      # Add industries here
+
+  - title: Insights
+    url: /insights
+
+  - title: About
+    url: /about
+
+  - title: Careers
+    url: /careers
+
+  - title: Contact
+    url: /contact
+
+footer:
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Terms of Use
+    url: /terms-of-use/
+  - title: Contact Us
+    url: /contact/
