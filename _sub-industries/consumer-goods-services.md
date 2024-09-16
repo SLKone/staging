@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: retail-and-consumer-goods
+parent: Retail and Consumer Goods
 order: 2
 title: "Consumer Goods & Services"
 subtitle: "We support consumer goods and services companies in product innovation, supply chain optimization, and digital transformation to drive growth and enhance customer satisfaction."
@@ -12,18 +12,21 @@ challenges:
   - "Adapting to D2C and e-commerce models"
   
 solutions:
-  - "Agile Product Development:"
-    - "Trend prediction and consumer insights integration"
-    - "Cross-functional collaboration enhancement"
-    - "Rapid prototyping and iterative testing"
-  - "Supply Chain Transformation:"
-    - "End-to-end supply chain visibility enhancement"
-    - "Supplier risk assessment and mitigation"
-    - "Circular economy principles integration"
-  - "D2C Strategy Development:"
-    - "E-commerce platform optimization"
-    - "Customer acquisition and retention strategies"
-    - "Last-mile delivery optimization"
+  - title: "Agile Product Development"
+    content:
+      - "Trend prediction and consumer insights integration"
+      - "Cross-functional collaboration enhancement"
+      - "Rapid prototyping and iterative testing"
+  - title: "Supply Chain Transformation"
+    content:
+      - "End-to-end supply chain visibility enhancement"
+      - "Supplier risk assessment and mitigation"
+      - "Circular economy principles integration"
+  - title: "D2C Strategy Development"
+    content:
+      - "E-commerce platform optimization"
+      - "Customer acquisition and retention strategies"
+      - "Last-mile delivery optimization"
   
 outcomes:
   - "25-35% reduction in time-to-market for new products"

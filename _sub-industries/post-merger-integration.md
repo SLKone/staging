@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: private-equity
+parent: Private Equity
 order: 3
 title: "Post-Merger Integration"
 subtitle: "We manage the complex process of integrating acquired companies, ensuring seamless transitions, realizing synergies, and maintaining operational continuity."
@@ -12,18 +12,21 @@ challenges:
   - "Balancing integration speed with thoroughness"
   
 solutions:
-  - "Integration Management Office (IMO) Establishment:"
-    - "Day 1 readiness planning and execution"
-    - "Synergy tracking and realization acceleration"
-    - "Cross-functional integration coordination"
-  - "Operating Model Optimization:"
-    - "Best practice identification and implementation"
-    - "Process standardization and efficiency improvement"
-    - "Organizational structure redesign"
-  - "Change Management:"
-    - "Comprehensive communication plans"
-    - "Leadership alignment and training programs"
-    - "Employee engagement and retention strategies"
+  - title: "Integration Management Office (IMO) Establishment"
+    content:
+      - "Day 1 readiness planning and execution"
+      - "Synergy tracking and realization acceleration"
+      - "Cross-functional integration coordination"
+  - title: "Operating Model Optimization"
+    content:
+      - "Best practice identification and implementation"
+      - "Process standardization and efficiency improvement"
+      - "Organizational structure redesign"
+  - title: "Change Management"
+    content:
+      - "Comprehensive communication plans"
+      - "Leadership alignment and training programs"
+      - "Employee engagement and retention strategies"
   
 outcomes:
   - "15-25% faster synergy realization"

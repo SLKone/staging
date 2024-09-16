@@ -3,6 +3,15 @@ layout: default
 ---
 {% include sub-service-content.html sub_service=page %}
 
+{% if include.sub_industry.why_choose %}
+<h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
+<ul>
+{% for reason in include.sub_industry.why_choose %}
+  <li>{{ reason }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
 {% if page.cta %}
 <div class="cta-section">
   <h3>Take the Next Step</h3>

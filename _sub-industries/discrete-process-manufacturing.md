@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: manufacturing
+parent: Manufacturing
 order: 4
 title: "Discrete & Process Manufacturing"
 subtitle: "We help both discrete and process manufacturers streamline operations, implement lean principles, and leverage Industry 4.0 technologies for enhanced productivity and efficiency."
@@ -12,17 +12,20 @@ challenges:
   - "Integration of legacy systems with new technologies"
 
 solutions:
-  - "Flexible Manufacturing Systems Implementation:"
-    - "Modular production line design"
-    - "Quick changeover techniques adoption"
-    - "Adaptive production scheduling"
-  - "Quality Management Enhancement:"
-    - "Statistical process control implementation"
-    - "End-to-end traceability solutions"
-  - "Operational Efficiency Improvements:"
-    - "Lean manufacturing principles adoption"
-    - "Energy efficiency initiatives"
-    - "Resource optimization strategies"
+  - title: "Flexible Manufacturing Systems Implementation"
+    content:
+      - "Modular production line design"
+      - "Quick changeover techniques adoption"
+      - "Adaptive production scheduling"
+  - title: "Quality Management Enhancement"
+    content:
+      - "Statistical process control implementation"
+      - "End-to-end traceability solutions"
+  - title: "Operational Efficiency Improvements"
+    content:
+      - "Lean manufacturing principles adoption"
+      - "Energy efficiency initiatives"
+      - "Resource optimization strategies"
 
 outcomes:
   - "15-25% improvement in overall equipment effectiveness"

@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: healthcare
+parent: Healthcare
 order: 4
 title: "Health Tech"
 subtitle: "We help health tech companies leverage emerging technologies to improve patient outcomes and streamline healthcare delivery."
@@ -10,18 +10,21 @@ challenges:
   - "Data security and privacy concerns"
   - "Demonstrating ROI to healthcare providers"
 solutions:
-  - "Scalable Operations Design:"
-    - "Organizational structure optimization"
-    - "Process standardization and automation"
-    - "Performance metrics and KPI development"
-  - "Integration Strategy and Execution:"
-    - "Interoperability assessment and roadmap development"
-    - "Data integration and migration strategies"
-    - "Change management and user adoption programs"
-  - "Data Analytics and Management:"
-    - "Advanced analytics capability development"
-    - "Data governance framework implementation"
-    - "Predictive modeling for population health"
+  - title: "Scalable Operations Design"
+    content:
+      - "Organizational structure optimization"
+      - "Process standardization and automation"
+      - "Performance metrics and KPI development"
+  - title: "Integration Strategy and Execution"
+    content:
+      - "Interoperability assessment and roadmap development"
+      - "Data integration and migration strategies"
+      - "Change management and user adoption programs"
+  - title: "Data Analytics and Management"
+    content:
+      - "Advanced analytics capability development"
+      - "Data governance framework implementation"
+      - "Predictive modeling for population health"
 outcomes:
   - "Sustainable growth and operational scalability"
   - "Improved interoperability with healthcare ecosystems"

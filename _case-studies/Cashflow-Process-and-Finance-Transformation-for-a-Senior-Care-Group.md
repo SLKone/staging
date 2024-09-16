@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Cashflow Process and Finance Transformation for a Senior Care Group"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
+industries: [Provider and Practice Management Groups, Value Creation and Growth]
+services: [Corporate Finance, Revenue Management, Performance Improvement]
 intro: SLKone took over the cash management process, month-end close, and finance functions at a senior care organization with more than 100 centers, helping the organization to avert a negative total liquidity while gaining visibility of the hurdles ahead 
 team-size: 2 consultants
 project-length: 2 months

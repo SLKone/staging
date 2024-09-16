@@ -1,36 +1,35 @@
 ---
 layout: sub-industry
-parent: technology
+parent: Technology
 order: 1
 title: "SaaS"
 subtitle: "We support Software-as-a-Service companies in optimizing customer acquisition, reducing churn, and scaling operations efficiently."
-  
 challenges:
   - "Customer acquisition cost optimization"
   - "Churn reduction and customer retention"
   - "Scalable infrastructure management"
   - "Balancing growth with profitability"
-  
 solutions:
-  - "Customer Lifecycle Optimization:"
-    - "Customer segmentation and targeting refinement"
-    - "Onboarding and adoption acceleration strategies"
-    - "Proactive churn prediction and prevention"
-  - "Financial Performance Enhancement:"
-    - "Unit economics analysis and improvement"
-    - "Revenue recognition optimization"
-    - "Investor reporting and metrics alignment"
-  - "Scalable Operations Design:"
-    - "Infrastructure scalability planning"
-    - "Automated deployment and CI/CD pipelines"
-    - "Performance monitoring and optimization"
-  
+  - title: "Customer Lifecycle Optimization"
+    content:
+      - "Customer segmentation and targeting refinement"
+      - "Onboarding and adoption acceleration strategies"
+      - "Proactive churn prediction and prevention"
+  - title: "Financial Performance Enhancement"
+    content:
+      - "Unit economics analysis and improvement"
+      - "Revenue recognition optimization"
+      - "Investor reporting and metrics alignment"
+  - title: "Scalable Operations Design"
+    content:
+      - "Infrastructure scalability planning"
+      - "Automated deployment and CI/CD pipelines"
+      - "Performance monitoring and optimization"
 outcomes:
   - "20-30% reduction in customer acquisition costs"
   - "15-25% improvement in net revenue retention"
   - "Enhanced operational efficiency and scalability"
   - "Improved financial metrics and investor confidence"
-  
 why_choose:
   - "SaaS Expertise: Deep understanding of SaaS business models and growth drivers."
   - "Data-Driven Solutions: Leveraging advanced analytics for customer and financial optimization."

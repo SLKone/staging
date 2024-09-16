@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Acquisition Integration Plan for $250M Oil & Gas Acquisition Plan"
-industries: [Oil-and-Gas]
-services-performed: [Pre-Transaction-Readiness,Change-Management]
+industries: [Oil and Gas]
+services: [Pre-Transaction Readiness, Change Management]
 intro: Planning an integration to break a trend and preserve the value of the acquisition
 team-size: 2 consultants
 project-length: 2 months

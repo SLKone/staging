@@ -4,7 +4,6 @@ order: 3
 title: "Change Management"
 parent: "Mergers and Acquisitions"
 description: "SLKone's Change Management services help your organization navigate and implement transformations smoothly, ensuring high adoption rates and sustained success."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Change Management.]"
 approach: "We develop and execute comprehensive change management strategies that address the human and organizational aspects of transformation. Our approach includes communication planning, stakeholder engagement, training programs, and support systems to ensure that changes are effectively adopted and integrated."
 focus_areas:
   - title: "Communication Strategy"

@@ -1,5 +1,6 @@
 ---
 layout: industry
+order: 4
 title: Technology
 subtitle: "In the fast-paced technology sector, we assist companies in optimizing operations, managing revenue processes, and integrating advanced analytics for superior decision-making."
 intro: "SLKone catalyzes growth and innovation in the technology industry. We collaborate with tech companies to refine operations, optimize revenue streams, revitalize finance functions, and embed analytics into core processes, ensuring our clients stay ahead in a competitive landscape."

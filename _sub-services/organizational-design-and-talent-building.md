@@ -4,7 +4,6 @@ order: 6
 title: "Organizational Design & Talent Building"
 parent: "New Business Support"
 description: "SLKone's Organizational Design & Talent Building services create a cohesive and high-performing workforce, aligning your organizational structure with strategic goals to drive excellence."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Organizational Design & Talent Building.]"
 approach: "We assess your current organizational structure and talent capabilities to identify strengths and gaps. Our team works with leadership to design an optimized structure and develop talent strategies that foster collaboration, innovation, and high performance."
 focus_areas:
   - title: "Org Structure Assessment"

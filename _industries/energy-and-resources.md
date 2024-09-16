@@ -1,6 +1,7 @@
 ---
 layout: industry
-title: Energy & Resources
+order: 6
+title: Energy and Resources
 subtitle: "In the evolving energy and resources sector, we help companies navigate industry disruptions, optimize operations, and drive sustainable growth."
 intro: "At SLKone, we understand the complex challenges facing the energy and resources sector. From upstream to downstream, we partner with companies to navigate industry disruptions, optimize operations, and drive sustainable growth. Our deep industry knowledge, combined with our data-driven approach, enables us to deliver tangible results in this dynamic sector."
 landscape-title: "The Energy & Resources Landscape"

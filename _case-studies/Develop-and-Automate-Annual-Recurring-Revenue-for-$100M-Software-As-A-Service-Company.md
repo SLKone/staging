@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Develop and Automate Annual Recurring Revenue for $100M Software-As-A-Service Company"
-industries: [Software-and-Tech]
-services-performed: [Financial-Analytics,Due-Diligence]
+industries: [Software and Tech]
+services: [Financial Analytics, Pre-Transaction Readiness]
 intro: Supported the unsolicited bid to acquire a company unprepared to undergo said transaction as it was halfway through its intended investment horizon
 team-size: 2 consultants
 project-length: 2 months

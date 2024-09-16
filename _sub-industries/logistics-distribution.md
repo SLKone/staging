@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: retail-and-consumer-goods
+parent: Retail and Consumer Goods
 order: 3
 title: "Logistics & Distribution"
 subtitle: "We help logistics and distribution companies optimize their networks, improve operational efficiency, and leverage technology for competitive advantage."
@@ -12,16 +12,19 @@ challenges:
   - "Enhancing visibility across the supply chain"
   
 solutions:
-  - "Last-Mile Delivery Optimization:"
-    - "Route optimization algorithms implementation"
-    - "Crowd-sourced delivery model evaluation"
-    - "Micro-fulfillment center strategy development"
-  - "Warehouse Optimization:"
-    - "IoT-enabled inventory management"
-    - "Predictive maintenance for equipment"
-  - "Supply Chain Visibility Enhancement:"
-    - "Real-time tracking and monitoring solutions"
-    - "Advanced analytics for performance optimization"
+  - title: "Last-Mile Delivery Optimization"
+    content:
+      - "Route optimization algorithms implementation"
+      - "Crowd-sourced delivery model evaluation"
+      - "Micro-fulfillment center strategy development"
+  - title: "Warehouse Optimization"
+    content:
+      - "IoT-enabled inventory management"
+      - "Predictive maintenance for equipment"
+  - title: "Supply Chain Visibility Enhancement"
+    content:
+      - "Real-time tracking and monitoring solutions"
+      - "Advanced analytics for performance optimization"
   
 outcomes:
   - "20-30% reduction in last-mile delivery costs"

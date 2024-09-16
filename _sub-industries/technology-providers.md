@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: technology
+parent: Technology
 order: 2
 title: "Technology Providers"
 subtitle: "We assist technology providers in enhancing product development, optimizing go-to-market strategies, and improving operational efficiency."
@@ -12,18 +12,21 @@ challenges:
   - "Navigating shifting regulatory landscapes"
   
 solutions:
-  - "Product Development Acceleration:"
-    - "Innovation pipeline optimization"
-    - "Cross-functional collaboration enhancement"
-    - "Agile development practices implementation"
-  - "Ecosystem Management:"
-    - "Partner performance analytics"
-    - "Channel strategy optimization"
-    - "Co-innovation program development"
-  - "Operational Excellence:"
-    - "Shared services optimization"
-    - "Process automation and AI integration"
-    - "Cost structure optimization"
+  - title: "Product Development Acceleration"
+    content:
+      - "Innovation pipeline optimization"
+      - "Cross-functional collaboration enhancement"
+      - "Agile development practices implementation"
+  - title: "Ecosystem Management"
+    content:
+      - "Partner performance analytics"
+      - "Channel strategy optimization"
+      - "Co-innovation program development"
+  - title: "Operational Excellence"
+    content:
+      - "Shared services optimization"
+      - "Process automation and AI integration"
+      - "Cost structure optimization"
   
 outcomes:
   - "25-35% reduction in product development cycles"

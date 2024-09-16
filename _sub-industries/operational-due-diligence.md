@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: private-equity
+parent: Private Equity
 order: 2
 title: "Operational Due Diligence"
 subtitle: "We conduct in-depth operational due diligence to assess the target company's operational capabilities, identify improvement areas, and validate potential synergies."
@@ -12,18 +12,21 @@ challenges:
   - "Aligning operational strategies with investment goals"
   
 solutions:
-  - "Operational Assessment:"
-    - "Comprehensive review of existing processes and systems"
-    - "Benchmarking against industry standards"
-    - "Identifying operational strengths and weaknesses"
-  - "Synergy Identification and Validation:"
-    - "Quantifying cost-saving opportunities"
-    - "Assessing revenue enhancement potential"
-    - "Validating integration feasibility and impact"
-  - "Risk Assessment and Mitigation:"
-    - "Identifying operational risks pre and post-acquisition"
-    - "Developing strategies to mitigate identified risks"
-    - "Creating contingency plans for critical operational areas"
+  - title: "Operational Assessment"
+    content:
+      - "Comprehensive review of existing processes and systems"
+      - "Benchmarking against industry standards"
+      - "Identifying operational strengths and weaknesses"
+  - title: "Synergy Identification and Validation"
+    content:
+      - "Quantifying cost-saving opportunities"
+      - "Assessing revenue enhancement potential"
+      - "Validating integration feasibility and impact"
+  - title: "Risk Assessment and Mitigation"
+    content:
+      - "Identifying operational risks pre and post-acquisition"
+      - "Developing strategies to mitigate identified risks"
+      - "Creating contingency plans for critical operational areas"
   
 outcomes:
   - "Thorough understanding of target company's operational capabilities"

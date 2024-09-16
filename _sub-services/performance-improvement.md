@@ -4,7 +4,6 @@ order: 1
 title: "Performance Improvement"
 parent: "Operational Excellence"
 description: "At SLKone, we drive real-world solutions that boost your bottom line. Our Performance Improvement service focuses on optimizing your operations, from supply chain enhancements to digital transformations, turning challenges into competitive advantages."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Performance Improvement.]"
 approach: "We become an extension of your team, working hands-on to implement improvements that deliver tangible results. Our data-driven methodology identifies key areas for enhancement and develops tailored strategies to maximize efficiency and effectiveness."
 focus_areas:
   - title: "Process Optimization"

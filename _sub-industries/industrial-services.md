@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: manufacturing
+parent: Manufacturing
 order: 3
 title: "Industrial Services"
 subtitle: "We assist industrial service providers in optimizing their service delivery models, improving customer satisfaction, and enhancing operational efficiency."
@@ -12,17 +12,20 @@ challenges:
   - "Digital transformation of service operations"
 
 solutions:
-  - "Service Delivery Optimization:"
-    - "Route optimization and scheduling enhancements"
-    - "Predictive maintenance implementation"
-    - "Remote monitoring and IoT integration"
-  - "Customer Experience Enhancement:"
-    - "Self-service portal development"
-    - "Proactive communication strategies"
-    - "Data-driven personalization initiatives"
-  - "Digital Transformation of Field Operations:"
-    - "Mobile workforce enablement"
-    - "AI-powered diagnostics and troubleshooting"
+  - title: "Service Delivery Optimization"
+    content:
+      - "Route optimization and scheduling enhancements"
+      - "Predictive maintenance implementation"
+      - "Remote monitoring and IoT integration"
+  - title: "Customer Experience Enhancement"
+    content:
+      - "Self-service portal development"
+      - "Proactive communication strategies"
+      - "Data-driven personalization initiatives"
+  - title: "Digital Transformation of Field Operations"
+    content:
+      - "Mobile workforce enablement"
+      - "AI-powered diagnostics and troubleshooting"
 
 outcomes:
   - "25-35% improvement in first-time fix rates"

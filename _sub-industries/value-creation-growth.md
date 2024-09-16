@@ -1,30 +1,30 @@
 ---
 layout: sub-industry
-parent: private-equity
+parent: Private Equity
 order: 4
 title: "Value Creation and Growth"
 subtitle: "We drive value creation and growth initiatives within your portfolio companies, enhancing performance, expanding market presence, and optimizing operations."
-  
 challenges:
   - "Stagnating growth during hold periods"
   - "Balancing cost reduction with growth investments"
   - "Adapting to rapidly changing market conditions"
   - "Identifying and executing on accretive add-on acquisitions"
-  
 solutions:
-  - "Performance Improvement Initiatives:"
-    - "Cost optimization and operational efficiency programs"
-    - "Revenue growth and market expansion strategies"
-    - "Working capital optimization"
-  - "Strategic Growth Planning:"
-    - "Market opportunity assessment and prioritization"
-    - "New product/service development acceleration"
-    - "M&A target identification and integration planning"
-  - "Accretive Add-On Acquisitions:"
-    - "Identifying complementary acquisition targets"
-    - "Conducting thorough due diligence and integration planning"
-    - "Executing seamless integration to maximize value"
-  
+  - title: "Performance Improvement Initiatives"
+    content:
+      - "Cost optimization and operational efficiency programs"
+      - "Revenue growth and market expansion strategies"
+      - "Working capital optimization"
+  - title: "Strategic Growth Planning"
+    content:
+      - "Market opportunity assessment and prioritization"
+      - "New product/service development acceleration"
+      - "M&A target identification and integration planning"
+  - title: "Accretive Add-On Acquisitions"
+    content:
+      - "Identifying complementary acquisition targets"
+      - "Conducting thorough due diligence and integration planning"
+      - "Executing seamless integration to maximize value"
 outcomes:
   - "20-30% EBITDA improvement over hold period"
   - "Accelerated organic growth rates"

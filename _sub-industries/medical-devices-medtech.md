@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: healthcare
+parent: Healthcare
 order: 3
 title: "Medical Devices & MedTech"
 subtitle: "We support medical device and health technology companies in product development, market access strategies, and operational optimization."
@@ -10,18 +10,21 @@ challenges:
   - "Changing customer expectations"
   - "Pressure for cost-effective solutions"
 solutions:
-  - "Product Development Process Improvement:"
-    - "Stage-gate process optimization"
-    - "Cross-functional collaboration enhancement"
-    - "Innovation management"
-  - "Manufacturing Efficiency:"
-    - "Lean manufacturing implementation"
-    - "Quality management system optimization"
-    - "Industry 4.0 technology adoption"
-  - "Go-to-Market Strategy Optimization:"
-    - "Value proposition development"
-    - "Channel strategy refinement"
-    - "Market penetration tactics"
+  - title: "Product Development Process Improvement"
+    content:
+      - "Stage-gate process optimization"
+      - "Cross-functional collaboration enhancement"
+      - "Innovation management"
+  - title: "Manufacturing Efficiency"
+    content:
+      - "Lean manufacturing implementation"
+      - "Quality management system optimization"
+      - "Industry 4.0 technology adoption"
+  - title: "Go-to-Market Strategy Optimization"
+    content:
+      - "Value proposition development"
+      - "Channel strategy refinement"
+      - "Market penetration tactics"
 outcomes:
   - "25-35% reduction in time-to-market for new products"
   - "15-20% improvement in manufacturing efficiency"

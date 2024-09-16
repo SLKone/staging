@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: healthcare
+parent: Healthcare
 order: 1
 title: "Provider and Practice Management Groups"
 subtitle: "We assist healthcare providers and practice management groups in improving operational efficiency, enhancing patient care, and optimizing revenue cycle management."
@@ -10,18 +10,21 @@ challenges:
   - "Shifting reimbursement models"
   - "Increasing patient expectations"
 solutions:
-  - "Operational Efficiency Improvement:"
-    - "Workflow optimization"
-    - "Resource allocation analysis"
-    - "Lean process implementation"
-  - "Revenue Cycle Optimization:"
-    - "Claims management enhancement"
-    - "Denials reduction strategies"
-    - "Payer contract optimization"
-  - "Strategic Planning and Execution:"
-    - "Service line optimization"
-    - "Merger and acquisition support"
-    - "Digital transformation roadmaps"
+  - title: "Operational Efficiency Improvement"
+    content:
+      - "Workflow optimization"
+      - "Resource allocation analysis"
+      - "Lean process implementation"
+  - title: "Revenue Cycle Optimization"
+    content:
+      - "Claims management enhancement"
+      - "Denials reduction strategies"
+      - "Payer contract optimization"
+  - title: "Strategic Planning and Execution"
+    content:
+      - "Service line optimization"
+      - "Merger and acquisition support"
+      - "Digital transformation roadmaps"
 outcomes:
   - "15-20% reduction in operational costs"
   - "10-15% improvement in revenue cycle performance"

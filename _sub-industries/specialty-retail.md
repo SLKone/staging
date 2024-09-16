@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: retail-and-consumer-goods
+parent: Retail and Consumer Goods
 order: 1
 title: "Specialty Retail"
 subtitle: "We assist specialty retailers in creating differentiated in-store experiences, managing inventory across multiple channels, and enhancing customer engagement."
@@ -12,18 +12,21 @@ challenges:
   - "Competing with e-commerce giants"
   
 solutions:
-  - "Inventory Optimization:"
-    - "Predictive analytics for demand forecasting"
-    - "RFID and IoT for real-time inventory tracking"
-    - "Omnichannel fulfillment strategy development"
-  - "Personalization Engine Implementation:"
-    - "Customer data platform integration"
-    - "AI-driven recommendation systems"
-    - "Privacy-compliant data management strategies"
-  - "Customer Experience Enhancement:"
-    - "In-store technology integration"
-    - "Staff training for personalized service"
-    - "Omnichannel engagement initiatives"
+  - title: "Inventory Optimization"
+    content:
+      - "Predictive analytics for demand forecasting"
+      - "RFID and IoT for real-time inventory tracking"
+      - "Omnichannel fulfillment strategy development"
+  - title: "Personalization Engine Implementation"
+    content:
+      - "Customer data platform integration"
+      - "AI-driven recommendation systems"
+      - "Privacy-compliant data management strategies"
+  - title: "Customer Experience Enhancement"
+    content:
+      - "In-store technology integration"
+      - "Staff training for personalized service"
+      - "Omnichannel engagement initiatives"
   
 outcomes:
   - "20-30% reduction in inventory holding costs"

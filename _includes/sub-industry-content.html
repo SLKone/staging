@@ -2,28 +2,36 @@
 <h2>{{ include.sub_industry.title }}</h2>
 {% endif %}
 
-{% if include.sub_industry.description %}
-<p>{{ include.sub_industry.description }}</p>
+{% if include.sub_industry.challenges %}
+  <h3>Challenges</h3>
+  <ul>
+    {% for challenge in include.sub_industry.challenges %}
+      <li>{{ challenge }}</li>
+    {% endfor %}
+  </ul>
 {% endif %}
 
-{% if include.sub_industry.approach %}
-<h3>Our Approach</h3>
-<p>{{ include.sub_industry.approach }}</p>
+{% if include.sub_industry.solutions %}
+  <h3>Solutions</h3>
+  <ul>
+    {% for solution in include.sub_industry.solutions %}
+      <li>
+        <strong>{{ solution.title }}:</strong>
+        <ul>
+          {% for detail in solution.content %}
+            <li>{{ detail }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}
 
-{% if include.sub_industry.focus_areas %}
-<h3>Focus Areas</h3>
-{% for area in include.sub_industry.focus_areas %}
-  <h4>{{ area.title }}</h4>
-  <p>{{ area.content }}</p>
-{% endfor %}
-{% endif %}
-
-{% if include.sub_industry.why_choose %}
-<h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
-<ul>
-{% for reason in include.sub_industry.why_choose %}
-  <li>{{ reason }}</li>
-{% endfor %}
-</ul>
+{% if include.sub_industry.outcomes %}
+  <h3>Outcomes</h3>
+  <ul>
+    {% for outcome in include.sub_industry.outcomes %}
+      <li>{{ outcome }}</li>
+    {% endfor %}
+  </ul>
 {% endif %}

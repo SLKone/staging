@@ -17,7 +17,7 @@ plugins:
 collections:
   services:
     output: true
-  sub-services:    # {{ add this block }}
+  sub-services: 
     output: true
   careers:
     output: true
@@ -25,7 +25,11 @@ collections:
     output: true
   expertise:
     output: true
-
+  industries:
+    output: true
+  sub-industries:
+    output: true 
+    
 # Defaults
 defaults:
   - scope:

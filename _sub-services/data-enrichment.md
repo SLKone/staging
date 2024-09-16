@@ -4,7 +4,6 @@ order: 6
 title: "Data Enrichment"
 parent: "Data & Advanced Analytics"
 description: "Our Data Enrichment services enhance your existing data by integrating additional relevant information, increasing its value and utility for informed decision-making and strategic initiatives."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Data Enrichment.]"
 approach: "We enhance your data by integrating it with internal and external sources, improving its quality and comprehensiveness. Our data enrichment process ensures that your data is more robust, enabling deeper insights and more effective analysis."
 focus_areas:
   - title: "Data Source Identification"

@@ -4,7 +4,6 @@ order: 4
 title: "GenAI Readiness"
 parent: "Digital Strategy and Technology"
 description: "SLKone's GenAI Readiness services prepare your organization to leverage Generative AI technologies, driving innovation and enhancing operational capabilities."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with GenAI Readiness.]"
 approach: "We help your organization understand the potential of Generative AI (GenAI) and integrate it into your business processes. Our services include training, strategy development, and implementation of GenAI tools tailored to your specific workflows. We ensure your team is equipped to harness the power of GenAI, driving efficiency and fostering innovation."
 focus_areas:
   - title: "GenAI Training"

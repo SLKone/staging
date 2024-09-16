@@ -1,8 +1,8 @@
 ---
 layout: sub-industry
-parent: healthcare
+parent: Healthcare
 order: 2
-title: "Pharma & Biotech"
+title: "Pharma and Biotech"
 subtitle: "We support pharmaceutical and biotechnology companies in streamlining R&D processes, optimizing supply chains, and enhancing market access."
 challenges:
   - "Long and costly R&D cycles"
@@ -10,18 +10,21 @@ challenges:
   - "Pricing pressures and market access barriers"
   - "Increasing competition from generics and biosimilars"
 solutions:
-  - "R&D Process Optimization:"
-    - "Portfolio optimization strategies"
-    - "Clinical trial design improvement"
-    - "Regulatory compliance enhancements"
-  - "Supply Chain Efficiency:"
-    - "End-to-end supply chain visibility"
-    - "Inventory optimization"
-    - "Manufacturing network rationalization"
-  - "Commercial Strategy Development:"
-    - "Market access and pricing strategies"
-    - "Launch readiness and execution support"
-    - "Sales force effectiveness"
+  - title: "R&D Process Optimization"
+    content:
+      - "Portfolio optimization strategies"
+      - "Clinical trial design improvement"
+      - "Regulatory compliance enhancements"
+  - title: "Supply Chain Efficiency"
+    content:
+      - "End-to-end supply chain visibility"
+      - "Inventory optimization"
+      - "Manufacturing network rationalization"
+  - title: "Commercial Strategy Development"
+    content:
+      - "Market access and pricing strategies"
+      - "Launch readiness and execution support"
+      - "Sales force effectiveness"
 outcomes:
   - "20-30% reduction in R&D cycle times"
   - "10-15% improvement in supply chain costs"

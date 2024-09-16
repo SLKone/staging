@@ -7,7 +7,7 @@ layout: default
 {{ page.intro }}
 </section>
 {% endif %}
-{% assign ordered-industries = site.industries %}
+{% assign ordered-industries = site.industries | sort: "order" %}
 
 {% for industry in ordered-industries %}
 <a href="{{ industry.url }}">

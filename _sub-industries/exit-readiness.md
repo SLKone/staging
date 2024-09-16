@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: private-equity
+parent: Private Equity
 order: 5
 title: "Exit Readiness"
 subtitle: "We prepare your portfolio companies for successful exits by maximizing valuation, optimizing performance, and ensuring seamless transitions to new ownership."
@@ -12,18 +12,21 @@ challenges:
   - "Ensuring smooth transition to new ownership"
   
 solutions:
-  - "Exit Value Maximization:"
-    - "EBITDA quality assessment and improvement"
-    - "Growth story development and validation"
-    - "Operational improvement runway identification"
-  - "Transaction Support:"
-    - "Vendor due diligence preparation"
-    - "Management presentation development"
-    - "Transition planning and execution support"
-  - "Strategic Roadmap Development:"
-    - "Next-step roadmap for post-exit growth"
-    - "Strategic initiatives prioritization"
-    - "Business transition support and continuity planning"
+  - title: "Exit Value Maximization"
+    content:
+      - "EBITDA quality assessment and improvement"
+      - "Growth story development and validation"
+      - "Operational improvement runway identification"
+  - title: "Transaction Support"
+    content:
+      - "Vendor due diligence preparation"
+      - "Management presentation development"
+      - "Transition planning and execution support"
+  - title: "Strategic Roadmap Development"
+    content:
+      - "Next-step roadmap for post-exit growth"
+      - "Strategic initiatives prioritization"
+      - "Business transition support and continuity planning"
   
 outcomes:
   - "1-2x multiple expansion at exit"

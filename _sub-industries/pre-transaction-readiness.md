@@ -1,6 +1,6 @@
 ---
 layout: sub-industry
-parent: private-equity
+parent: Private Equity
 order: 1
 title: "Pre-Transaction Readiness"
 subtitle: "We help private equity firms prepare for acquisitions by conducting thorough due diligence, identifying synergy opportunities, and assessing integration needs."
@@ -12,18 +12,21 @@ challenges:
   - "Balancing short-term value maximization with long-term strategic alignment"
   
 solutions:
-  - "Comprehensive Due Diligence:"
-    - "Operational assessment and improvement opportunity identification"
-    - "Synergy validation and quantification"
-    - "Risk assessment and mitigation planning"
-  - "Value Creation Plan Development:"
-    - "EBITDA growth roadmap creation"
-    - "Quick win identification for immediate post-close impact"
-    - "Long-term strategic initiative planning"
-  - "Integration Planning:"
-    - "Detailed integration plans addressing all key aspects"
-    - "Cultural compatibility analysis and strategy development"
-    - "Governance structure and decision-making framework setup"
+  - title: "Comprehensive Due Diligence"
+    content:
+      - "Operational assessment and improvement opportunity identification"
+      - "Synergy validation and quantification"
+      - "Risk assessment and mitigation planning"
+  - title: "Value Creation Plan Development"
+    content:
+      - "EBITDA growth roadmap creation"
+      - "Quick win identification for immediate post-close impact"
+      - "Long-term strategic initiative planning"
+  - title: "Integration Planning"
+    content:
+      - "Detailed integration plans addressing all key aspects"
+      - "Cultural compatibility analysis and strategy development"
+      - "Governance structure and decision-making framework setup"
   
 outcomes:
   - "20-30% more accurate valuation and synergy estimates"

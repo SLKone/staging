@@ -3,20 +3,15 @@ layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro %}
 
-{% if page.approach %}
-<section class="approach">
-  <h3>Our Approach</h3>
-  <p>{{ page.approach }}</p>
-</section>
-{% endif %}
+{% include content-block-bullets.html bullet_title=page.approach-title bullet_intro=page.approach-intro bullets=page.approach bullet_conclusion=page.approach-conclusion %}
 
-{% include content-block-bullets.html bullet_title=page.impact_title bullet_intro=page.impact_intro bullets=page.impact bullet_conclusion=page.impact_conclusion %}
+{% include content-block-bullets.html bullet_title=page.landscape-title bullet_intro=page.landscape-intro bullets=page.landscape bullet_conclusion=page.landscape-conclusion %}
 
-{% assign related_sub_industries = site["sub-industries"] | where: "parent", page.title | sort:"order" %}
+{% assign related_sub_industries = site.sub-industries | where: "parent", page.title | sort:"order" %}
 {% if related_sub_industries.size > 0 %}
-  <h3>{{page.title}} Sub-Industries</h3>
+  <h2>{{page.title}} Sub-Industries</h2>
     {% for sub-industry in related_sub_industries %}
-        {% include sub-service-content.html sub_service=sub-industry %}
+        {% include sub-industry-content.html sub_industry=sub-industry %}
     {% endfor %}
 {% endif %}
 
