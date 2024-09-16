@@ -1,9 +1,8 @@
 # Site settings
 title: SLKone
-email: hello@sl
-description: >-
-  SLKone is a bespoke management consulting firm bridging Strategy, Leadership, and Knowledge to build lasting solutions.
-baseurl: ""
+email: hello@slone.com
+description: SLKone is a bespoke management consulting firm bridging Strategy, Leadership, and Knowledge to build lasting solutions.
+baseurl: "file:///Users/adit/Documents/staging/_site/"
 url: "https://staging.slkone.com"
 github_username: SLKone
 
@@ -17,6 +16,8 @@ plugins:
 # Collections
 collections:
   services:
+    output: true
+  sub-services:    # {{ add this block }}
     output: true
   careers:
     output: true
@@ -37,6 +38,11 @@ defaults:
       type: "services"
     values:
       layout: "service"
+  - scope:
+      path: ""
+      type: "sub-services"
+    values:
+      layout: "sub-service"      
   - scope:
       path: ""
       type: "careers"

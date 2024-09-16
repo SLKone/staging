@@ -1,28 +1,23 @@
 ---
 layout: default
 ---
-{% include page-header.html title=page.title subtitle=page.subtitle %}
-
-{% if page.description %}
-<p>{{ page.description }}</p>
-{% endif %}
+{% include page-header.html title=page.title subtitle=page.intro %}
 
 {% if page.approach %}
+<section class="approach">
 <h3>Our Approach</h3>
 <p>{{ page.approach }}</p>
+</section>
 {% endif %}
 
 {% include impact-section.html impact_intro=page.impact_intro impact=page.impact impact_conclusion=page.impact_conclusion %}
 
-{% assign sub_services = site.pages | where: "layout", "sub-service" | where: "parent", page.title %}
-{% if sub_services.size > 0 %}
-<h3>Our Services</h3>
-{% for sub_service in sub_services %}
-  <h4><a href="{{ sub_service.url | relative_url }}">{{ sub_service.title }}</a></h4>
-  {% if sub_service.description %}
-    <p>{{ sub_service.description }}</p>
-  {% endif %}
-{% endfor %}
+{% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
+{% if related_sub_services.size > 0 %}
+  <h3>{{page.title}} Services</h3>
+    {% for sub-service in related_sub_services %}
+        {% include sub-service-content.html sub_service=sub-service %}
+    {% endfor %}
 {% endif %}
 
 {% if page.why_choose %}
