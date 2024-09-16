@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Product Development and Growth Strategy for $1B Chemicals Organization"
-industries: [Oil-and-Gas]
-services-performed: [Operations]
+industries: [Pharma and Biotech]
+services: [Operations, Financial Analytics]
 intro: Defining and measuring global market for a new product development in an emerging sector to support creation of business case.
 team-size: 2 consultants
 project-length: 2 months
@@ -19,7 +19,7 @@ heroimage: case-studies/Product-Development-and-Growth-Strategy-for-$1B-Chemical
 #### Bespoke Solutions
 - Performed detailed review of global landscape, key competitors, products / services, and use cases
 - Executed quantitative regional analysis on global market demand by product type, region, application, and end user; including market dynamics evaluations and a competitive landscape overview
-- Conducted internal qualitative interviews with all functions to identify client’s internal capabilities, constraints, and focal areas
+- Conducted internal qualitative interviews with all functions to identify client's internal capabilities, constraints, and focal areas
 - Constructed findings, analyses, and summaries into a final deliverable to be used by client when developing a fully vetted business case for the leadership team that supports their proposal / thesis
 
 #### Leading With Results
@@ -27,7 +27,7 @@ heroimage: case-studies/Product-Development-and-Growth-Strategy-for-$1B-Chemical
 - Recommended top 4 options based on multiple variables
      - Use cases, key markets, preferable geographies, market size & rates
 - Detailed review of overall market
-     - Porter’s Five Forces Analysis of Market Dynamics
+     - Porter's Five Forces Analysis of Market Dynamics
      - Regulatory & Standards Impacts
      - COVID-19 Impacts to Market
      - Market Risks & Opportunities

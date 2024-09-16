@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Operationalizing a Project Management Office for a $2B Specialty Retailer"
-industries: [Consumer-Goods-and-Services]
-services-performed: [Sales-and-Operations-Planning,Performance-Improvement]
+industries: [Specialty Retail]
+services: [Sales-and-Operations-Planning,Performance-Improvement]
 intro: SLKone helped organizations realize the benefits of an intended project, program, or portfolio of projects.  We maximized their return on project investment by effectively utilizing their resources.
 team-size: 2 consultants
 project-length: 2 months

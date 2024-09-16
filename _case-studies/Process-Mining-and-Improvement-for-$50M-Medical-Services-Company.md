@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Process Mining and Improvement for $50M Medical Services Company"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Process-Mining, Financial-Analytics, Performance-Improvement]
+industries: [Medical Devices and MedTech]
+services: [Process Design, Financial Analytics]
 intro: Prepared a transparent, real time, user-friendly visualization of business processes, rapidly unlocking insights into process inefficiencies, down to root causes, and measuring the operational and financial impact of recommended actions
 team-size: 2 consultants
 project-length: 2 months

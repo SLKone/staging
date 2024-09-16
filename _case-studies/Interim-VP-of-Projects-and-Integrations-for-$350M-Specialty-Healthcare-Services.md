@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Interim VP of Projects and Integrations for $350M Specialty Healthcare Services"
-industries: [Healthcare]
-services-performed: [Post-Merger-Integration, Change-Management]
+industries: [Provider and Practice Management Groups]
+services: [Post-Merger-Integration, Change-Management]
 intro: Ongoing enterprise initiatives and acquisitions required a focused leader for projects and integrations across the organization​
 team-size: 2 consultants
 project-length: 2 months

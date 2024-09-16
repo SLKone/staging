@@ -2,8 +2,8 @@
 layout: case-study
 title:  "Establishing a Longe-Range Planning Process for 800M Division of 24B Global Building Automation Conglomerate"
 industries: [Manufacturing]
-services-performed: [Operating-Model-Design,Process-Design]
-intro: Establishing and managing a complete Long-Range Planning (“LRP”) process of a complex matrix organization to drive an updated strategy and foster accountability.
+services: [Operating Model Design, Process Design]
+intro: Establishing and managing a complete Long-Range Planning ("LRP") process of a complex matrix organization to drive an updated strategy and foster accountability.
 team-size: 2 consultants
 project-length: 2 months
 heroimage: case-studies/Establishing-a-Longe-Range-Planning-Process-for-800M-Division-of-24B-Global-Building-Automation-Conglomerate.jpg

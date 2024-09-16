@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Supply Chain Optimization for a $450M Electrification Manufacturer"
-industries: [Manufacturing]
-services-performed: [Supply-Chain-Optimization,Process-Design]
+industries: [Discrete and Process Manufacturing]
+services: [Supply-Chain-Optimization,Process-Design]
 intro: Develop supply chain strategy based on opportunities to reduce operational costs while enabling profitable growth
 team-size: 2 consultants
 project-length: 2 months

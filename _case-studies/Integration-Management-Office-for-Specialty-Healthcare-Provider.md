@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Integration Management Office for Specialty Healthcare Provider"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Post-Merger-Integration]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Post-Merger-Integration]
 intro: Establishment and facilitation of the Integration Management Office to assist in the successful integration of two specialty healthcare practices in separate geographies
 team-size: 2 consultants
 project-length: 2 months

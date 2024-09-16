@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Operational Performance Improvement for a $100M Medical Repair and Maintenance Organization​"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
+industries: [Medical Devices and MedTech]
+services: [Corporate Finance and Revenue Management, Process Design, Performance Improvement]
 intro: Reduce operating costs through process, systems, and training improvements yielding ~$575k in annualized benefits​
 project-length: 2 months
 heroimage: case-studies/Operational-Performance-Improvement-for-a-$100M-Medical-Repair-and-Maintenance-Organization.jpg
@@ -19,7 +19,7 @@ heroimage: case-studies/Operational-Performance-Improvement-for-a-$100M-Medical-
 - Rapid operational assessment leveraging Celonis process mining software followed by interviews with key stakeholders to confirm opportunities​
 - Executed an immersive design thinking approach to understand needs and gaps of the existing training curriculum​
 - Worked with finance team to understand invoicing process; discovering highly manual process with data gaps ​
-- Identified user-experience issues within the work order and parts ordering process which made training more difficult; training also taught “how the system worked” and not “how to use the system”
+- Identified user-experience issues within the work order and parts ordering process which made training more difficult; training also taught "how the system worked" and not "how to use the system"
 
 #### Leading With Results
 - **~$100k in headcount savings** by building a Python based tool to integrate field service and account systems​

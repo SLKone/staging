@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "From Reactive to Proactive Budgeting for a Private Equity Company"
-industries: [Private-Equity]
-services-performed: [Corporate-Finance-and-Revenue-Management, Operations]
+industries: [Value Creation and Growth]
+services: [Corporate Finance, Operations]
 intro: SLKone drove performance with our ability to compare the expectations and results that tie operations and finance.  We empowered the organization to appropriately distribute resources based on needs and outcomes
 team-size: 2 consultants
 project-length: 2 months

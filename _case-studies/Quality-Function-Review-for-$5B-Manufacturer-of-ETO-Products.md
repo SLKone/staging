@@ -2,7 +2,7 @@
 layout: case-study
 title:  "Quality Function Review for $5B Manufacturer of ETO Products"
 industries: [Oil and Gas]
-services-performed: [Performance-Improvement, Automation]
+services: [Performance-Improvement, Automation]
 intro: Development of streamlined operational planning process and interim activity planning model to create an automated bottoms-up, 12-month rolling operational plan and revenue forecast
 team-size: 2 consultants
 project-length: 2 months

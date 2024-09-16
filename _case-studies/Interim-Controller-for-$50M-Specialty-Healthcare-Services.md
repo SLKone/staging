@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Interim Controller for $50M Specialty Healthcare Services"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
 intro: A high-growth Private Equity-backed specialty healthcare services company needed an interim-controller to correct the financials
 team-size: 2 consultants
 project-length: 2 months

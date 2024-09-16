@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Personnel Utilization Tracking $1.2B Oil Field Services Organization"
-industries: [Oil-and-Gas]
-services-performed: [IT-Roadmap,Automation,Process-Design]
+industries: [Oil and Gas]
+services: [IT-Roadmap,Automation,Process-Design]
 intro: Better control C&B and overtime spend through the implementation analytical dashboards supported by a re-engineered time entry to track utilization at a more specific and granular level 
 team-size: 2 consultants
 project-length: 2 months

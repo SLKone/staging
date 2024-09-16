@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Commercializing Project Portfolios for a Research Nonprofit"
-industries: [Software and Tech]
-services: [Sales Inventory and Operations Planning, Process Design]
+industries: [Nonprofit]
+services: [Process Design, Sales Inventory and Operations Planning]
 intro: SLKone removed information siloes in order to benefit from more than the sum of the organizations knowledge and capabilities.  Our methodology fostered collaboration through knowledge integration.
 team-size: 2 consultants
 project-length: 2 months
@@ -16,7 +16,7 @@ heroimage: case-studies/Commercializing-Project-Portfolios-Research-Nonprofit.jp
 
 
 #### Bespoke Solutions
-- Created a documentation framework to clearly define purpose, desired outcomes of investments, and the projects’ place in the technology landscape
+- Created a documentation framework to clearly define purpose, desired outcomes of investments, and the projects' place in the technology landscape
 - Implemented processes to intake reporting and status updates in a consistent manner
 - Developed reporting templates and a supporting process to disseminate gathered information and knowledge
 - Assessed the inventory of knowledge to find compatibilities, opportunities for integration, and points of distinction

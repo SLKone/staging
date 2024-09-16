@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Process Standardization and Org Structure $50M Industrial Services Provider"
-industries: [Manufacturing]
-services-performed: [Operating-Model-Design, Process-Design]
+industries: [Industrial Services]
+services: [Operating-Model-Design, Process-Design]
 intro: Redesigned the work order management (WOM) process and organizational structure for a growing industrial services firm actively undergoing integration and restructuring
 team-size: 2 consultants
 project-length: 2 months

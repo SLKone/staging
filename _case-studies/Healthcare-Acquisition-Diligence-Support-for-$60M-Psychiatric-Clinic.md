@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Healthcare Acquisition Diligence Support for $60M Psychiatric Clinic"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Due-Diligence, Financial-Analytics]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Due-Diligence, Financial-Analytics]
 intro: Rapid assessment of the due diligence process for the healthcare acquisition to identifying structural and management deficiencies​ 
 team-size: 2 consultants
 project-length: 2 months

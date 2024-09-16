@@ -1,7 +1,37 @@
 ---
 layout: default
 ---
-<article class="career-listing">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-</article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- ... other head elements ... -->
+</head>
+<body>
+    <article class="career-listing">
+        <header>
+            <!-- Light mode logo -->
+            <img src="/assets/images/logo/svg/Mark - Black.svg" alt="Logo" class="logo logo-light">
+            <!-- Dark mode logo -->
+            <img src="/assets/images/logo/svg/Mark - White.svg" alt="Logo" class="logo logo-dark">
+            <!-- ... existing header content ... -->
+        </header>
+
+        <section class="section">
+            <h1>Careers</h1>
+            <p>Join our team!</p>
+            <!-- ... other content ... -->
+        </section>
+
+        <footer>
+            <p>© 2023 Your Company</p>
+        </footer>
+
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </article>
+</body>
+</html>

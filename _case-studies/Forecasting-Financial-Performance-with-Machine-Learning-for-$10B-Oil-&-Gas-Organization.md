@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Forecasting Financial Performance with Machine Learning for $10B Oil & Gas Organization"
-industries: [Oil-and-Gas]
-services-performed: [Performance-Improvement,Operating-Model-Design,Change-Management]
+industries: [Oil and Gas]
+services: [Performance Improvement, Operating Model Design, Change Management]
 intro: Developed methodology to increase forecast accuracy and manage costs​
 team-size: 2 consultants
 project-length: 2 months
@@ -10,7 +10,7 @@ heroimage: case-studies/Forecasting-Financial-Performance-with-Machine-Learning-
 ---
 
 #### Situation
-- Client’s Financial Planning and Analysis (FP&A) team executed a monthly forecasting exercise largely dependent on qualitative inputs from sales and executive leadership ​
+- Client's Financial Planning and Analysis (FP&A) team executed a monthly forecasting exercise largely dependent on qualitative inputs from sales and executive leadership ​
 - Leadership was concerned with the poor forecast accuracy and wanted to identify opportunities for improvement​
 - The challenge for the forecasting team was identifying the operational factors driving revenue and costs across various data sets​
 - **FP&A leadership asked SLKone for process and systems improvement opportunities to increase forecast accuracy**

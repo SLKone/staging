@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Integration Management Office for $40M Opthalmology & Specialty Eye Care Portfolio Company"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Pre-Transaction-Readiness, Financial-Analytics, Post-Merger-Integration]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Pre-Transaction-Readiness, Financial-Analytics, Post-Merger-Integration]
 intro: Creation of the Integration Management Office to assist in pre-close transactional alignment, perform resource assessments and functional structuring, and develop overall integration approach to assist in achieving the overall investment thesis​
 team-size: 2 consultants
 project-length: 2 months

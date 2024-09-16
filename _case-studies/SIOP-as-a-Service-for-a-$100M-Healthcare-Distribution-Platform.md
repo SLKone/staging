@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "SIOP as a Service for a $100M Healthcare Distribution Platform"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
+industries: [Pharma and Biotech]
+services: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
 intro: Developed Sales, Inventory, and Operational Planning (SIOP) process, supporting forecasting and purchase order tools to streamline cross-functional collaboration and reduce manual entry into the system
 team-size: 2 consultants
 project-length: 2 months

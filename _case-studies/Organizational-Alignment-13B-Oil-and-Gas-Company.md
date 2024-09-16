@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Organizational Alignment $13B Oil and Gas Company"
-industries: [Oil-and-Gas]
-services-performed: [Performance-Improvement,Operating-Model-Design,Process-Design]
+industries: [Oil and Gas]
+services: [Performance Improvement,Operating Model Design,Process Design]
 intro: Significant confusion in a cross-PL department due to new leadership and a poorly communicated mission caused significant underperformance. SLKone worked with key leaders to identify, clarify, and document key initiatives and goals. 
 team-size: 2 consultants
 project-length: 2 months

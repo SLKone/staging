@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Integration Management Office for $45M Behavioral Health Portfolio Company"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Pre-Transaction-Readiness, Change-Management, Post-Merger-Integration]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Pre-Transaction-Readiness, Change-Management, Post-Merger-Integration]
 intro: Establishment and facilitation of the Integration Management Office (IMO) to assist the successful integration of two of the largest Behavioral Health practices in the region
 team-size: 2 consultants
 project-length: 2 months

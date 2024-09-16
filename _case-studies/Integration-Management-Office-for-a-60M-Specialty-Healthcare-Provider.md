@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Integration Management Office for a $60M Specialty Healthcare Provider"
-industries: [Healthcare]
-services-performed: [Pre-Transaction-Readiness,Change-Management]
+industries: [Provider and Practice Management Groups]
+services: [Pre-Transaction-Readiness,Change-Management]
 intro: SLKone developed and staffed the Integration Management Office for the merger of two like-sized specialty healthcare provider companies with over 25 offices and emerged as the largest provider in the region
 team-size: 2 consultants
 project-length: 2 months

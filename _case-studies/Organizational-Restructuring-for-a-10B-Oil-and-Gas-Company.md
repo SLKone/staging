@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Organizational Restructuring for a $10B Oil and Gas Company"
-industries: [Oil-and-Gas]
-services-performed: [Performance-Improvement,Operating-Model-Design,Process-Design]
+industries: [Oil and Gas]
+services: [Performance-Improvement,Operating-Model-Design,Process-Design]
 intro: SLKone improved the productivity and connectivity of business support functions by designing and aligning departmental structures within the organization
 team-size: 2 consultants
 project-length: 2 months

@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Manufacturing and Schedule Improvement Project $150M Division of a Multinational Pharma Company"
-industries: [Healthcare]
-services-performed: [Performance-Improvement,Operating-Model-Design]
+industries: [Pharma and Biotech]
+services: [Performance-Improvement,Operating-Model-Design]
 intro: SLKone performed a rapid cost assessment of a Pharmaceutical manufacturer identifying several areas for operational improvement. The improvement plan identified millions in savings to the client without impacting production commitments
 team-size: 2 consultants
 project-length: 2 months

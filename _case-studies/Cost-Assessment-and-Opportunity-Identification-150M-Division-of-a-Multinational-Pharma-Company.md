@@ -26,7 +26,7 @@ heroimage: case-studies/Cost-Assessment-and-Opportunity-Identification-150M-Divi
 - Evaluated manufacturing equipment utilization and warehousing storage to minimize excess overhead costs
 
 #### Leading With Results
-- **Identified the need for a “Cost Containment Culture”** by establishing functional targets and specific recommendations to reduce spend
+- **Identified the need for a "Cost Containment Culture"** by establishing functional targets and specific recommendations to reduce spend
 - **Improved reporting structure** to align leadership, commercial, and manufacturing functions around metrics and measures
 - **Developed a proactive product portfolio approach** leveraging scenario-based models including financial and operational impacts to manage commercial strategies
 - **Identified 50% Increase in EBITDA** through opportunities including: increasing span of control, reducing indirect spend, adjusting manufacturing scheduling to volume, and commercial / customer changes

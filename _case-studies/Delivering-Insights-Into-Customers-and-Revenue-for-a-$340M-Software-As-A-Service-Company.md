@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title:  "Delivering Insights Into Customers and Revenue for $340M Software-As-A-Service Company"
-industries: [Software and Tech]
+industries: [SaaS]
 services: [Financial Analytics]
 intro: SLKone delivered, within weeks of starting, static and trending KPIs which finance leadership had requested internally for over 9 months. These insights will allow for substantially more visibility into the health of their business and financial decisions moving forward.
 team-size: 2 consultants

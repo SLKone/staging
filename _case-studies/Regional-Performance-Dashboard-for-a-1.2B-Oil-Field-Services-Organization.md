@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Regional Performance Dashboard for a $1.2B Oil Field Services Organization"
-industries: [Oil-and-Gas]
-services-performed: [IT-Roadmap,Automation,Process-Design]
+industries: [Oil and Gas]
+services: [IT-Roadmap,Automation,Process-Design]
 intro: Defining and building dashboards and analytics that support strategic initiatives in order to better manage and direct improvements
 team-size: 2 consultants
 project-length: 2 months

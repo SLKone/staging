@@ -2,7 +2,7 @@
 layout: case-study
 title:  "Acquisition Integration Plan for $250M Oil & Gas Acquisition Plan"
 industries: [Oil and Gas]
-services: [Pre-Transaction Readiness, Change Management]
+services: [Mergers and Acquisitions, Change Management, Financial Analytics]
 intro: Planning an integration to break a trend and preserve the value of the acquisition
 team-size: 2 consultants
 project-length: 2 months
@@ -21,4 +21,4 @@ heroimage: case-studies/Acquisition-Integration-Plan-for-$250M-Oil-&-Gas-Acquisi
 
 #### Leading With Results
 - Provided a destination and integration pathway to follow.  Where the business had a rough integration plan developed, we were able to establish a detailed integration plan for the business leaders to follow to reach that goal.​
-- Communication materials developed.  **The process that was executed to review future state provided business rationale and materials to help establish buy in with the acquired business’ leadership team on the combined direction.**
+- Communication materials developed.  **The process that was executed to review future state provided business rationale and materials to help establish buy in with the acquired business' leadership team on the combined direction.**

@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Supply Chain Footprint Optimization $1.2B Oil Field Services Organization"
-industries: [Oil-and-Gas]
-services-performed: [Supply-Chain-Network-Optimization,Process-Design,IT-Roadmap]
+industries: [Oil and Gas]
+services: [Supply-Chain-Network-Optimization,Process-Design,IT-Roadmap]
 intro: Leverage machine learning and decision science methods to plan, pressure test and compare go-forward models for global supply chain footprint requiring >$100m in investment
 team-size: 2 consultants
 project-length: 2 months

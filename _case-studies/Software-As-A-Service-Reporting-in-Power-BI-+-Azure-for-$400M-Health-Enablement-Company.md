@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Software-As-A-Service Reporting in Power BI + Azure for $400M Health Enablement Company"
-industries: [Software-and-Tech]
-services-performed: [Performance-Improvement,Sales-and-Operations-Planning]
+industries: [SaaS, Health Tech]
+services: [Performance-Improvement,Sales-and-Operations-Planning]
 intro: Developed a suite of SaaS reports and dashboards for various stakeholders including C-Suite and private equity sponsors, which provided insights for critical business decisions such as where to best invest sales & marketing dollars for the highest percentage return
 team-size: 2 consultants
 project-length: 2 months

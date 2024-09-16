@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Interim Controller and Accounting Surge for $350M Specialty Healthcare Services"
-industries: [Healthcare]
-services-performed: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
+industries: [Provider and Practice Management Groups]
+services: [Corporate-Finance-and-Revenue-Management, Cost-Management, Financial-Analytics, Performance-Improvement]
 intro: Following the departure of the previous CFO, compliance was deemed lax and required surge capacity in the controllership function
 team-size: 2 consultants
 project-length: 2 months

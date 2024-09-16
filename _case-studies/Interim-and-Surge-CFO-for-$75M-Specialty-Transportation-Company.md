@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Interim and Surge CFO for $75M Specialty Transportation Company"
-industries: [Consumer-Goods-and-Services]
-services-performed: [Financial-Analytics,Cost-Management,Quality-of-Revenue]
+industries: [Consumer Goods and Services]
+services: [Financial Analytics, Cost Management, Quality of Revenue]
 intro: In order to support a recent private-equity backed portfolio company acquisition, an interim CFO was needed to lead the finance function for a specialty transportation provider
 team-size: 2 consultants
 project-length: 2 months

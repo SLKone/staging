@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Failed Implementation Review for a $110M Food Manufacturer"
-industries: [Food-and-Beverage]
-services-performed: [Performance-Improvement]
+industries: [Consumer Goods and Services]
+services: [Performance-Improvement]
 intro: SLKone reviewed and assessed the adequacy of a partially installed system implementation that was well beyond budget, which helped reign in costs and develop a corrective plan of action
 team-size: 2 consultants
 project-length: 2 months

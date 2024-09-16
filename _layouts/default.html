@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+    {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    {% if page.author %}
+      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+    {% endif %}
+    {% include open-graph.html %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
+    <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script src="https://kit.fontawesome.com/f7e54a3b3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/pef0cwc.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header>
@@ -17,5 +35,6 @@
       {% include footer.html %}
     </footer>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% include analytics.html %}
 </body>
 </html>

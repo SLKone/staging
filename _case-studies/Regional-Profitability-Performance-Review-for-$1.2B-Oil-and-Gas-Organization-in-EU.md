@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Regional Profitability Performance Review for $1.2B Oil and Gas Organization in EU"
-industries: [Oil-and-Gas]
-services-performed: [Performance-Improvement,Operating-Model-Design,Change-Management]
+industries: [Oil and Gas]
+services: [Performance Improvement, Financial Analytics]
 intro: Performed detailed forensic financial and operational analysis to discover root cause of deteriorating margins in EU region following restructuring event
 team-size: 2 consultants
 project-length: 2 months
@@ -23,7 +23,7 @@ heroimage: case-studies/Regional-Profitability-Performance-Review-for-$1.2B-Oil-
     - Weakening product mix, activity decline, lag to tenure goals, misaligned organization, inflexible cost structure, and adverse forex impact​
 - Developed proprietary activity analysis tool to evaluate operations and related financial outputs at lowest possible level​
     - Provided insights into operational fluctuations that explained financial impacts at a level the business was unable to reach in the past​
-- Aligned actual performance to new tenure’s original forecast​
+- Aligned actual performance to new tenure's original forecast​
 - Quantified true FX impact through the development of local currency P&L and an agreed upon benchmark to measure variance in USD / local currencies over analyzed period​
 - Performed Fixed and Variable cost analysis for high impact categories and key industry trends ​
 - Reviewed organizational structure utilizing spans and layers analysis correlated with financial data​
@@ -39,6 +39,6 @@ SLKone recommendations based on findings noted:​
    - Revised S&OP ground-up discipline that cuts across all areas of the business​
    - Building of predictive algorithms and goal-seek functionality into operational planning mode​
    - Plan to implement a shift in the cultural mindset​
-   - Discrete products pricing model update to be “gap-fillers” in the much longer horizon of integrated projects forecast​
+   - Discrete products pricing model update to be "gap-fillers" in the much longer horizon of integrated projects forecast​
    - Deploy identified structural changes to remove product line siloed operations​
-   - Implement targeted vs. random organizational transition based on new tenure’s forecast
+   - Implement targeted vs. random organizational transition based on new tenure's forecast

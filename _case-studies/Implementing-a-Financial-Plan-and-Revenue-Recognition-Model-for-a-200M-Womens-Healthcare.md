@@ -1,8 +1,8 @@
 ---
 layout: case-study
-title:  "Implementing a Financial Plan and Revenue Recognition Model for a $200M Women’s Healthcare Company"
-industries: [Healthcare]
-services-performed: [Financial-Analytics,Quality-of-Revenue]
+title:  "Implementing a Financial Plan and Revenue Recognition Model for a $200M Women's Healthcare Company"
+industries: [Provider and Practice Management Groups]
+services: [Financial Analytics, Quality of Revenue]
 intro: SLKone assisted the development of a granular, compliant revenue recognition model that resolved material issues in the accounting function, while simultaneously unlocking business intelligence reporting opportunities
 team-size: 2 consultants
 project-length: 2 months
@@ -10,10 +10,10 @@ heroimage: case-studies/Implementing-a-Financial-Plan-and-Revenue-Recognition-Mo
 ---
 
 #### Situation
-- The client was a $200M women’s healthcare company
+- The client was a $200M women's healthcare company
 - The company had grown rapidly in the prior two years, primarily through acquisitions
 - The inorganic growth, coupled with existing process weaknesses in revenue recognition, led to increased confusion and a lack of confidence in revenue figures and accounts receivable balances on the financial statements
-- New accounting guidance had been issued, impacting the current policy’s compliance
+- New accounting guidance had been issued, impacting the current policy's compliance
 
 
 #### Bespoke Solutions

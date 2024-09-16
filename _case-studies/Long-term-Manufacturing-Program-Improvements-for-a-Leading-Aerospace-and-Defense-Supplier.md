@@ -1,9 +1,9 @@
 ---
 layout: case-study
 title:  "Long-term Manufacturing Program Improvements for a Leading Aerospace and Defense Supplier"
-industries: [Manufacturing]
-services-performed: [Performance-Improvement,Operating-Model-Design]
-intro: Facilitated performance improvement ‘kaizen’ resulting in long-term improvements for a ten year manufacturing parts program and improved team morale
+industries: [Aerospace and Defense]
+services: [Performance Improvement, Operating Model Design]
+intro: Facilitated performance improvement 'kaizen' resulting in long-term improvements for a ten year manufacturing parts program and improved team morale
 team-size: 2 consultants
 project-length: 2 months
 heroimage: case-studies/Long-term-Manufacturing-Program-Improvements-for-a-Leading-Aerospace-and-Defense-Supplier.jpg

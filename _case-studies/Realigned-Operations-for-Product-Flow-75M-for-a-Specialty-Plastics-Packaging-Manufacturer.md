@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Realigned Operations for Product Flow for a $75M Specialty Plastics Packaging Manufacturer"
-industries: [Manufacturing]
-services-performed: [Performance-Improvement,Operating-Model-Design]
+industries: [Discrete and Process Manufacturing]
+services: [Performance-Improvement,Operating-Model-Design]
 intro: After reviewing the operations of the organization, in alignment with future production needs and sales pipelines, a manufacturing shop floor reconfiguration project was embarked on resulting in improved performance, delivery, and profitability
 team-size: 2 consultants
 project-length: 2 months

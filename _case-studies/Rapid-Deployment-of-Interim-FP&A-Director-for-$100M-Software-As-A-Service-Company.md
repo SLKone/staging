@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Rapid Deployment of Interim FP&A Director for $100M Software-As-A-Service Company"
-industries: [Software-and-Tech]
-services-performed: [Financial-Analytics]
+industries: [SaaS]
+services: [Financial-Analytics]
 intro: Deployed within 1 week to provide interim management of FP&A department at the beginning of sale process​
 team-size: 2 consultants
 project-length: 2 months

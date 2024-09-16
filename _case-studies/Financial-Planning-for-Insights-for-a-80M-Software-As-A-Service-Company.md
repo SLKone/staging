@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Financial Planning for Insights for a $80M Software-As-A-Service"
-industries: [Software-and-Tech]
-services-performed: [Corporate-Finance-and-Revenue-Management, Operations]
+industries: [SaaS]
+services: [Corporate Finance, Financial Analytics]
 intro: SLKone assisted the development of a granular, compliant revenue recognition model that resolved material issues in the accounting function, while simultaneously unlocking business intelligence reporting opportunities
 team-size: 2 consultants
 project-length: 2 months

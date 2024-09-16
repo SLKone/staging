@@ -1,8 +1,8 @@
 ---
 layout: case-study
 title:  "Reducing Sales Channel Complexity for a $1B Oil Field Service Organization in Latin America"
-industries: [Oil-and-Gas]
-services-performed: [Sales-and-Operations-Planning,Quality-of-Revenue]
+industries: [Oil and Gas]
+services: [Sales-and-Operations-Planning,Quality-of-Revenue]
 intro: Complexity within Products, Customers and Markets divides organizational focus and energy leading to lagging results; our ability to reduce complexity and emphasize core competencies allows organizations to realize profits and sell focused products results to their organizations
 team-size: 2 consultants
 project-length: 2 months

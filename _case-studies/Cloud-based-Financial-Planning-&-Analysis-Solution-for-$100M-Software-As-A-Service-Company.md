@@ -2,7 +2,7 @@
 layout: case-study
 title:  "Cloud-based Financial Planning & Analysis Solution for $100M Software-As-A-Service Company"
 industries: [SaaS]
-services: [Corporate Finance, Sales Inventory and Operations Planning]
+services: [Financial Analytics, IT Roadmap]
 intro: SLKone transformed an antiquated finance function from a transaction manager to a strategic business partner
 team-size: 2 consultants
 project-length: 2 months
@@ -21,7 +21,7 @@ heroimage: case-studies/Cloud-based-Financial-Planning-&-Analysis-Solution-for-$
 - Identified three potential FP&A solutions​
 - Rescued an overbudget implementation by working with implementation office to reallocate hours ​
 - Independently coordinated with implementation partner​
-- Developed ‘one click’ reporting capability
+- Developed 'one click' reporting capability
 
 #### Leading With Results
 - Successful implementation that ultimately supported the creation of a first ever budget​
