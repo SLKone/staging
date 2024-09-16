@@ -1,10 +1,11 @@
 ---
 layout: service
 order: 3
-title: "Mergers & Acquisitions"
+title: "Mergers and Acquisitions"
 subtitle: "We specialize in identifying the extent of integration needed and can roll up our sleeves to jump in and help -- not just direct -- project and organizational management for successful M&A integration. We are also versed in how to prepare for an exit from an investment – how to identify and drive key improvements and manage the sale process."
 intro: "At SLKone, we understand that while combining functional areas or departments may appear straightforward on paper, the reality is far more complex. Our consultants and subject matter experts, trained across various industries and possessing deep functional expertise, specialize in identifying the extent of integration needed. We don't just direct – we actively participate in project and organizational management to ensure successful M&A integration."
 approach: "We follow a comprehensive approach that includes strategic planning, due diligence, integration management, and value optimization. Our team works closely with your stakeholders to align M&A objectives with your business goals, ensuring that every acquisition or merger contributes positively to your long-term strategy."
+impact_title: "Our Impact"
 impact_intro: "Partnering with SLKone for your M&A needs can lead to transformative outcomes, such as:"
 impact:
   - "20-30% acceleration in integration timelines"

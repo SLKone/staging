@@ -29,32 +29,42 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: ""
+      path: "/insights/"
       type: "posts"
     values:
       layout: "post"
   - scope:
-      path: ""
+      path: "/services/"
       type: "services"
     values:
       layout: "service"
   - scope:
-      path: ""
+      path: "/sub-services/"
       type: "sub-services"
     values:
       layout: "sub-service"      
   - scope:
-      path: ""
+      path: "/industries/"
+      type: "industries"
+    values:
+      layout: "industry"
+  - scope:
+      path: "/sub-industries/"
+      type: "sub-industries"
+    values:
+      layout: "sub-industry"            
+  - scope:
+      path: "/careers/"
       type: "careers"
     values:
       layout: "career"
   - scope:
-      path: ""
+      path: "/case-studies/"
       type: "case_studies"
     values:
       layout: "case_study"
   - scope:
-      path: ""
+      path: "/expertise/"
       type: "expertise"
     values:
       layout: "expertise"

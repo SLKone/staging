@@ -14,7 +14,7 @@ layout: default
     <h3>{{ service.title }}</h3>
     <p>{{ service.subtitle }}</p>
     <ul>
-      {% assign related_sub_services = site["sub-services"] | where: "parent", service.title %}
+      {% assign related_sub_services = site["sub-services"] | where: "parent", service.title | sort:"order" %}
       {% for sub-service in related_sub_services %}
         <li>{{ sub-service.title }}</li>
       {% endfor %}

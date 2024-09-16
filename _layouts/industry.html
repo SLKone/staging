@@ -5,18 +5,18 @@ layout: default
 
 {% if page.approach %}
 <section class="approach">
-<h3>Our Approach</h3>
-<p>{{ page.approach }}</p>
+  <h3>Our Approach</h3>
+  <p>{{ page.approach }}</p>
 </section>
 {% endif %}
 
 {% include content-block-bullets.html bullet_title=page.impact_title bullet_intro=page.impact_intro bullets=page.impact bullet_conclusion=page.impact_conclusion %}
 
-{% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
-{% if related_sub_services.size > 0 %}
-  <h3>{{page.title}} Services</h3>
-    {% for sub-service in related_sub_services %}
-        {% include sub-service-content.html sub_service=sub-service %}
+{% assign related_sub_industries = site["sub-industries"] | where: "parent", page.title | sort:"order" %}
+{% if related_sub_industries.size > 0 %}
+  <h3>{{page.title}} Sub-Industries</h3>
+    {% for sub-industry in related_sub_industries %}
+        {% include sub-service-content.html sub_service=sub-industry %}
     {% endfor %}
 {% endif %}
 

@@ -1,0 +1,20 @@
+{% if include.bullets %}
+  <section class="impact">
+    {% if include.bullet_title %}
+      <h3>{{ include.bullet_title }}</h3>
+    {% endif %}
+    {% if include.bullet_intro %}
+      <p>{{ include.bullet_intro }}</p>
+    {% endif %}
+    {% if include.bullets %}
+      <ul>
+        {% for bullet_item in include.bullets %}
+          <li>{{ bullet_item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if include.bullet_conclusion %}
+      <p>{{ include.bullet_conclusion }}</p>
+    {% endif %}
+  </section>
+{% endif %}

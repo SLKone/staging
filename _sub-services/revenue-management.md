@@ -2,7 +2,7 @@
 layout: sub-service
 order: 3
 title: "Revenue Management"
-parent: "Financial Management"
+parent: "Corporate Finance and Revenue Management"
 description: "SLKone's Revenue Management services focus on maximizing your organization's revenue potential through strategic pricing, sales optimization, and market expansion strategies."
 intro: "[Introductory text from Siteplanning-SLKone.md aligned with Revenue Management.]"
 approach: "We employ a comprehensive approach to revenue management, combining advanced analytics with strategic insights to identify and capitalize on revenue opportunities. Our tailored strategies ensure sustainable revenue growth and enhanced market competitiveness."

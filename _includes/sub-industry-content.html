@@ -1,0 +1,29 @@
+{% if include.sub_industry.title %}
+<h2>{{ include.sub_industry.title }}</h2>
+{% endif %}
+
+{% if include.sub_industry.description %}
+<p>{{ include.sub_industry.description }}</p>
+{% endif %}
+
+{% if include.sub_industry.approach %}
+<h3>Our Approach</h3>
+<p>{{ include.sub_industry.approach }}</p>
+{% endif %}
+
+{% if include.sub_industry.focus_areas %}
+<h3>Focus Areas</h3>
+{% for area in include.sub_industry.focus_areas %}
+  <h4>{{ area.title }}</h4>
+  <p>{{ area.content }}</p>
+{% endfor %}
+{% endif %}
+
+{% if include.sub_industry.why_choose %}
+<h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
+<ul>
+{% for reason in include.sub_industry.why_choose %}
+  <li>{{ reason }}</li>
+{% endfor %}
+</ul>
+{% endif %}

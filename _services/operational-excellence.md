@@ -5,6 +5,7 @@ title: "Operational Excellence"
 subtitle: "Efficient and effective operations execution means the difference between withstanding shocks, ensuring continuity, and satisfying customers. We help clients reduce complexity, codify options, and make decisions that improve on-time, on-cost, and on-quality metrics."
 intro: "How you execute your operations is just as critical as why you do it. SLKone simplifies operations, enhances decision-making, and improves performance in on-time delivery, cost control, and quality. We ensure your business can quickly adapt to market disruptions while maintaining consistency in customer satisfaction."
 approach: "We take a holistic view of your operations, understanding that true excellence comes from the seamless integration of people, processes, and technology. Our data-driven methodology allows us to identify bottlenecks, inefficiencies, and opportunities for improvement across your entire value chain."
+impact_title: "Our Impact"
 impact_intro: "Our Operational Excellence services consistently yield significant results across various industries. Here are some of the typical improvements our clients experience:"
 impact:
   - "15-20% reduction in operational costs"

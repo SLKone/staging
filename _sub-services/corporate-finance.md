@@ -2,7 +2,7 @@
 layout: sub-service
 order: 2
 title: "Corporate Finance"
-parent: "Financial Management"
+parent: "Corporate Finance and Revenue Management"
 description: "At SLKone, our Corporate Finance services focus on optimizing your financial operations, from cost management to revenue growth strategies, ensuring your organization achieves long-term financial health and competitive advantage."
 intro: "[Introductory text from Siteplanning-SLKone.md aligned with Corporate Finance.]"
 approach: "We integrate financial expertise with operational insights to deliver strategies that drive profitability and efficiency. Our data-driven approach identifies key financial metrics and develops tailored solutions to enhance your financial performance."

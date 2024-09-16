@@ -5,6 +5,7 @@ title: "Strategy"
 subtitle: "We help business leaders make tough decisions on which customers, products, services, and/or markets they should compete in to maximize their stated financial goals."
 intro: "At SLKone, we understand that effective strategy is crucial for long-term business success. Our approach to strategy combines deep industry knowledge with advanced analytics to develop actionable plans that drive sustainable growth and competitive advantage."
 approach: "We take a comprehensive approach to strategy development and execution, focusing on Performance Management, Strategic Planning & Execution, and Risk Mitigation. Our methodology ensures that your strategy is not only well-crafted but also effectively implemented and monitored for success."
+impact_title: "Our Impact"
 impact_intro: "Implementing effective strategies can lead to transformative outcomes, including:"
 impact:
   - "20-25% improvement in strategic goal attainment"

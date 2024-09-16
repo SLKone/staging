@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% include sub-service-content.html sub_service=page %}
+
+{% if page.cta %}
+<div class="cta-section">
+  <h3>Take the Next Step</h3>
+  <p>{{ page.cta }}</p>
+  <a href="/contact" class="cta-button">Contact Us</a>
+</div>
+{% endif %}

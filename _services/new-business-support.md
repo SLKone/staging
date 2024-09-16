@@ -5,6 +5,7 @@ title: "New Business Support"
 subtitle: "We help new businesses set up for success from the start, ensuring they have the right processes, people, and technology in place."
 intro: "At SLKone, we understand that launching and growing new businesses comes with unique challenges and opportunities. Our New Business Support services are designed to help entrepreneurs and intrapreneurs successfully establish and scale new ventures, whether as standalone startups or within existing organizations."
 approach: "We take a comprehensive approach to new business support, focusing on Process Setup & Optimization, Organizational Design & Talent Building, and Technology Roadmap Development. Our methodology ensures that your new business has a strong foundation across operations, people, and technology to support rapid and sustainable growth."
+impact_title: "Our Impact"
 impact_intro: "Supporting new businesses can lead to significant benefits, including:"
 impact:
   - "20-25% improvement in operational efficiency from day one"
