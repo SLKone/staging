@@ -1,0 +1,5 @@
+#ignore the _site folder
+_site
+
+#ignore jekyll-cache
+.jekyll-cache
