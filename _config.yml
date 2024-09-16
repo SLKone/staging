@@ -2,7 +2,7 @@
 title: SLKone
 email: hello@slone.com
 description: SLKone is a bespoke management consulting firm bridging Strategy, Leadership, and Knowledge to build lasting solutions.
-baseurl: "file:///Users/adit/Documents/staging/_site/"
+baseurl: ""
 url: "https://staging.slkone.com"
 github_username: SLKone
 
@@ -29,7 +29,7 @@ collections:
     output: true
   sub-industries:
     output: true 
-    
+
 # Defaults
 defaults:
   - scope:
