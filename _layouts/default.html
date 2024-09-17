@@ -7,7 +7,9 @@
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     {% if page.author %}
-      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+      {% assign author = site.data.authors[page.author] %}
+    {% else %}
+      {% assign author = site.owner %}
     {% endif %}
     {% include open-graph.html %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
@@ -19,12 +21,36 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script src="https://kit.fontawesome.com/f7e54a3b3a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/pef0cwc.css">
+    
+    <!-- Unified CSS Linking -->
+    <link rel="stylesheet" href="{{site.url}}/assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                emerald: '#006548',
+                forest: '#5CB85D',
+                navy: '#377BBF',
+                currant: '#161A41',
+                tangerine: '#F9A618',
+                mustard: '#FFD54A',
+                cinnabar: '#EF5127',
+                coral: '#F7278F',
+                blush: '#C14D6C',
+                plum: '#820776',
+                viola: '#C27D84',
+                sand: '#F2956A',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body>
     <header>
         {% include navigation.html %}
     </header>

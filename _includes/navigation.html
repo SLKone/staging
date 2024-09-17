@@ -2,19 +2,39 @@
   <ul>
     {% for item in site.data.navigation.main %}
       <li>
-        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% if item.subitems %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% assign sub_items = "" %}
+        
+        {% if item.url == '/services' %}
+          {% assign sub_items = site.services | sort: 'order' %}
+          {% assign sub_sub_items = site.sub-services | sort: 'order' %}
+        {% elsif item.url == '/industries' %}
+          {% assign sub_items = site.industries | sort: 'order' %}
+          {% assign sub_sub_items = site.sub-industries | sort: 'order' %}
+        {% endif %}
+        
+        {% if sub_items != "" %}
           <ul>
-            {% for subitem in item.subitems %}
+            {% for sub in sub_items %}
               <li>
-                <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
-                {% if subitem.subitems %}
+                <a href="{{ sub.url | relative_url }}">{{ sub.title }}</a>
+                
+                {% assign nested_items = "" %}
+                
+                {% if item.url == '/services' %}
+                  {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
+                {% elsif item.url == '/industries' %}
+                  {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
+                {% endif %}
+                
+                {% if nested_items.size > 0 %}
                   <ul>
-                    {% for subsubitem in subitem.subitems %}
-                      <li>{{ subsubitem.title }}</li>
+                    {% for nested in nested_items %}
+                      <li>{{ nested.title }}</li>
                     {% endfor %}
                   </ul>
                 {% endif %}
+                
               </li>
             {% endfor %}
           </ul>
