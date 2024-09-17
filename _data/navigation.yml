@@ -8,14 +8,8 @@ main:
   - title: Insights
     url: /insights
 
-  - title: About
-    url: /about
-
-  - title: Careers
-    url: /careers
-
-  - title: Contact
-    url: /contact
+  - title: Culture
+    url: /culture
 
 footer:
   - title: Privacy Policy
