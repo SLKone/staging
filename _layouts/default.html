@@ -21,15 +21,15 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-    <script src="https://kit.fontawesome.com/f7e54a3b3a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/pef0cwc.css">
-    
-    <!-- Unified CSS Linking -->
-    <link rel="stylesheet" href="{{site.url}}/assets/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
+            fontFamily: {
+              'display': ['aktiv-grotesk-extended', 'sans-serif'],
+              'body': ['aktiv-grotesk', 'sans-serif'],
+            },
             extend: {
               colors: {
                 emerald: '#006548',
@@ -49,10 +49,12 @@
           }
         }
       </script>
+    <script src="https://kit.fontawesome.com/f7e54a3b3a.js" crossorigin="anonymous"></script>
+    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
 </head>
-<body>
+<body class="{% if layout.body-class %}{{ layout.body-class }}{% endif %} bg-white dark:bg-currant dark:text-white">
     {% include header.html %}
-    <main class="container mx-auto px-4 py-8">
+    <main>
         {{ content }}
     </main>
     <footer>

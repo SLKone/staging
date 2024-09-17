@@ -6,9 +6,12 @@
     "build:css": "postcss ./assets/css/styles.css -o ./assets/css/main.css"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.45",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.47",
     "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.4.11"
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.12"
   }
 }

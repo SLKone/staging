@@ -1,5 +1,5 @@
-#ignore the _site folder
-_site
-
-#ignore jekyll-cache
-.jekyll-cache
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+node_modules

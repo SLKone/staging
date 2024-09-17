@@ -1,0 +1,36 @@
+main:
+- title: Services
+  url: /services
+- title: Industries
+  url: /industries
+- title: Insights
+  url: /insights
+- title: Culture
+  url: /culture
+- title: Brands
+  url: /brands 
+  sub:
+    - title: Amalgam Capital
+      url: https://amalgamcapital.com
+    - title: SLK Catalyst Partners
+      url: https://slkcatalystpartners.com
+    - title: Abyss Analytics
+      url: https://abyssanalytics.com
+cta:
+- title: Contact Us
+  url: /contact
+mobile:
+- title: Services
+  url: /services
+- title: Industries
+  url: /industries
+- title: Insights
+  url: /insights
+- title: Culture
+  url: /culture
+- title: Brands
+  url: /brands  
+- title: Careers
+  url: /careers
+- title: Contact Us
+  url: /contact  

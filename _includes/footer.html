@@ -1,23 +1,59 @@
-<footer class="bg-gray-800 text-white mt-8">
-  <div class="container mx-auto px-4 py-8">
-    <div class="flex justify-between">
-      <div>
-        <h3 class="text-lg font-bold mb-4">{{ site.title }}</h3>
-        <p>{{ site.description }}</p>
-      </div>
-      <div>
-        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<footer class="text-sm">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
+      <div class="col-span-4 md:col-span-2">
+        <h3 class="font-bold">Services</h3>
         <ul>
-          {% for item in site.data.navigation.footer %}
-            <li>
-              <a href="{{ item.url | relative_url }}" class="hover:text-blue-300">{{ item.title }}</a>
-            </li>
+          {% for item in site.services | sort: 'order' %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-span-4 md:col-span-2">
+        <h3 class="font-bold">Industries</h3>
+        <ul>
+          {% for item in site.industries | sort: 'order' %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-span-4 md:col-span-2">
+        <h3 class="font-bold">Company</h3>
+        <ul>
+          {% for item in site.data.footer-navigation.Company %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h3 class="font-bold">Read</h3>
+        <ul>
+          {% for item in site.data.footer-navigation.Read %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h3 class="font-bold">Brands</h3>
+        <ul>
+          {% for item in site.data.footer-navigation.Brands %}
+            <li><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-span-4 md:col-span-2">
+        <h3 class="font-bold">Contact</h3>
+        <ul>
+          {% for item in site.data.footer-navigation.Contact %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h3 class="font-bold">Terms and Policies</h3>
+        <ul>
+          {% for item in site.data.footer-navigation.Terms-and-policies %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    <div class="mt-8 text-center">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    </div>
+  </div>
+  <div class="container mx-auto px-4">
+    <p class="text-sm"></p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
   </div>
 </footer>

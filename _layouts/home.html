@@ -1,56 +1,69 @@
 ---
 layout: default
+body-class: body-home
 ---
-<div class="home">
+<section class="hero min-h-dvh flex flex-col justify-center items-center">
   <div class="container mx-auto px-4">
-    <section class="hero">
-      <h1>{{ site.data.homepage.hero.title }}</h1>
-      <p>{{ site.data.homepage.hero.description }}</p>
-      <a href="{{ site.data.homepage.hero.cta_link }}" class="btn">{{ site.data.homepage.hero.cta_text }}</a>
-    </section>
-
-    <section class="approach">
-      <h2>{{ site.data.homepage.approach.title }}</h2>
-      <p>{{ site.data.homepage.approach.description }}</p>
-    </section>
-
-    <section class="unique-points">
-      <h2>What sets SLKone apart</h2>
-      <ul>
-        {% for point in site.data.homepage.unique_points %}
-          <li>
-            <strong>{{ point.title }}:</strong> {{ point.description }}
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-
-    <section class="data-driven-approach">
-      <h2>{{ site.data.homepage.data_driven_approach.title }}</h2>
-      <ol>
-        {% for step in site.data.homepage.data_driven_approach.steps %}
-          <li>{{ step }}</li>
-        {% endfor %}
-      </ol>
-    </section>
-
-    <section class="testimonials">
-      <h2>What our Clients Say</h2>
-      {% for testimonial in site.data.homepage.testimonials %}
-        <blockquote>{{ testimonial.quote }}</blockquote>
-      {% endfor %}
-    </section>
-
-    <section class="join-team">
-      <h2>{{ site.data.homepage.join_team.title }}</h2>
-      <p>{{ site.data.homepage.join_team.description }}</p>
-      <a href="{{ site.data.homepage.join_team.cta_link }}" class="btn">{{ site.data.homepage.join_team.cta_text }}</a>
-    </section>
-
-    <section class="contact">
-      <h2>{{ site.data.homepage.contact.title }}</h2>
-      <p>{{ site.data.homepage.contact.description }}</p>
-      <a href="{{ site.data.homepage.contact.cta_link }}" class="btn">{{ site.data.homepage.contact.cta_text }}</a>
-    </section>
+    <h1 class="text-5xl max-w-prose font-bold">{{ site.data.homepage.hero.title }}</h1>
+    <div class="max-w-prose">
+      <p class="text-xl">{{ site.data.homepage.hero.description }}</p>
+      <p class="text-xl"><a href="{{ site.data.homepage.hero.cta_link }}" class="btn">{{ site.data.homepage.hero.cta_text }}</a></p>
+    </div>
   </div>
-</div>
+</section>
+
+<section class="approach min-h-max"> 
+  <div class="container mx-auto px-4">
+    <h2>{{ site.data.homepage.approach.title }}</h2>
+    <p>{{ site.data.homepage.approach.description }}</p>
+  </div>
+</section>
+
+<section class="unique-points min-h-max">
+  <div class="container mx-auto px-4">
+    <h2>What sets SLKone apart</h2>
+    <ul>
+    {% for point in site.data.homepage.unique_points %}
+      <li>
+        <strong>{{ point.title }}:</strong> {{ point.description }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="data-driven-approach min-h-max">
+  <div class="container mx-auto px-4">
+    <h2>{{ site.data.homepage.data_driven_approach.title }}</h2>
+    <ol>
+      {% for step in site.data.homepage.data_driven_approach.steps %}
+        <li>{{ step }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="testimonials min-h-max">
+  <div class="container mx-auto px-4">
+    <h2>What our Clients Say</h2>
+  {% for testimonial in site.data.homepage.testimonials %}
+      <blockquote>{{ testimonial.quote }}</blockquote>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="join-team min-h-max">
+  <div class="container mx-auto px-4">
+    <h2>{{ site.data.homepage.join_team.title }}</h2>
+    <p>{{ site.data.homepage.join_team.description }}</p>
+    <a href="{{ site.data.homepage.join_team.cta_link }}" class="btn">{{ site.data.homepage.join_team.cta_text }}</a>
+  </div>
+</section>
+
+<section class="contact min-h-max">
+  <div class="container mx-auto px-4">
+    <h2>{{ site.data.homepage.contact.title }}</h2>
+    <p>{{ site.data.homepage.contact.description }}</p>
+    <a href="{{ site.data.homepage.contact.cta_link }}" class="btn">{{ site.data.homepage.contact.cta_text }}</a>
+  </div>
+</section>
