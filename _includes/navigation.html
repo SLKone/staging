@@ -32,7 +32,7 @@
                 {% elsif item.url == '/industries' %}
                   {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
                 {% endif %}
-                <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="flex px-4 py-8 rounded hover:text-emerald hover:bg-emerald/10 text-xl dark:hover:text-forest" href="{{ sub.url | relative_url }}">
+                <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="transition-all duration-300 flex px-4 py-8 rounded hover:text-emerald hover:bg-emerald/10 text-xl dark:hover:text-forest" href="{{ sub.url | relative_url }}">
                   {% if sub.icon %}
                   <div class="flex-none">
                     <i class="text-emerald dark:text-forest fa-sharp-duotone fa-solid {{ sub.icon }}"></i>
@@ -59,7 +59,7 @@
           </div>
         </div>
     {% else %}
-      <a id="desktop-navigation-item-{{ forloop.index }}-button" class="z-50 p-6 hover:text-emerald dark:hover:text-forest" href="{{ item.url }}">{{ item.title }}</a>
+      <a id="desktop-navigation-item-{{ forloop.index }}-button" class="z-50 p-6 hover:text-emerald dark:hover:text-forest transition-all duration-300" href="{{ item.url }}">{{ item.title }}</a>
     {% endif %}
   {% endfor %}
 </div>

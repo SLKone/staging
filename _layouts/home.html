@@ -3,15 +3,18 @@ layout: default
 body-class: body-home
 ---
 <canvas id="canvas" class="absolute top-0 left-0 w-full h-full z-[-1]"></canvas>
-<section id="hero-background" class="hero min-h-dvh py-10 flex flex-col justify-center items-center">
-  <div class="container mx-auto text-center px-4 max-w-7xl">
-    <h1 class="text-6xl mb-12 mx-auto max-w-prose font-bold">{{ site.data.homepage.hero.title }}</h1>
-    <div class="max-w-prose mx-auto">
-      <p class="text-2xl">{{ site.data.homepage.hero.description }}</p>
-      <p class="text-2xl mt-12 mb-12"><a class="rounded bg-emerald p-4 text-white dark:hover:text-forest hover:bg-emerald/10 hover:text-emerald" href="{{ site.data.homepage.hero.cta_link }}" class="btn">{{ site.data.homepage.hero.cta_text }}</a></p>
+<section id="hero-background" class="hero min-h-dvh py-10 flex flex-col justify-center items-center bg-transparent bg-gradient-to-t from-white to-transparent dark:from-currant dark:to-transparent">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <h1 class="text-6xl lg:text-8xl mb-12 mx-auto max-w-prose font-display">{{ site.data.homepage.hero.title }}</h1>
+    <div class="max-w-prose text-left ">
+      <p class="text-xl">{{ site.data.homepage.hero.description }}</p>
+      <p class="text-xl mt-12 mb-12">
+        <a class="text-emerald dark:text-forest" href="{{ site.data.homepage.hero.cta_link }}" class="btn">
+          {{ site.data.homepage.hero.cta_text }} <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
     </div>
 </section>
-
 <section class="approach min-h-[80dvh] py-10"> 
   <div class="ontainer mx-auto px-4 max-w-7xl">
     <h2>{{ site.data.homepage.approach.title }}</h2>

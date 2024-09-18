@@ -1,9 +1,9 @@
-<header id="header" class="scroll sticky top-0 left-0 px-6 z-40 bg-transparent transition-all duration-300 hover:bg-white hover:shadow-lg dark:hover:bg-currant" data-scrolled="false">
-  <nav class="container mx-auto max-w-7xl flex items-center justify-between">
+<header id="header" class="scroll sticky top-0 left-0 z-40 bg-transparent transition-all duration-300 bg-transparent bg-gradient-to-t to-white from-transparent dark:to-currant dark:from-transparent hover:bg-white hover:shadow-lg dark:hover:bg-currant" data-scrolled="false">
+  <nav class="container px-4 mx-auto max-w-7xl flex items-center justify-between">
     
     <!-- Logo Section -->
     <div class="flex lg:flex-1 z-50">
-      <a class="hover:opacity-80" href="{{ '/' | relative_url }}">
+      <a class="hover:opacity-80 transition-all duration-300" href="{{ '/' | relative_url }}">
         <div class="hidden lg:block">
           <img src="{{ '/assets/images/logo_light.svg' }}" alt="{{ site.title }}" class="h-12 w-auto dark:hidden">
           <img src="{{ '/assets/images/logo_dark.svg' }}" alt="{{ site.title }}" class="h-12 w-auto hidden dark:block">
@@ -21,7 +21,7 @@
     <!-- Contact Link -->
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       {% for item in site.data.header-navigation.cta %}
-        <a href="{{ item.url | relative_url }}" class="px-3 py-2 text-emerald dark:text-forest hover:bg-emerald/10 rounded-md">{{ item.title }}</a>
+        <a href="{{ item.url | relative_url }}" class="px-3 py-2 text-emerald dark:text-forest hover:bg-emerald/10 rounded-md transition-all duration-300">{{ item.title }}</a>
       {% endfor %}
     </div>
     {% include mobile-navigation.html %}

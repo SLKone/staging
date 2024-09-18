@@ -53,7 +53,8 @@
     <script src="https://kit.fontawesome.com/f7e54a3b3a.js" crossorigin="anonymous"></script>
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
 </head>
-<body class="{% if layout.body-class %}{{ layout.body-class }}{% endif %} bg-white dark:bg-currant dark:text-white">
+<!-- Start of Selection -->
+<body class="{% if layout.body-class %}{{ layout.body-class }}{% endif %} bg-white dark:bg-currant dark:text-white font-body">
     {% include header.html %}
     <main>
         {{ content }}

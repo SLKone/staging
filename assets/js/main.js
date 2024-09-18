@@ -2,13 +2,10 @@ const topThreshold = 10;
 
 window.addEventListener("scroll", () => {
   const header = document.getElementById('header');
-  const dropdown = document.getElementById('desktop-navigation-item-dropdown');
   if (window.scrollY > topThreshold) {
     header.classList.add("shadow-lg", "bg-white", "dark:bg-currant");
-    dropdown.classList.add("shadow-lg", "bg-white", "dark:bg-currant");
   } else {
     header.classList.remove("shadow-lg", "bg-white", "dark:bg-currant");
-    dropdown.classList.remove("shadow-lg", "bg-white", "dark:bg-currant");
   }
 });
 
@@ -21,10 +18,10 @@ const ctx = canvas.getContext('2d');
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 // Set background color
-const backgroundColor = isDarkMode ? '#161A41' : '#FFFFFF'; // White for light mode
+const backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparent background
 
 // Set streamline opacity based on color scheme
-const streamlineOpacity = isDarkMode ? 0.2 : 0.15; // Adjust these values as needed
+const streamlineOpacity = isDarkMode ? 0.8 : 0.4; // Adjust these values as needed
 
 // Initialize Simplex Noise
 const simplex = new SimplexNoise();
