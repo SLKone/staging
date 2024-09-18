@@ -1,3 +1,32 @@
+// Toggle mobile menu
+
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-navigation');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const header = document.getElementById('header'); // Get the header element
+
+    menu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+
+    // Lock body scroll when menu is open
+    if (!menu.classList.contains('hidden')) {
+        document.body.style.overflow = 'hidden'; // Lock body scroll
+        header.classList.add("shadow-lg", "bg-white", "dark:bg-currant");
+    } else {
+        document.body.style.overflow = ''; // Unlock body scroll
+        // Only remove classes if the scroll position is above the threshold
+        if (window.scrollY <= topThreshold) {
+            header.classList.remove("shadow-lg", "bg-white", "dark:bg-currant");
+        }
+    }
+    
+    // Ensure the menu can still scroll
+    menu.style.overflowY = 'auto'; // Allow vertical scrolling in the menu
+}
+
+// Scroll add shadow to header
 const topThreshold = 10;
 
 window.addEventListener("scroll", () => {

@@ -5,7 +5,7 @@
     <i id="close-icon" class="fa-sharp inline-flex items-center justify-center fa-solid fa-xmark h-12 w-12 hidden" aria-hidden="true"></i>
   </button>
 </div>
-<div id="mobile-navigation" class="absolute top-20 min-h-screen left-0 w-full bg-white shadow-lg hidden z-60" role="dialog" aria-modal="true">
+<div id="mobile-navigation" class="absolute top-[64px] min-h-screen left-0 w-full bg-white dark:bg-currant shadow-lg hidden z-60" role="dialog" aria-modal="true">
   <ul class="flex flex-col p-4">
     {% for item in site.data.header-navigation.mobile %}
       <li id="mobile-navigation-item-{{ forloop.index }}" class="py-2">
@@ -16,15 +16,3 @@
     {% endfor %}
   </ul>
 </div>
-
-<script>
-  function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-navigation');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
-    
-    menu.classList.toggle('hidden');
-    menuIcon.classList.toggle('hidden');
-    closeIcon.classList.toggle('hidden');
-  }
-</script>
