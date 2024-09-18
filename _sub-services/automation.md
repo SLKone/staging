@@ -5,6 +5,7 @@ title: "Automation"
 parent: "Digital Strategy and Technology"
 description: "SLKone's Automation services streamline your business processes, enhancing efficiency, reducing costs, and improving consistency through intelligent automation solutions."
 approach: "We evaluate your existing processes to identify automation opportunities that align with your business goals. Leveraging state-of-the-art technologies like Robotic Process Automation (RPA) and intelligent workflows, we implement solutions that transform your operations for greater efficiency and reliability."
+intro: "Streamlining operations and enhancing efficiency through the evaluation of existing workflows and the implementation of cutting-edge automation technologies."
 focus_areas:
   - title: "Process Assessment"
     content: "Analyze your current business processes to identify areas ripe for automation and efficiency gains."
@@ -24,4 +25,5 @@ why_choose:
   - "Continuous Support and Optimization"
 cta: "Contact us to explore how our Automation services can transform your business processes and drive operational excellence."
 icon: "fa-robot"
+color: "plum"
 ---

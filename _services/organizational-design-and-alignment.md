@@ -23,4 +23,5 @@ why_choose:
   - "Scalable Solutions: Flexible designs that grow with your business needs."
 cta: "Ready to optimize your organizational structure? Contact SLKone today to learn how our Organizational Design & Alignment services can drive your business forward and achieve strategic alignment."
 icon: "fa-sitemap"
+color: "cinnabar"
 ---

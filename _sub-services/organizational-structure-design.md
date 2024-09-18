@@ -5,6 +5,7 @@ title: "Organizational Structure Design"
 parent: "Organizational Design and Alignment"
 description: "SLKone's Organizational Structure Design services reshape your organizational hierarchy to enhance communication, decision-making, and operational efficiency."
 approach: "We evaluate your current organizational structure to identify inefficiencies and areas for improvement. Our team collaborates with your leadership to design a structure that supports your strategic goals, fosters collaboration, and enhances overall performance."
+intro: "Reshape your organizational hierarchy to enhance communication and operational efficiency with SLKone's Organizational Structure Design services."
 focus_areas:
   - title: "Organizational Assessment"
     content: "Evaluate your current structure to identify strengths and areas for improvement."
@@ -23,4 +24,5 @@ why_choose:
   - "Proven Success in Organizational Restructuring"
 cta: "Contact us to design an Organizational Structure that drives your strategic objectives and enhances operational efficiency."
 icon: "fa-sitemap"
+color: "blush"
 ---

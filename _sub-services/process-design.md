@@ -4,7 +4,7 @@ order: 2
 title: "Process Design"
 parent: "Organizational Design and Alignment"
 description: "SLKone's Process Design services streamline your business processes, enhancing efficiency, reducing costs, and improving quality to drive operational excellence."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Process Design.]"
+intro: "Streamline your business processes with SLKone's Process Design services, enhancing efficiency, reducing costs, and improving quality."
 approach: "We conduct a thorough analysis of your existing processes to identify inefficiencies and bottlenecks. Our team collaborates with key stakeholders to redesign processes that are aligned with your strategic goals, ensuring improved performance and scalability."
 focus_areas:
   - title: "Process Mapping"
@@ -24,4 +24,5 @@ why_choose:
   - "Proven Track Record in Process Improvement"
 cta: "Contact us to optimize your business processes and achieve operational excellence."
 icon: "fa-arrow-progress"
+color: "blush"
 ---

@@ -4,8 +4,8 @@ order: 4
 title: "Supply Chain Network Optimization"
 parent: "Operational Excellence"
 description: "We design and refine your supply chain network to improve efficiency, reduce costs, and enhance responsiveness, building resilience to adapt to changing market conditions."
-intro: "SLKone's Supply Chain Network Optimization services focus on designing and refining your supply chain network to enhance efficiency, reduce costs, and improve responsiveness. We build resilient supply chains that can adapt to market fluctuations and support your long-term growth."
 approach: "We conduct a comprehensive analysis of your existing supply chain network, identifying strengths and areas for improvement. Utilizing advanced modeling and simulation tools, we design optimized network structures that balance cost, service levels, and flexibility."
+intro: "Transform your supply chain network with SLKone's expertise in optimization, enhancing efficiency and responsiveness while reducing costs."
 focus_areas:
   - title: "Network Design and Optimization"
     content: "Optimize your supply chain network configuration to reduce costs and improve service levels."
@@ -26,4 +26,5 @@ why_choose:
   - "Expert Team with Extensive Supply Chain Knowledge"
 cta: "Looking to optimize your supply chain network? Contact SLKone today to discover how our Supply Chain Network Optimization services can enhance your operational performance and competitiveness."
 icon: "fa-chart-network"
+color: "tangerine"
 ---

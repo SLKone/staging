@@ -23,4 +23,5 @@ why_choose:
   - "Data-Driven Approach: Utilizing analytics to inform and optimize digital strategies."
 cta: "Ready to drive your digital transformation? Contact SLKone today to discover how our Digital Strategy and Technology services can elevate your business operations and performance."
 icon: "fa-computer"
+color: "plum"
 ---

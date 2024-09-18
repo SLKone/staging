@@ -5,6 +5,7 @@ title: "Financial Analytics"
 parent: "Corporate Finance and Revenue Management"
 description: "We construct financial analytics that offer deeper insights into your business, enhancing profitability, cash flow, value, and decision-making. SLKone leverages state-of-the-art open-source libraries and leading business tools to link operations and finance, peering into the future while deploying robust processes to track the present more swiftly, thoroughly, and precisely."
 approach: "We integrate financial expertise with operational insights to deliver strategies that drive profitability and efficiency. Our data-driven approach identifies key financial metrics and develops tailored solutions to enhance your financial performance."
+intro: "Enhancing profitability and optimizing efficiency through a blend of financial expertise and operational insights, we focus on data-driven strategies to elevate overall financial performance."
 focus_areas:
   - title: "Predictive Financial Modeling"
     content: "We develop sophisticated financial models to forecast future performance and plan for various scenarios."
@@ -24,4 +25,5 @@ why_choose:
   - "Procurement and Vendor Optimization"
 cta: "Contact us to learn how our Corporate Finance services can enhance your financial operations and drive sustainable business growth."
 icon: "fa-chart-mixed-up-circle-dollar"
+color: "tangerine"
 ---

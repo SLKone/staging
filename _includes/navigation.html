@@ -19,10 +19,11 @@
       {% endif %}
       {% assign grid_class = "grid-cols-" | append: grid_num %}
       <div id="desktop-navigation-item-{{ forloop.index }}" class="group content-center py-2 transition-all duration-300">
-        <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 hover:text-emerald dark:hover:text-forest flex items-center justify-between" aria-expanded="false">
+        <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 flex items-center justify-between hover:text-emerald dark:hover:text-forest" aria-expanded="false">
           <span class="z-50">{{ item.title }}</span>
           <i class="ml-2 z-50 fa-sharp fa-solid fa-angle-down"></i>
         </a>
+        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
         <div id="desktop-navigation-item-dropdown" class="transition-all duration-300 group-hover:block absolute left-0 top-full z-40 w-screen bg-white shadow-lg dark:bg-currant hidden">
           <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="mx-auto max-w-7xl grid {{ grid_class }} auto-rows-auto gap-2 py-10">
               {% for sub in sub_items %}
@@ -59,7 +60,12 @@
           </div>
         </div>
     {% else %}
-      <a id="desktop-navigation-item-{{ forloop.index }}-button" class="z-50 p-6 hover:text-emerald dark:hover:text-forest transition-all duration-300" href="{{ item.url }}">{{ item.title }}</a>
+      <div class="group">
+        <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 flex items-center justify-between hover:text-emerald dark:hover:text-forest" aria-expanded="false">
+          {{ item.title }}
+        </a>
+        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
+      </div>
     {% endif %}
   {% endfor %}
 </div>

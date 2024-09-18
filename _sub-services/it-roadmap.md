@@ -5,6 +5,7 @@ title: "IT Roadmap"
 parent: "Digital Strategy and Technology"
 description: "SLKone's IT Roadmap services guide your technology investments, ensuring they align with your strategic goals and support your business growth."
 approach: "We collaborate with your IT and business teams to assess your current technology landscape. Using this insight, we prioritize initiatives and develop a strategic IT roadmap that outlines the steps needed to achieve your long-term objectives. Our roadmap encompasses infrastructure upgrades, software implementations, and technology integrations tailored to your unique business needs."
+intro: "Guiding your technology investments with a strategic IT roadmap that aligns with your business growth and goals."
 focus_areas:
   - title: "Technology Assessment"
     content: "Evaluate your current IT infrastructure and identify gaps and opportunities for improvement."
@@ -24,4 +25,5 @@ why_choose:
   - "Ongoing Support for Implementation Success"
 cta: "Contact us to develop a strategic IT Roadmap that supports your business growth and technology needs."
 icon: "fa-road"
+color: "blush"
 ---

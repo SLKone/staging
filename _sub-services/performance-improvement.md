@@ -5,6 +5,7 @@ title: "Performance Improvement"
 parent: "Operational Excellence"
 description: "At SLKone, we drive real-world solutions that boost your bottom line. Our Performance Improvement service focuses on optimizing your operations, from supply chain enhancements to digital transformations, turning challenges into competitive advantages."
 approach: "We become an extension of your team, working hands-on to implement improvements that deliver tangible results. Our data-driven methodology identifies key areas for enhancement and develops tailored strategies to maximize efficiency and effectiveness."
+intro: "Transforming operations into competitive advantages through optimized processes and digital enhancements."
 focus_areas:
   - title: "Process Optimization"
     content: "Analyze and redesign core business processes to eliminate waste, reduce variability, and enhance overall efficiency."
@@ -23,4 +24,5 @@ why_choose:
   - "Measurable, bottom-line results"
 cta: "Contact us to learn how our Performance Improvement services can transform your operations and drive sustainable growth."
 icon: "fa-gauge-simple-max"
+color: "plum"
 ---

@@ -23,4 +23,5 @@ why_choose:
   - "Cross-Industry Experience: Expertise across various sectors for diverse strategic challenges."
 cta: "Ready to develop a winning strategy? Contact SLKone today to discover how our Strategy services can help you achieve your business objectives and drive sustainable growth."
 icon: "fa-scribble"
+color: "viola"
 ---

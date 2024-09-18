@@ -5,6 +5,7 @@ title: "Organizational Role Effectiveness"
 parent: "Organizational Design and Alignment"
 description: "SLKone's Organizational Role Effectiveness services ensure that each role within your organization is clearly defined and optimized to contribute effectively to your business goals."
 approach: "We assess the effectiveness of current roles within your organization, identifying overlaps and gaps. Our team works with leadership to redefine roles and responsibilities, ensuring that each position aligns with your strategic objectives and maximizes individual and team performance."
+intro: "Maximize your business goals by ensuring each role is clearly defined and optimized for effectiveness."
 focus_areas:
   - title: "Role Assessment"
     content: "Evaluate current roles to identify overlaps, gaps, and areas for improvement."
@@ -23,4 +24,5 @@ why_choose:
   - "Experienced in Enhancing Role Effectiveness"
 cta: "Contact us to enhance the effectiveness of roles within your organization and drive your business goals."
 icon: "fa-user-shield"
+color: "currant"
 ---

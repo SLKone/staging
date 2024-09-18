@@ -23,4 +23,5 @@ why_choose:
   - "Results-Driven Partnership: We measure our success by the tangible impact we create for your business."
 cta: "Ready to achieve operational excellence? Contact SLKone today to learn how we can help you optimize your operations and drive sustainable growth."
 icon: "fa-head-side-gear"
+color: "blush"
 ---

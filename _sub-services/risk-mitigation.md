@@ -4,8 +4,8 @@ order: 6
 title: "Risk Mitigation"
 parent: "Strategy"
 description: "SLKone's Risk Mitigation services identify, assess, and address potential risks to ensure your organization remains resilient and capable of achieving its strategic objectives."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Risk Mitigation.]"
 approach: "We employ a proactive approach to risk mitigation, utilizing comprehensive risk assessments and strategic planning to identify potential threats. Our solutions are tailored to your specific business needs, ensuring robust defenses and contingency plans are in place to minimize impact and ensure business continuity."
+intro: "SLKone's Risk Mitigation services ensure resilience by identifying and addressing potential risks to achieve strategic objectives."
 focus_areas:
   - title: "Risk Assessment"
     content: "Conduct thorough evaluations to identify and understand potential risks that could impact your business."
@@ -25,4 +25,5 @@ why_choose:
   - "Continuous Risk Monitoring and Improvement"
 cta: "Contact us to discover how our Risk Mitigation services can safeguard your organization against potential threats and ensure long-term strategic success."
 icon: "fa-shield-halved"
+color: "mustard"
 ---

@@ -4,7 +4,7 @@ order: 5
 title: "Performance Management"
 parent: "Strategy"
 description: "SLKone's Performance Management services help your organization align individual and team performance with strategic goals, driving continuous improvement and achieving operational excellence."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Performance Management.]"
+intro: "Aligning individual and team performance with strategic goals to drive continuous improvement and operational excellence."
 approach: "We develop and implement robust performance management systems that track, measure, and enhance performance across your organization. Our data-driven approach ensures that performance metrics are aligned with your strategic objectives, enabling informed decision-making and fostering a culture of continuous improvement."
 focus_areas:
   - title: "KPI Development"
@@ -24,4 +24,5 @@ why_choose:
   - "Continuous Improvement: Fostering a culture of ongoing performance enhancement."
 cta: "Contact us to learn how our Performance Management services can align your team's efforts with your strategic goals and drive organizational excellence."
 icon: "fa-objects-align-right"
+color: "coral"
 ---

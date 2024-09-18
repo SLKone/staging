@@ -4,7 +4,7 @@ order: 1
 title: "Pre-Transaction Readiness"
 parent: "Mergers and Acquisitions"
 description: "SLKone's Pre-Transaction Readiness services ensure that your organization is well-prepared for mergers and acquisitions, providing comprehensive due diligence, strategic alignment, and value creation planning."
-intro: "[Introductory text from Siteplanning-SLKone.md aligned with Pre-Transaction Readiness.]"
+intro: "Prepare for successful mergers and acquisitions with SLKone's comprehensive due diligence and strategic alignment services."
 approach: "We conduct thorough assessments and strategic planning to prepare your organization for successful transactions. Our approach includes detailed due diligence, synergy identification, and risk assessment to ensure that every aspect of the transaction is meticulously planned and executed."
 focus_areas:
   - title: "Due Diligence Support"
@@ -24,4 +24,5 @@ why_choose:
   - "Expertise in M&A: Experienced consultants specialized in pre-transaction processes."
 cta: "Contact us to learn how our Pre-Transaction Readiness services can prepare your organization for successful mergers and acquisitions."
 icon: "fa-check-double"
+color: "forest"
 ---

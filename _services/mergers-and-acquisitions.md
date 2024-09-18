@@ -23,4 +23,5 @@ why_choose:
   - "Rapid Deployment: Efficient mobilization to support time-sensitive M&A activities."
 cta: "Ready to navigate your mergers and acquisitions with confidence? Contact SLKone today to learn how our M&A services can help you maximize the value of your transactions and achieve lasting success."
 icon: "fa-handshake"
+color: "forest"
 ---

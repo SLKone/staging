@@ -25,4 +25,5 @@ why_choose:
   - "Continuous Innovation: We stay at the forefront of data science and analytics, continuously bringing new techniques and technologies to our clients."
 cta: "Ready to unlock the full potential of your data? Contact SLKone today to learn how our Data & Advanced Analytics services can drive insights, innovation, and informed decision-making for your business."
 icon: "fa-magnifying-glass-chart"
+color: "tangerine"
 ---

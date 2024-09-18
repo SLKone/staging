@@ -5,6 +5,7 @@ title: "Operating Model Design"
 parent: "Organizational Design and Alignment"
 description: "SLKone's Operating Model Design services ensure that your organization's structure, processes, and systems are optimized to support your strategic goals and drive business performance."
 approach: "We assess your current operating model to identify strengths and areas for improvement. Our team collaborates with your leadership to design an operating model that aligns with your strategic objectives, enhances efficiency, and supports sustainable growth."
+intro: "Optimize your organization's structure and processes to drive performance and support strategic goals through tailored Operating Model Design services."
 focus_areas:
   - title: "Current State Assessment"
     content: "Analyze your existing operating model to identify strengths, weaknesses, and opportunities for improvement."
@@ -23,4 +24,5 @@ why_choose:
   - "Proven Methodologies for Successful Implementation"
 cta: "Contact us to design an Operating Model that drives your strategic objectives and enhances organizational performance."
 icon: "fa-object-group"
+color: "emerald"
 ---

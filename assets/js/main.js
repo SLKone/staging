@@ -67,7 +67,6 @@ const simplex = new SimplexNoise();
 // Color palette without alpha values
 const colorPalette = [
   'rgb(0, 101, 72)',    // emerald
-  'rgb(22, 26, 65)',    // currant
   'rgb(55, 123, 191)',  // navy
   'rgb(249, 166, 24)',  // tangerine
   'rgb(255, 213, 74)',  // mustard
@@ -76,7 +75,6 @@ const colorPalette = [
   'rgb(193, 77, 108)',  // blush
   'rgb(247, 39, 143)',  // coral
   'rgb(130, 7, 118)',   // plum
-  'rgb(194, 125, 132)', // viola
 ];
 
 // Randomly select up to three colors from the palette

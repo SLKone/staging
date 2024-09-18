@@ -1,0 +1,26 @@
+{% assign parent_service = site["services"] | where: "title", include.sub_service.parent | first %}
+{% assign parent_color = parent_service.color %}
+{% assign url = parent_service.url | append: '#' | append: include.sub_service.slug %}
+<a id="{{ include.sub_service.slug }}" href="{{ url }}" class="rounded hover:shadow-lg transition-all bg-white duration-300 dark:bg-currant-700 dark:text-white block mb-4 max-w-sm min-w-[360px]">
+    <div class="bg-{{ parent_color }}-100 bg-opacity-20 rounded p-4">{% if include.sub_service.parent %}
+    {% endif %}
+    {% if include.sub_service.icon %}
+    <i class="text-{{ parent_color }} fas fa-duotone {{ include.sub_service.icon }} mr-2 text-4xl"></i>
+    {% endif %}
+    <p class="text font-semibold">{{ include.sub_service.parent }}</p>
+    </div>
+    <div class="p-4">
+    {% if include.sub_service.title %}
+    <p class="text-xl font-bold">{{ include.sub_service.title }}</p>
+    {% endif %}
+    {% if include.sub_service.intro %}
+    <p class="text-sm">{{ include.sub_service.intro }}</p>
+    {% endif %}
+
+    {% if include.sub_service.focus_areas %}
+    {% for focus_area in include.sub_service.focus_areas %}
+    <span class="bg-{{ parent_color }} bg-opacity-20 text-{{ parent_color }}-700 rounded-full px-2 py-1 text-sm whitespace-nowrap">{{ focus_area.title }}</span>
+    {% endfor %}
+    {% endif %}
+</div>
+</a>

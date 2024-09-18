@@ -5,6 +5,7 @@ title: "Data Enrichment"
 parent: "Data & Advanced Analytics"
 description: "Our Data Enrichment services enhance your existing data by integrating additional relevant information, increasing its value and utility for informed decision-making and strategic initiatives."
 approach: "We enhance your data by integrating it with internal and external sources, improving its quality and comprehensiveness. Our data enrichment process ensures that your data is more robust, enabling deeper insights and more effective analysis."
+intro: "Enhancing data quality and utility through comprehensive integration of multiple sources for informed decision-making and strategic initiatives."
 focus_areas:
   - title: "Data Source Identification"
     content: "Identify and evaluate data sources that can add value to your existing datasets."
@@ -23,4 +24,5 @@ why_choose:
   - "Experienced Data Professionals"
 cta: "Contact us to learn how our Data Enrichment services can enhance the value of your data and support your strategic initiatives."
 icon: "fa-database"
+color: "emerald"
 ---
