@@ -23,4 +23,5 @@ why_choose:
   - "Hands-On Training and Support"
   - "Proven Track Record in GenAI Integration"
 cta: "Contact us to prepare your organization for the transformative impact of Generative AI and drive innovation through GenAI Readiness."
+icon: "fa-brain-circuit"
 ---

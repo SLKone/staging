@@ -23,4 +23,5 @@ why_choose:
   - "Risk Mitigation: Proactive identification and management of potential risks."
   - "Expertise in M&A: Experienced consultants specialized in pre-transaction processes."
 cta: "Contact us to learn how our Pre-Transaction Readiness services can prepare your organization for successful mergers and acquisitions."
+icon: "fa-check-double"
 ---

@@ -23,4 +23,5 @@ why_choose:
   - "Shared Services Efficiency"
   - "Procurement and Vendor Optimization"
 cta: "Contact us to learn how our Corporate Finance services can enhance your financial operations and drive sustainable business growth."
+icon: "fa-wallet"
 ---

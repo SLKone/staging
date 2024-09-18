@@ -39,4 +39,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your portfolio companies to deliver customized and impactful solutions."
   
 cta: "Ready to accelerate value creation and drive growth in your portfolio companies? Contact SLKone today to discover how our specialized services can enhance performance and expand your market presence."
+icon: "fa-arrow-up-right-dots"
 ---

@@ -40,4 +40,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to deliver customized and impactful solutions."
   
 cta: "Ready to optimize your Logistics & Distribution operations? Contact SLKone today to discover how our specialized services can enhance your delivery efficiency and supply chain resilience."
+icon: "fa-truck-fast"
 ---

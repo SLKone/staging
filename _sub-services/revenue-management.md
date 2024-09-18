@@ -23,4 +23,5 @@ why_choose:
   - "Customized revenue management solutions"
   - "Proven ability to increase sales and profitability"
 cta: "Contact us to discover how our Revenue Management services can maximize your revenue potential and drive business growth."
+icon: "fa-money-bill-transfer"
 ---

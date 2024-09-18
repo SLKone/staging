@@ -22,4 +22,5 @@ why_choose:
   - "Focus on Data Quality and Governance"
   - "Experienced Data Professionals"
 cta: "Contact us to learn how our Data Enrichment services can enhance the value of your data and support your strategic initiatives."
+icon: "fa-database"
 ---

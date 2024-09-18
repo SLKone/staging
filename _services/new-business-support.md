@@ -22,4 +22,5 @@ why_choose:
   - "Continuous Growth: Ongoing assistance to support your business as it scales."
   - "Cross-Industry Experience: Expertise across various sectors to address diverse needs."
 cta: "Ready to launch or scale your new business with confidence? Contact SLKone today to discover how our New Business Support services can help you navigate the challenges of entrepreneurship and set your venture on the path to success."
+icon: "fa-rocket"
 ---

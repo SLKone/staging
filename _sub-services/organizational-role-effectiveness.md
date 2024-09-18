@@ -22,4 +22,5 @@ why_choose:
   - "Focus on Accountability and Performance"
   - "Experienced in Enhancing Role Effectiveness"
 cta: "Contact us to enhance the effectiveness of roles within your organization and drive your business goals."
+icon: "fa-user-shield"
 ---

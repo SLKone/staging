@@ -23,4 +23,5 @@ why_chooose:
   - "Data-Driven Insights"
   - "Collaborative Approach"
 cta: "Ready to optimize your working capital management? Contact SLKone today to discover how our specialized services can drive your financial performance."
+icon: "fa-money-bills-simple"
 ---

@@ -42,4 +42,5 @@ why_choose:
   - "Proven Track Record: Demonstrated success in preparing firms for profitable acquisitions."
   
 cta: "Ready to prepare your next acquisition for success? Contact SLKone today to learn how our Pre-Transaction Readiness services can ensure a smooth and value-driven acquisition process."
+icon: "fa-list"
 ---

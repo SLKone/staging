@@ -12,14 +12,19 @@ main:
   sub:
     - title: Amalgam Capital
       url: https://amalgamcapital.com
+      info: "Amalgam Capital is our independent sponsor arm, focused on acquiring and sustainably growing underrated businesses."
     - title: SLK Catalyst Partners
       url: https://slkcatalystpartners.com
+      info: "SLK Catalyst Partners offers a structured framework of actionable solutions to help corporate and operating entities tackle complex challenges."
     - title: Abyss Analytics
       url: https://abyssanalytics.com
+      info: "Abyss Analytics is our trailblazing healthcare analytics company, leveraging data science and AI to tackle the industry's most complex challenges."
 cta:
 - title: Contact Us
   url: /contact
 mobile:
+- title: Home
+  url: /
 - title: Services
   url: /services
 - title: Industries

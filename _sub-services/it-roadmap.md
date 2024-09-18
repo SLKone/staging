@@ -23,4 +23,5 @@ why_choose:
   - "Detailed, Actionable Roadmaps"
   - "Ongoing Support for Implementation Success"
 cta: "Contact us to develop a strategic IT Roadmap that supports your business growth and technology needs."
+icon: "fa-road"
 ---

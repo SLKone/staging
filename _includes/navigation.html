@@ -1,5 +1,4 @@
-
-<div class="hidden lg:flex lg:gap-x-12">
+<div id="desktop-navigation" class="hidden lg:flex flex items-center">
   {% for item in site.data.header-navigation.main %}
     {% assign sub_items = "" %}
     {% if item.url == '/services' %}
@@ -12,34 +11,55 @@
       {% assign sub_items = item.sub %}
     {% endif %}
     {% if sub_items != '' %}
-    <button type="button" class="flex items-center gap-x-1" aria-expanded="false">
-      <span>{{ item.title }}</span>
-      <i class="fa-solid fa-angle-down"></i>
-    </button>
-    <div class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-      <div class="submenu-content group-hover:block">
-          {% for sub in sub_items %}
-            <a href="{{ sub.url | relative_url }}">
-              <h4>{{ sub.title }}</h4>
-              <ul>
+      {% assign num_sub_items = sub_items | size %}
+      {% if num_sub_items >= 4 %}
+        {% assign grid_num = 4 %}
+      {% else %}
+        {% assign grid_num = num_sub_items %}
+      {% endif %}
+      {% assign grid_class = "grid-cols-" | append: grid_num %}
+      <div id="desktop-navigation-item-{{ forloop.index }}" class="group content-center py-2 transition-all duration-300">
+        <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 hover:text-emerald dark:hover:text-forest flex items-center justify-between" aria-expanded="false">
+          <span class="z-50">{{ item.title }}</span>
+          <i class="ml-2 z-50 fa-sharp fa-solid fa-angle-down"></i>
+        </a>
+        <div id="desktop-navigation-item-dropdown" class="transition-all duration-300 group-hover:block absolute left-0 top-full z-40 w-screen bg-white shadow-lg dark:bg-currant hidden">
+          <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="mx-auto max-w-7xl grid {{ grid_class }} auto-rows-auto gap-2 py-10">
+              {% for sub in sub_items %}
                 {% assign nested_items = "" %}
                 {% if item.url == '/services' %}
                   {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
                 {% elsif item.url == '/industries' %}
                   {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
                 {% endif %}
-                {% for nested in nested_items %}
-                  <li>
-                      {{ nested.title }}
-                  </li>
-                {% endfor %}
-              </ul>
-            </a>
-          {% endfor %}
+                <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="flex px-4 py-8 rounded hover:text-emerald hover:bg-emerald/10 text-xl dark:hover:text-forest" href="{{ sub.url | relative_url }}">
+                  {% if sub.icon %}
+                  <div class="flex-none">
+                    <i class="text-emerald dark:text-forest fa-sharp-duotone fa-solid {{ sub.icon }}"></i>
+                  </div>
+                  {% endif %}
+                  <div class="pl-4">
+                    <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-title" class="text-xl mb-2">{{ sub.title }}</p>
+                    {% if sub.info %}
+                      <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-info" class="text-sm opacity-80">{{ sub.info }}</p>
+                    {% endif %}
+                    {% if nested_items != '' %}
+                      <ul class="list-none text-sm opacity-80">
+                        {% for nested in nested_items %}
+                          <li id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-nested-item-{{ forloop.index }}">
+                            {{ nested.title }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                </a>
+              {% endfor %}
+            </div>
           </div>
         </div>
     {% else %}
-    <a class="flex items-center gap-x-1" href="{{ item.url }}">{{ item.title }}</a>
+      <a id="desktop-navigation-item-{{ forloop.index }}-button" class="z-50 p-6 hover:text-emerald dark:hover:text-forest" href="{{ item.url }}">{{ item.title }}</a>
     {% endif %}
   {% endfor %}
 </div>

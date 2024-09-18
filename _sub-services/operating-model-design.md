@@ -22,4 +22,5 @@ why_choose:
   - "Data-Driven Design Approach"
   - "Proven Methodologies for Successful Implementation"
 cta: "Contact us to design an Operating Model that drives your strategic objectives and enhances organizational performance."
+icon: "fa-object-group"
 ---

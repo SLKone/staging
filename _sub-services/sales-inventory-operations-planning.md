@@ -25,4 +25,5 @@ why_choose:
   - "Operational Excellence Focus"
   - "Proven Track Record"
 cta: "Ready to synchronize your sales, inventory, and operations? Contact SLKone today to learn how our SIOP services can transform your business processes and drive sustainable growth."
+icon: "fa-shelves"
 ---

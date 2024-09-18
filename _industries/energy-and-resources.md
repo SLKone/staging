@@ -31,4 +31,5 @@ why_choose:
   - "Proven Track Record: Demonstrated success in optimizing operations and driving growth."
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to navigate the complexities of the energy and resources sector? Contact SLKone today to discover how our specialized services can drive your sustainable growth and operational excellence."
+icon: "fa-solid fa-bolt"
 ---

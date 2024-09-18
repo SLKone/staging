@@ -22,4 +22,5 @@ why_choose:
   - "Proven Methods for High Adoption Rates"
   - "Focus on Sustained Organizational Success"
 cta: "Contact us to learn how our Change Management services can help your organization navigate transformations smoothly and achieve lasting success."
+icon: "fa-list-check"
 ---

@@ -24,4 +24,5 @@ why_choose:
   - "Comprehensive Vendor Evaluation"
   - "Supportive Digital Transformation Planning"
 cta: "Contact us to navigate the technology landscape and adopt the innovations that will drive your business forward."
+icon: "fa-image-landscape"
 ---

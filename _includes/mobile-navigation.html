@@ -1,19 +1,30 @@
-<div class="flex lg:hidden">
-  <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+<div id="mobile-navigation-button" class="flex items-center lg:hidden justify-between">
+  <button type="button" class="inline-flex items-center justify-center p-2 text-3xl" aria-expanded="false" onclick="toggleMobileMenu()">
     <span class="sr-only">Open main menu</span>
-    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-    </svg>
+    <i id="menu-icon" class="fa-sharp inline-flex items-center justify-center fa-solid fa-bars h-12 w-12" aria-hidden="true"></i>
+    <i id="close-icon" class="fa-sharp inline-flex items-center justify-center fa-solid fa-xmark h-12 w-12 hidden" aria-hidden="true"></i>
   </button>
 </div>
-<div class="lg:hidden" role="dialog" aria-modal="true">
-  <ul>
+<div id="mobile-navigation" class="absolute top-20 min-h-screen left-0 w-full bg-white shadow-lg hidden" role="dialog" aria-modal="true">
+  <ul class="flex flex-col p-4">
     {% for item in site.data.header-navigation.mobile %}
-      <li class="group relative">
-        <a href="{{ item.url }}" class="{% if item.submenu %}has-subitem{% endif %}">
+      <li id="mobile-navigation-item-{{ forloop.index }}" class="py-2">
+        <a id="mobile-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="block p-2 text-2xl {% if item.submenu %}has-subitem{% endif %}">
           {{ item.title }}
         </a>
       </li>
     {% endfor %}
   </ul>
 </div>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-navigation');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    menu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  }
+</script>

@@ -42,4 +42,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective exit strategies."
   
 cta: "Ready to maximize the value of your exit strategy? Contact SLKone today to learn how our Exit Readiness services can ensure a profitable and seamless transition to new ownership."
+icon: "fa-right-from-bracket"
 ---

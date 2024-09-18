@@ -25,4 +25,5 @@ why_choose:
   - "Cost Efficiency Focus"
   - "Expert Team with Extensive Supply Chain Knowledge"
 cta: "Looking to optimize your supply chain network? Contact SLKone today to discover how our Supply Chain Network Optimization services can enhance your operational performance and competitiveness."
+icon: "fa-chart-network"
 ---

@@ -38,4 +38,5 @@ why_choose:
   - "Analytics-Driven Insights: Building advanced analytics capabilities for better decision-making."
   - "Collaborative Partnership: Working closely with your team to deliver tailored and effective solutions."
 cta: "Ready to transform your Health Tech operations? Contact SLKone today to learn how our specialized services can enhance your technology integration and drive patient-centric innovations."
+icon: "fa-monitor-waveform"
 ---

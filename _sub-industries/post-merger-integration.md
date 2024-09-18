@@ -42,4 +42,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and impactful integration solutions."
   
 cta: "Ready to ensure a seamless integration of your recent acquisition? Contact SLKone today to learn how our Post-Merger Integration services can drive your combined company's success."
+icon: "fa-merge"
 ---

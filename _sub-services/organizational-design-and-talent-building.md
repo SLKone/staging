@@ -23,4 +23,5 @@ why_choose:
   - "Focus on Leadership and Employee Development"
   - "Enhancing Collaboration and Innovation"
 cta: "Contact us to design an organizational structure and talent strategy that drives your business forward and fosters a thriving workforce."
+icon: "fa-people-group"
 ---

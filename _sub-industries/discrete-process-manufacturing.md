@@ -42,4 +42,5 @@ why_choose:
   - "Collaborative Approach: Partnering with your team to deliver customized and impactful solutions."
 
 cta: "Ready to streamline your Discrete & Process Manufacturing operations? Contact SLKone today to learn how our specialized services can enhance your productivity and operational efficiency."
+icon: "fa-conveyor-belt-boxes"
 ---

@@ -30,4 +30,5 @@ why_choose:
     - "Collaborative working style that ensures knowledge transfer and sustainable improvements"
     - "Practical methodology that adapts to the rapidly changing healthcare landscape"
 cta: "Ready to transform your healthcare organization? Contact SLKone today to learn how our tailored solutions can help you navigate industry challenges, drive operational excellence, and achieve sustainable growth in the evolving healthcare landscape."
+icon: "fa-solid fa-heart"
 ---

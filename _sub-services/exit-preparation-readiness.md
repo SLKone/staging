@@ -21,4 +21,5 @@ why_choose:
   - "Experienced Advisors: Work with consultants who have a proven track record in exit strategies."
   - "Smooth Transition: Ensure a seamless shift during the exit process with minimal disruption."
 cta: "Contact us to discover how our Exit Preparation & Readiness services can maximize the value of your organization and facilitate a smooth transition to your next venture."
+icon: "fa-door-closed"
 ---

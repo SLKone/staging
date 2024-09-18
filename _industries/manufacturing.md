@@ -29,4 +29,5 @@ why_choose:
   - "Talent Development: Strategies to bridge the skills gap and foster a skilled workforce."
   - "Collaborative Approach: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to elevate your manufacturing operations? Contact SLKone today to learn how our specialized services can drive your operational excellence and sustainable growth."
+icon: "fa-solid fa-industry"
 ---

@@ -41,4 +41,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 
 cta: "Ready to optimize your Industrial Services operations? Contact SLKone today to discover how our specialized services can enhance your service delivery and customer satisfaction."
+icon: "fa-container"
 ---

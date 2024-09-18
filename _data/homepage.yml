@@ -1,8 +1,8 @@
 hero:
-  title: "SLKone - Bridge Strategy to Measurable Success"
+  title: "Bridge Strategy to Measurable Success"
   description: "SLKone is more than a consulting firm—we're your partner in turning strategy into measurable success. Our hands-on approach means we work side-by-side with your team, delivering actionable solutions that directly impact your bottom line."
   cta_text: "Ready to Cross The Bridge?"
-  cta_link: "#contact-us"
+  cta_link: "/services"
 
 approach:
   title: "Our Approach"
@@ -11,25 +11,35 @@ approach:
 unique_points:
   - title: "Data-Backed Decisiveness"
     description: "We turn complex data into clear, actionable strategies"
+    icon: "fa-down-left-and-up-right-to-center"
   - title: "Beyond Advice to Action"
     description: "We implement alongside your team, ensuring real-world results"
+    icon: "fa-turn-up-right"
   - title: "Cross-Industry Insights"
     description: "Fresh perspectives that drive innovative solutions"
+    icon: "fa-arrows-spin"
   - title: "Aligned Success"
     description: "Our economic models prioritize mutual growth"
+    icon: "fa-objects-align-center-horizontal"
   - title: "Versatile Expertise"
     description: "From coding to process redesign, we tackle challenges across the operational spectrum"
+    icon: "fa-arrow-up-square-triangle"
   - title: "Results-Driven Partnership"
     description: "We measure our success by the tangible impact we create for your business"
+    icon: "fa-timeline-arrow"
 
 data_driven_approach:
   title: "Our Data Driven Approach"
   steps:
-    - "Strategic Ideation: Uncover unique opportunities"
-    - "Data-Driven Decisions: Minimize risk, maximize impact"
-    - "Hands-On Implementation: Turn strategies into reality"
-    - "Continuous Optimization: Ensure lasting success"
-
+    - title: "Strategic Ideation: Uncover unique opportunities"
+      icon: "fa-lightbulb"
+    - title: "Data-Driven Decisions: Minimize risk, maximize impact"
+      icon: "fa-chart-line"
+    - title: "Hands-On Implementation: Turn strategies into reality"
+      icon: "fa-hammer"
+    - title: "Continuous Optimization: Ensure lasting success"
+      icon: "fa-arrows-spin"
+  
 testimonials:
   - quote: "I found you to listen more intently and more genuinely than many other firms. Also, you pushed back and helped redirect when needed in a very professional manner."
   - quote: "Access and agility - Our work together epitomized a high performance team passing the ball to each other without having to look. Access to anyone at anytime on your team helped; and agility in terms of keeping the group small, we were able to adopt and move fast."

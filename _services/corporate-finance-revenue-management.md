@@ -22,4 +22,5 @@ why_choose:
   - "Data-Driven Insights: Leveraging advanced analytics for informed decision-making."
   - "Cross-Industry Experience: Expertise across multiple sectors for diverse financial challenges."
 cta: "Ready to optimize your financial performance? Contact SLKone today to discover how our Corporate Finance & Revenue Management services can drive your business growth."
+icon: "fa-chart-line"
 ---

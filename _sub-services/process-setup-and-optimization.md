@@ -24,4 +24,5 @@ why_choose:
   - "Focus on Scalability and Sustainable Growth"
   - "Comprehensive Quality Management Integration"
 cta: "Contact us to establish efficient processes that drive your organization's success and operational excellence."
+icon: "fa-play"
 ---

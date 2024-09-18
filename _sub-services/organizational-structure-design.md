@@ -22,4 +22,5 @@ why_choose:
   - "Focus on Communication and Efficiency"
   - "Proven Success in Organizational Restructuring"
 cta: "Contact us to design an Organizational Structure that drives your strategic objectives and enhances operational efficiency."
+icon: "fa-sitemap"
 ---

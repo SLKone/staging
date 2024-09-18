@@ -42,4 +42,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to deliver customized and impactful solutions."
   
 cta: "Ready to drive growth and innovation in your Consumer Goods & Services operations? Contact SLKone today to learn how our specialized services can enhance your product development and supply chain strategies."
+icon: "fa-basket-shopping"
 ---

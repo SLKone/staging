@@ -23,4 +23,5 @@ why_choose:
   - "Proven Accuracy and Reliability"
   - "Expert Data Scientists and Analysts"
 cta: "Contact us to explore how our Predictive Model Development services can enhance your forecasting capabilities and drive strategic growth."
+icon: "fa-bars-progress"
 ---

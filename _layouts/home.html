@@ -2,25 +2,25 @@
 layout: default
 body-class: body-home
 ---
-<section class="hero min-h-dvh flex flex-col justify-center items-center">
-  <div class="container mx-auto px-4">
-    <h1 class="text-5xl max-w-prose font-bold">{{ site.data.homepage.hero.title }}</h1>
-    <div class="max-w-prose">
-      <p class="text-xl">{{ site.data.homepage.hero.description }}</p>
-      <p class="text-xl"><a href="{{ site.data.homepage.hero.cta_link }}" class="btn">{{ site.data.homepage.hero.cta_text }}</a></p>
+<canvas id="canvas" class="absolute top-0 left-0 w-full h-full z-[-1]"></canvas>
+<section id="hero-background" class="hero min-h-dvh py-10 flex flex-col justify-center items-center">
+  <div class="container mx-auto text-center px-4 max-w-7xl">
+    <h1 class="text-6xl mb-12 mx-auto max-w-prose font-bold">{{ site.data.homepage.hero.title }}</h1>
+    <div class="max-w-prose mx-auto">
+      <p class="text-2xl">{{ site.data.homepage.hero.description }}</p>
+      <p class="text-2xl mt-12 mb-12"><a class="rounded bg-emerald p-4 text-white dark:hover:text-forest hover:bg-emerald/10 hover:text-emerald" href="{{ site.data.homepage.hero.cta_link }}" class="btn">{{ site.data.homepage.hero.cta_text }}</a></p>
     </div>
-  </div>
 </section>
 
-<section class="approach min-h-max"> 
-  <div class="container mx-auto px-4">
+<section class="approach min-h-[80dvh] py-10"> 
+  <div class="ontainer mx-auto px-4 max-w-7xl">
     <h2>{{ site.data.homepage.approach.title }}</h2>
     <p>{{ site.data.homepage.approach.description }}</p>
   </div>
 </section>
 
-<section class="unique-points min-h-max">
-  <div class="container mx-auto px-4">
+<section class="unique-points min-h-[80dvh] py-10">
+  <div class="container mx-auto px-4 max-w-7xl">
     <h2>What sets SLKone apart</h2>
     <ul>
     {% for point in site.data.homepage.unique_points %}
@@ -32,8 +32,8 @@ body-class: body-home
   </div>
 </section>
 
-<section class="data-driven-approach min-h-max">
-  <div class="container mx-auto px-4">
+<section class="data-driven-approach min-h-[80dvh] py-10">
+  <div class="container mx-auto px-4 max-w-7xl">
     <h2>{{ site.data.homepage.data_driven_approach.title }}</h2>
     <ol>
       {% for step in site.data.homepage.data_driven_approach.steps %}
@@ -43,8 +43,8 @@ body-class: body-home
   </div>
 </section>
 
-<section class="testimonials min-h-max">
-  <div class="container mx-auto px-4">
+<section class="testimonials min-h-[80dvh] py-10">
+  <div class="container mx-auto px-4 max-w-7xl">
     <h2>What our Clients Say</h2>
   {% for testimonial in site.data.homepage.testimonials %}
       <blockquote>{{ testimonial.quote }}</blockquote>
@@ -52,18 +52,20 @@ body-class: body-home
   </div>
 </section>
 
-<section class="join-team min-h-max">
-  <div class="container mx-auto px-4">
+<section class="join-team min-h-[80dvh] py-10">
+  <div class="container mx-auto px-4 max-w-7xl">
     <h2>{{ site.data.homepage.join_team.title }}</h2>
     <p>{{ site.data.homepage.join_team.description }}</p>
     <a href="{{ site.data.homepage.join_team.cta_link }}" class="btn">{{ site.data.homepage.join_team.cta_text }}</a>
   </div>
 </section>
 
-<section class="contact min-h-max">
-  <div class="container mx-auto px-4">
+<section class="contact min-h-[80dvh] py-10">
+  <div class="container mx-auto px-4 max-w-7xl">
     <h2>{{ site.data.homepage.contact.title }}</h2>
     <p>{{ site.data.homepage.contact.description }}</p>
     <a href="{{ site.data.homepage.contact.cta_link }}" class="btn">{{ site.data.homepage.contact.cta_text }}</a>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>

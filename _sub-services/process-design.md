@@ -23,4 +23,5 @@ why_choose:
   - "Focus on Efficiency and Quality"
   - "Proven Track Record in Process Improvement"
 cta: "Contact us to optimize your business processes and achieve operational excellence."
+icon: "fa-arrow-progress"
 ---

@@ -31,4 +31,5 @@ why_choose:
   - "Proven Success: Demonstrated results in optimizing operations and driving growth."
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to elevate your retail and consumer goods operations? Contact SLKone today to learn how our specialized services can enhance your operational agility and customer experiences."
+icon: "fa-solid fa-store"
 ---

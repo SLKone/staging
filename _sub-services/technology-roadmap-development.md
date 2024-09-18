@@ -24,4 +24,5 @@ why_choose:
   - "Customized Roadmaps Tailored to Your Needs"
   - "Proven Track Record in Technology Strategy"
 cta: "Contact us to develop a strategic Technology Roadmap that supports your business growth and technological advancement."
+icon: "fa-map"
 ---

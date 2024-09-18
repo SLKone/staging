@@ -23,4 +23,5 @@ why_choose:
   - "Seamless Integration with Existing Systems"
   - "Continuous Support and Optimization"
 cta: "Contact us to explore how our Automation services can transform your business processes and drive operational excellence."
+icon: "fa-robot"
 ---
