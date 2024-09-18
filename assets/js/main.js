@@ -11,8 +11,17 @@ window.addEventListener("scroll", () => {
 
 // Code for the background wind map
 // Get the canvas and context
+// Get the canvas and context
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+
+// Create an off-screen canvas for static streamlines
+const staticCanvas = document.createElement('canvas');
+const staticCtx = staticCanvas.getContext('2d');
+
+// Variables for animation
+let animatedStreamlines = [];
+let animationStarted = false;
 
 // Detect color scheme
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -183,8 +192,8 @@ function adjustAlpha(color, alpha) {
   }
 }
 
-// Draw the selected streamlines on the canvas with fade effect
-function drawStreamlines(selectedStreamlines) {
+// Draw the selected streamlines on the given context with fade effect
+function drawStreamlines(ctx, selectedStreamlines) {
   selectedStreamlines.forEach(streamline => {
     if (streamline.length >= MIN_STREAMLINE_LENGTH) {
       // Choose a color for each streamline without alpha
@@ -223,11 +232,64 @@ function drawStreamlines(selectedStreamlines) {
   });
 }
 
+// Function to select random streamlines
+function selectRandomStreamlines(streamlines, numToSelect) {
+  const shuffled = streamlines.slice().sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, numToSelect);
+}
+
+// Draw an animated streamline with a moving gradient
+function drawAnimatedStreamline(ctx, animatedStreamline) {
+  const streamline = animatedStreamline.streamline;
+  const progress = animatedStreamline.progress;
+  const windowSize = 0.45; // Adjust the window size for the gradient effect
+  const color = animatedStreamline.color;
+
+  if (streamline.length >= MIN_STREAMLINE_LENGTH) {
+    ctx.lineWidth = 1.5; // Set line width for animated streamlines
+
+    for (let i = 1; i < streamline.length; i++) {
+      let start = streamline[i - 1];
+      let end = streamline[i];
+
+      // Compute normalized position along the streamline
+      let t = i / (streamline.length - 1);
+
+      // Compute distance from the current progress
+      let distance = Math.abs(t - progress);
+      // Handle wrapping around
+      if (distance > 0.5) {
+        distance = 1 - distance;
+      }
+
+      // Compute opacity based on distance
+      let opacity;
+      if (distance < windowSize / 2) {
+        opacity = 1 - (distance / (windowSize / 2));
+      } else {
+        opacity = 0;
+      }
+
+      if (opacity > 0) {
+        // Adjust the alpha of the color
+        let strokeStyle = adjustAlpha(color, opacity);
+
+        ctx.strokeStyle = strokeStyle;
+
+        ctx.beginPath();
+        ctx.moveTo(start.x, start.y);
+        ctx.lineTo(end.x, end.y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
 // Render the wind map
 function renderWindMap() {
-  // Clear the canvas
-  ctx.fillStyle = backgroundColor;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  // Clear the off-screen canvas
+  staticCtx.fillStyle = backgroundColor;
+  staticCtx.fillRect(0, 0, canvas.width, canvas.height);
 
   initializeGrid();
   allStreamlines = [];
@@ -236,24 +298,62 @@ function renderWindMap() {
   console.log('Total streamlines generated:', allStreamlines.length);
 
   // Randomly select some streamlines to draw
-  const numStreamlinesToDraw = 300; // Adjust as needed
+  const numStreamlinesToDraw = 150; // Adjust as needed
   const selectedStreamlines = selectRandomStreamlines(allStreamlines, numStreamlinesToDraw);
 
-  // Draw the selected streamlines with fade effect
-  drawStreamlines(selectedStreamlines);
+  // Draw the selected streamlines with fade effect onto staticCtx
+  drawStreamlines(staticCtx, selectedStreamlines);
+
+  // Randomly select streamlines for animation
+  animatedStreamlines = selectRandomStreamlines(allStreamlines, 150).map(streamline => ({
+    streamline,
+    progress: Math.random(), // Start at a random progress
+    speed: 0.01 + Math.random() * 0.001, // Random speed
+    color: selectedColors[Math.floor(Math.random() * selectedColors.length)],
+  }));
 }
 
-// Function to select random streamlines
-function selectRandomStreamlines(streamlines, numToSelect) {
-  const shuffled = streamlines.slice().sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, numToSelect);
+// Animation loop
+function animate() {
+  function animationLoop() {
+    // Clear the main canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the static canvas onto the main canvas
+    ctx.drawImage(staticCanvas, 0, 0);
+
+    // For each animated streamline, update progress and draw
+    animatedStreamlines.forEach(animatedStreamline => {
+      // Update progress
+      animatedStreamline.progress += animatedStreamline.speed;
+      if (animatedStreamline.progress > 1) {
+        animatedStreamline.progress = 0; // Loop back to start
+      }
+
+      // Draw the animated streamline
+      drawAnimatedStreamline(ctx, animatedStreamline);
+    });
+
+    // Request the next frame
+    requestAnimationFrame(animationLoop);
+  }
+
+  // Start the loop
+  animationLoop();
 }
 
 // Resize the canvas to fit the window
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+  staticCanvas.width = canvas.width;
+  staticCanvas.height = canvas.height;
   renderWindMap(); // Re-render the wind map on resize
+
+  if (!animationStarted) {
+    animate(); // Start the animation
+    animationStarted = true;
+  }
 }
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
