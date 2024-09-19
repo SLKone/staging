@@ -31,4 +31,5 @@ why_choose:
 cta: "Ready to elevate your manufacturing operations? Contact SLKone today to learn how our specialized services can drive your operational excellence and sustainable growth."
 icon: "fa-solid fa-industry"
 color: "sand"
+image: "/assets/images/backgrounds/manufacturing.webp"
 ---

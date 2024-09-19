@@ -38,349 +38,396 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Code for the background wind map
-// Get the canvas and context
-// Get the canvas and context
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
-// Create an off-screen canvas for static streamlines
-const staticCanvas = document.createElement('canvas');
-const staticCtx = staticCanvas.getContext('2d');
-
-// Variables for animation
-let animatedStreamlines = [];
-let animationStarted = false;
-
-// Detect color scheme
-const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Set background color
-const backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparent background
-
-// Set streamline opacity based on color scheme
-const streamlineOpacity = isDarkMode ? 0.8 : 0.4; // Adjust these values as needed
-
-// Initialize Simplex Noise
-const simplex = new SimplexNoise();
-
-// Color palette without alpha values
-const colorPalette = [
-  'rgb(0, 101, 72)',    // emerald
-  'rgb(55, 123, 191)',  // navy
-  'rgb(249, 166, 24)',  // tangerine
-  'rgb(255, 213, 74)',  // mustard
-  'rgb(242, 149, 106)', // sand
-  'rgb(239, 81, 39)',   // cinnabar
-  'rgb(193, 77, 108)',  // blush
-  'rgb(247, 39, 143)',  // coral
-  'rgb(130, 7, 118)',   // plum
-];
-
-// Randomly select up to three colors from the palette
-function getRandomColors(palette, numColors) {
-  const shuffled = palette.slice().sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, numColors);
-}
-
-const selectedColors = getRandomColors(colorPalette, 3);
-
-// Streamline parameters
-const streamlineParams = {
-  stepSize: 1,          // The step size for each integration step
-  maxLength: 10000,     // Maximum number of steps per streamline
-  dSep: 1,              // Distance between streamlines
-  gridResolution: 75,   // Controls seed point spacing
-};
-
-// Minimum streamline length
-const MIN_STREAMLINE_LENGTH = 0; // Minimum number of points in a streamline
-
-// Grid to keep track of streamline coverage
-let grid, gridWidth, gridHeight;
-
-// Global array to store streamlines
-let allStreamlines = [];
-
-// Function to get the vector at a given point
-function getVector(x, y) {
-  const scale = 0.00015;
-  const angle = simplex.noise2D(x * scale, y * scale) * Math.PI * 2;
-  return {
-    x: Math.cos(angle),
-    y: Math.sin(angle),
-  };
-}
-
-// Initialize the grid for streamline coverage
-function initializeGrid() {
-  gridWidth = Math.ceil(canvas.width / streamlineParams.dSep);
-  gridHeight = Math.ceil(canvas.height / streamlineParams.dSep);
-  grid = [];
-  for (let i = 0; i < gridWidth; i++) {
-    grid[i] = [];
-    for (let j = 0; j < gridHeight; j++) {
-      grid[i][j] = 0; // Initialize as a counter
+// Windmap visualization
+class WindMapVisualization {
+    constructor(canvas) {
+      // Store the canvas and context
+      this.canvas = canvas;
+      this.ctx = canvas.getContext('2d');
+  
+      // Create an off-screen canvas for static streamlines
+      this.staticCanvas = document.createElement('canvas');
+      this.staticCtx = this.staticCanvas.getContext('2d');
+  
+      // Variables for animation
+      this.animatedStreamlines = [];
+      this.animationStarted = false;
+  
+      // Detect color scheme
+      this.isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+      // Read parameters from data attributes
+      this.readParameters();
+  
+      // Initialize Simplex Noise
+      this.simplex = new SimplexNoise();
+  
+      // Grid variables
+      this.grid = [];
+      this.gridWidth = 0;
+      this.gridHeight = 0;
+  
+      // Global array to store streamlines
+      this.allStreamlines = [];
+  
+      // Start the visualization
+      this.init();
     }
-  }
-}
-
-// Check if a point is far enough from existing streamlines
-function isFarFromStreamlines(x, y) {
-  const i = Math.floor(x / streamlineParams.dSep);
-  const j = Math.floor(y / streamlineParams.dSep);
-  if (i < 0 || i >= gridWidth || j < 0 || j >= gridHeight) {
-    return false;
-  }
-  // Allow up to 3 streamlines per grid cell
-  return grid[i][j] < 3;
-}
-
-// Mark a point on the grid as covered by a streamline
-function markPointOnGrid(x, y) {
-  const i = Math.floor(x / streamlineParams.dSep);
-  const j = Math.floor(y / streamlineParams.dSep);
-  if (i >= 0 && i < gridWidth && j >= 0 && j < gridHeight) {
-    grid[i][j] += 1; // Increment the counter
-  }
-}
-
-// Compute a streamline starting from (x0, y0)
-function computeStreamline(x0, y0) {
-  const streamline = [];
-  let x = x0;
-  let y = y0;
-
-  streamline.push({ x, y });
-  markPointOnGrid(x, y);
-
-  for (let i = 1; i < streamlineParams.maxLength; i++) {
-    const vector = getVector(x, y);
-    const vx = vector.x;
-    const vy = vector.y;
-
-    x += vx * streamlineParams.stepSize;
-    y += vy * streamlineParams.stepSize;
-
-    if (x < 0 || x > canvas.width || y < 0 || y > canvas.height) {
-      break;
-    }
-
-    streamline.push({ x, y });
-    markPointOnGrid(x, y);
-
-    if (!isFarFromStreamlines(x, y)) {
-      break;
-    }
-  }
-
-  return streamline;
-}
-
-// Generate and store all streamlines
-function generateStreamlines() {
-  ctx.lineWidth = 1;
-
-  const seeds = [];
-  const spacing = streamlineParams.gridResolution;
-
-  for (let x = 0; x < canvas.width; x += spacing) {
-    for (let y = 0; y < canvas.height; y += spacing) {
-      seeds.push({ x, y });
-    }
-  }
-
-  for (const seed of seeds) {
-    if (isFarFromStreamlines(seed.x, seed.y)) {
-      const streamline = computeStreamline(seed.x, seed.y);
-      if (streamline.length >= MIN_STREAMLINE_LENGTH) {
-        allStreamlines.push(streamline);
-      }
-    }
-  }
-}
-
-// Function to adjust the alpha of a color
-function adjustAlpha(color, alpha) {
-  // Combine the per-segment alpha with the overall streamline opacity
-  const combinedAlpha = alpha * streamlineOpacity;
-
-  // Assume color is in 'rgb(r, g, b)' format
-  let rgb = color.match(/rgb\((\d+), (\d+), (\d+)\)/);
-  if (rgb) {
-    let r = rgb[1];
-    let g = rgb[2];
-    let b = rgb[3];
-
-    return `rgba(${r}, ${g}, ${b}, ${combinedAlpha})`;
-  } else {
-    // If parsing fails, return the original color
-    return color;
-  }
-}
-
-// Draw the selected streamlines on the given context with fade effect
-function drawStreamlines(ctx, selectedStreamlines) {
-  selectedStreamlines.forEach(streamline => {
-    if (streamline.length >= MIN_STREAMLINE_LENGTH) {
-      // Choose a color for each streamline without alpha
-      let color = selectedColors[Math.floor(Math.random() * selectedColors.length)];
-      ctx.lineWidth = 0.5 + Math.random() * 2; // Vary line width between 0.5 and 2.5
-
-      for (let i = 1; i < streamline.length; i++) {
-        let start = streamline[i - 1];
-        let end = streamline[i];
-
-        // Compute normalized position along the streamline
-        let t = i / (streamline.length - 1);
-
-        // Compute opacity for fade effect
-        let opacity;
-        let fadeLength = 1; // Fraction of the streamline to fade over (adjust as needed)
-        if (t < fadeLength) {
-          opacity = t / fadeLength;
-        } else if (t > 1 - fadeLength) {
-          opacity = (1 - t) / fadeLength;
-        } else {
-          opacity = 1;
+  
+    readParameters() {
+      // Read data attributes from the canvas element
+      const dataset = this.canvas.dataset;
+  
+      // Determine the suffix based on the color scheme
+      const modeSuffix = this.isDarkMode ? 'Dark' : 'Light';
+  
+      // Helper function to read parameters with consideration of mode-specific attributes
+      const getParam = (paramName, defaultValue) => {
+        const modeParam = dataset[paramName + modeSuffix];
+        if (modeParam !== undefined) {
+          return modeParam;
         }
-
-        // Adjust the alpha of the color
-        let strokeStyle = adjustAlpha(color, opacity);
-
-        ctx.strokeStyle = strokeStyle;
-
-        ctx.beginPath();
-        ctx.moveTo(start.x, start.y);
-        ctx.lineTo(end.x, end.y);
-        ctx.stroke();
-      }
-    }
-  });
-}
-
-// Function to select random streamlines
-function selectRandomStreamlines(streamlines, numToSelect) {
-  const shuffled = streamlines.slice().sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, numToSelect);
-}
-
-// Draw an animated streamline with a moving gradient
-function drawAnimatedStreamline(ctx, animatedStreamline) {
-  const streamline = animatedStreamline.streamline;
-  const progress = animatedStreamline.progress;
-  const windowSize = 0.45; // Adjust the window size for the gradient effect
-  const color = animatedStreamline.color;
-
-  if (streamline.length >= MIN_STREAMLINE_LENGTH) {
-    ctx.lineWidth = 1.5; // Set line width for animated streamlines
-
-    for (let i = 1; i < streamline.length; i++) {
-      let start = streamline[i - 1];
-      let end = streamline[i];
-
-      // Compute normalized position along the streamline
-      let t = i / (streamline.length - 1);
-
-      // Compute distance from the current progress
-      let distance = Math.abs(t - progress);
-      // Handle wrapping around
-      if (distance > 0.5) {
-        distance = 1 - distance;
-      }
-
-      // Compute opacity based on distance
-      let opacity;
-      if (distance < windowSize / 2) {
-        opacity = 1 - (distance / (windowSize / 2));
+        const generalParam = dataset[paramName];
+        return generalParam !== undefined ? generalParam : defaultValue;
+      };
+  
+      // Parse parameters, with default values if not specified
+      this.animate = getParam('animate', 'true') !== 'false';
+      this.numStreamlines = parseInt(getParam('numStreamlines', 150));
+      this.numAnimated = parseInt(getParam('numAnimated', 5));
+      this.numColors = parseInt(getParam('numColors', 3));
+  
+      const colorsParam = getParam('colors', null);
+      this.colorValues = colorsParam
+        ? colorsParam.split(',').map(color => color.trim())
+        : [
+            'rgb(0, 101, 72)',    // emerald
+            'rgb(55, 123, 191)',  // navy
+            'rgb(249, 166, 24)',  // tangerine
+            'rgb(255, 213, 74)',  // mustard
+            'rgb(242, 149, 106)', // sand
+            'rgb(239, 81, 39)',   // cinnabar
+            'rgb(193, 77, 108)',  // blush
+            'rgb(247, 39, 143)',  // coral
+            'rgb(130, 7, 118)',   // plum
+          ];
+  
+      this.scale = parseFloat(getParam('scale', 0.00015));
+  
+      // Set background color
+      this.backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparent background
+  
+      // Set streamline opacity based on data attribute or color scheme
+      const dataOpacity = getParam('opacity', null);
+      if (dataOpacity !== null) {
+        this.streamlineOpacity = parseFloat(dataOpacity);
+        if (isNaN(this.streamlineOpacity) || this.streamlineOpacity < 0 || this.streamlineOpacity > 1) {
+          console.warn(`Invalid opacity value: ${dataOpacity}. Using default value.`);
+          this.streamlineOpacity = this.isDarkMode ? 0.8 : 0.4;
+        }
       } else {
-        opacity = 0;
+        // Default opacity values if not specified
+        this.streamlineOpacity = this.isDarkMode ? 0.8 : 0.4;
       }
-
-      if (opacity > 0) {
-        // Adjust the alpha of the color
-        let strokeStyle = adjustAlpha(color, opacity);
-
-        ctx.strokeStyle = strokeStyle;
-
-        ctx.beginPath();
-        ctx.moveTo(start.x, start.y);
-        ctx.lineTo(end.x, end.y);
-        ctx.stroke();
+  
+      // Streamline parameters
+      this.streamlineParams = {
+        stepSize: 1,          // The step size for each integration step
+        maxLength: 10000,     // Maximum number of steps per streamline
+        dSep: 1,              // Distance between streamlines
+        gridResolution: 75,   // Controls seed point spacing
+      };
+  
+      // Minimum streamline length
+      this.MIN_STREAMLINE_LENGTH = 0; // Minimum number of points in a streamline
+  
+      // Randomly select colors
+      this.selectedColors = this.getRandomColors(this.colorValues, this.numColors);
+  
+      // Log selected parameters for debugging
+      console.log('Current Mode:', this.isDarkMode ? 'Dark' : 'Light');
+      console.log('Animate:', this.animate);
+      console.log('Number of Streamlines:', this.numStreamlines);
+      console.log('Number of Animated Streamlines:', this.numAnimated);
+      console.log('Selected Colors:', this.selectedColors);
+      console.log('Scale:', this.scale);
+      console.log('Opacity:', this.streamlineOpacity);
+    }
+  
+    getRandomColors(palette, numColors) {
+      const shuffled = palette.slice().sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, numColors);
+    }
+  
+    init() {
+      // Set up the canvas size
+      this.resizeCanvas();
+  
+      // Add event listener for window resize
+      window.addEventListener('resize', () => this.resizeCanvas());
+    }
+  
+    resizeCanvas() {
+      this.canvas.width = this.canvas.clientWidth;
+      this.canvas.height = this.canvas.clientHeight;
+      this.staticCanvas.width = this.canvas.width;
+      this.staticCanvas.height = this.canvas.height;
+      this.renderWindMap(); // Re-render the wind map on resize
+  
+      if (this.animate && !this.animationStarted) {
+        this.animateLoop(); // Start the animation
+        this.animationStarted = true;
       }
     }
-  }
-}
-
-// Render the wind map
-function renderWindMap() {
-  // Clear the off-screen canvas
-  staticCtx.fillStyle = backgroundColor;
-  staticCtx.fillRect(0, 0, canvas.width, canvas.height);
-
-  initializeGrid();
-  allStreamlines = [];
-  generateStreamlines();
-
-  console.log('Total streamlines generated:', allStreamlines.length);
-
-  // Randomly select some streamlines to draw
-  const numStreamlinesToDraw = 150; // Adjust as needed
-  const selectedStreamlines = selectRandomStreamlines(allStreamlines, numStreamlinesToDraw);
-
-  // Draw the selected streamlines with fade effect onto staticCtx
-  drawStreamlines(staticCtx, selectedStreamlines);
-
-  // Randomly select streamlines for animation
-  animatedStreamlines = selectRandomStreamlines(allStreamlines, 150).map(streamline => ({
-    streamline,
-    progress: Math.random(), // Start at a random progress
-    speed: 0.01 + Math.random() * 0.001, // Random speed
-    color: selectedColors[Math.floor(Math.random() * selectedColors.length)],
-  }));
-}
-
-// Animation loop
-function animate() {
-  function animationLoop() {
-    // Clear the main canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Draw the static canvas onto the main canvas
-    ctx.drawImage(staticCanvas, 0, 0);
-
-    // For each animated streamline, update progress and draw
-    animatedStreamlines.forEach(animatedStreamline => {
-      // Update progress
-      animatedStreamline.progress += animatedStreamline.speed;
-      if (animatedStreamline.progress > 1) {
-        animatedStreamline.progress = 0; // Loop back to start
+  
+    renderWindMap() {
+      // Clear the off-screen canvas
+      this.staticCtx.fillStyle = this.backgroundColor;
+      this.staticCtx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+  
+      this.initializeGrid();
+      this.allStreamlines = [];
+      this.generateStreamlines();
+  
+      console.log('Total streamlines generated:', this.allStreamlines.length);
+  
+      // Randomly select some streamlines to draw
+      const selectedStreamlines = this.selectRandomStreamlines(this.allStreamlines, this.numStreamlines);
+  
+      // Draw the selected streamlines with fade effect onto staticCtx
+      this.drawStreamlines(this.staticCtx, selectedStreamlines);
+  
+      if (this.animate) {
+        // Randomly select streamlines for animation
+        this.animatedStreamlines = this.selectRandomStreamlines(this.allStreamlines, this.numAnimated).map(streamline => ({
+          streamline,
+          progress: Math.random(), // Start at a random progress
+          speed: 0.005 + Math.random() * 0.005, // Random speed
+          color: this.selectedColors[Math.floor(Math.random() * this.selectedColors.length)],
+        }));
       }
-
-      // Draw the animated streamline
-      drawAnimatedStreamline(ctx, animatedStreamline);
-    });
-
-    // Request the next frame
-    requestAnimationFrame(animationLoop);
+    }
+  
+    initializeGrid() {
+      this.gridWidth = Math.ceil(this.canvas.width / this.streamlineParams.dSep);
+      this.gridHeight = Math.ceil(this.canvas.height / this.streamlineParams.dSep);
+      this.grid = [];
+      for (let i = 0; i < this.gridWidth; i++) {
+        this.grid[i] = [];
+        for (let j = 0; j < this.gridHeight; j++) {
+          this.grid[i][j] = 0; // Initialize as a counter
+        }
+      }
+    }
+  
+    isFarFromStreamlines(x, y) {
+      const i = Math.floor(x / this.streamlineParams.dSep);
+      const j = Math.floor(y / this.streamlineParams.dSep);
+      if (i < 0 || i >= this.gridWidth || j < 0 || j >= this.gridHeight) {
+        return false;
+      }
+      // Allow up to 3 streamlines per grid cell
+      return this.grid[i][j] < 3;
+    }
+  
+    markPointOnGrid(x, y) {
+      const i = Math.floor(x / this.streamlineParams.dSep);
+      const j = Math.floor(y / this.streamlineParams.dSep);
+      if (i >= 0 && i < this.gridWidth && j >= 0 && j < this.gridHeight) {
+        this.grid[i][j] += 1; // Increment the counter
+      }
+    }
+  
+    getVector(x, y) {
+      const scale = this.scale;
+      const angle = this.simplex.noise2D(x * scale, y * scale) * Math.PI * 2;
+      return {
+        x: Math.cos(angle),
+        y: Math.sin(angle),
+      };
+    }
+  
+    computeStreamline(x0, y0) {
+      const streamline = [];
+      let x = x0;
+      let y = y0;
+  
+      streamline.push({ x, y });
+      this.markPointOnGrid(x, y);
+  
+      for (let i = 1; i < this.streamlineParams.maxLength; i++) {
+        const vector = this.getVector(x, y);
+        const vx = vector.x;
+        const vy = vector.y;
+  
+        x += vx * this.streamlineParams.stepSize;
+        y += vy * this.streamlineParams.stepSize;
+  
+        if (x < 0 || x > this.canvas.width || y < 0 || y > this.canvas.height) {
+          break;
+        }
+  
+        streamline.push({ x, y });
+        this.markPointOnGrid(x, y);
+  
+        if (!this.isFarFromStreamlines(x, y)) {
+          break;
+        }
+      }
+  
+      return streamline;
+    }
+  
+    generateStreamlines() {
+      const seeds = [];
+      const spacing = this.streamlineParams.gridResolution;
+  
+      for (let x = 0; x < this.canvas.width; x += spacing) {
+        for (let y = 0; y < this.canvas.height; y += spacing) {
+          seeds.push({ x, y });
+        }
+      }
+  
+      for (const seed of seeds) {
+        if (this.isFarFromStreamlines(seed.x, seed.y)) {
+          const streamline = this.computeStreamline(seed.x, seed.y);
+          if (streamline.length >= this.MIN_STREAMLINE_LENGTH) {
+            this.allStreamlines.push(streamline);
+          }
+        }
+      }
+    }
+  
+    drawStreamlines(ctx, selectedStreamlines) {
+      selectedStreamlines.forEach(streamline => {
+        if (streamline.length >= this.MIN_STREAMLINE_LENGTH) {
+          // Choose a color for each streamline
+          let color = this.selectedColors[Math.floor(Math.random() * this.selectedColors.length)];
+          ctx.lineWidth = 0.5 + Math.random() * 2; // Vary line width between 0.5 and 2.5
+  
+          ctx.strokeStyle = color; // Set the color
+  
+          for (let i = 1; i < streamline.length; i++) {
+            let start = streamline[i - 1];
+            let end = streamline[i];
+  
+            // Compute normalized position along the streamline
+            let t = i / (streamline.length - 1);
+  
+            // Compute opacity for fade effect
+            let opacity;
+            let fadeLength = 1; // Fraction of the streamline to fade over (adjust as needed)
+            if (t < fadeLength) {
+              opacity = t / fadeLength;
+            } else if (t > 1 - fadeLength) {
+              opacity = (1 - t) / fadeLength;
+            } else {
+              opacity = 1;
+            }
+  
+            // Combine the per-segment opacity with the overall streamline opacity
+            let combinedAlpha = opacity * this.streamlineOpacity;
+  
+            ctx.globalAlpha = combinedAlpha;
+  
+            ctx.beginPath();
+            ctx.moveTo(start.x, start.y);
+            ctx.lineTo(end.x, end.y);
+            ctx.stroke();
+          }
+        }
+      });
+  
+      // Reset globalAlpha to 1 after drawing
+      ctx.globalAlpha = 1;
+    }
+  
+    selectRandomStreamlines(streamlines, numToSelect) {
+      const shuffled = streamlines.slice().sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, numToSelect);
+    }
+  
+    drawAnimatedStreamline(ctx, animatedStreamline) {
+      const streamline = animatedStreamline.streamline;
+      const progress = animatedStreamline.progress;
+      const windowSize = 0.2; // Adjust the window size for the gradient effect
+      const color = animatedStreamline.color;
+  
+      if (streamline.length >= this.MIN_STREAMLINE_LENGTH) {
+        ctx.lineWidth = 1.5; // Set line width for animated streamlines
+        ctx.strokeStyle = color; // Set the color
+  
+        for (let i = 1; i < streamline.length; i++) {
+          let start = streamline[i - 1];
+          let end = streamline[i];
+  
+          // Compute normalized position along the streamline
+          let t = i / (streamline.length - 1);
+  
+          // Compute distance from the current progress
+          let distance = Math.abs(t - progress);
+          // Handle wrapping around
+          if (distance > 0.5) {
+            distance = 1 - distance;
+          }
+  
+          // Compute opacity based on distance
+          let opacity;
+          if (distance < windowSize / 2) {
+            opacity = 1 - (distance / (windowSize / 2));
+          } else {
+            opacity = 0;
+          }
+  
+          if (opacity > 0) {
+            // Combine the per-segment opacity with the overall streamline opacity
+            let combinedAlpha = opacity * this.streamlineOpacity;
+  
+            ctx.globalAlpha = combinedAlpha;
+  
+            ctx.beginPath();
+            ctx.moveTo(start.x, start.y);
+            ctx.lineTo(end.x, end.y);
+            ctx.stroke();
+          }
+        }
+      }
+  
+      // Reset globalAlpha to 1 after drawing
+      ctx.globalAlpha = 1;
+    }
+  
+    animateLoop() {
+      const animationLoop = () => {
+        // Clear the main canvas
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  
+        // Draw the static canvas onto the main canvas
+        this.ctx.drawImage(this.staticCanvas, 0, 0);
+  
+        // For each animated streamline, update progress and draw
+        this.animatedStreamlines.forEach(animatedStreamline => {
+          // Update progress
+          animatedStreamline.progress += animatedStreamline.speed;
+          if (animatedStreamline.progress > 1) {
+            animatedStreamline.progress = 0; // Loop back to start
+          }
+  
+          // Draw the animated streamline
+          this.drawAnimatedStreamline(this.ctx, animatedStreamline);
+        });
+  
+        // Request the next frame
+        requestAnimationFrame(animationLoop);
+      };
+  
+      // Start the loop
+      animationLoop();
+    }
   }
-
-  // Start the loop
-  animationLoop();
-}
-
-// Resize the canvas to fit the window
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  staticCanvas.width = canvas.width;
-  staticCanvas.height = canvas.height;
-  renderWindMap(); // Re-render the wind map on resize
-
-  if (!animationStarted) {
-    animate(); // Start the animation
-    animationStarted = true;
-  }
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
+  
+  // Initialize the visualization for each canvas element with class 'windmap-canvas'
+  document.querySelectorAll('.windmap-canvas').forEach(canvas => {
+    new WindMapVisualization(canvas);
+  });
+  

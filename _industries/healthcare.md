@@ -32,4 +32,5 @@ why_choose:
 cta: "Ready to transform your healthcare organization? Contact SLKone today to learn how our tailored solutions can help you navigate industry challenges, drive operational excellence, and achieve sustainable growth in the evolving healthcare landscape."
 icon: "fa-solid fa-heart"
 color: "coral"
+image: "/assets/images/backgrounds/healthcare.webp"
 ---
