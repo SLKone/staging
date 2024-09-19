@@ -4,10 +4,12 @@ body-class: body-home
 ---
 <canvas
   class="windmap-canvas absolute top-0 left-0 w-full h-full z-[-1]"
-  data-num-streamlines="150"
-  data-num-animated="150"
+  data-num-streamlines="100"
+  data-num-streamlines-dark="150"
+  data-num-animated="50"
+  data-num-animated-dark="75"
   data-num-colors="3"
-  data-opacity="0.5"
+  data-opacity="0.3"
   data-opacity-dark="0.75"
   data-scale="0.00015"
   ></canvas>
@@ -35,13 +37,13 @@ body-class: body-home
   </div>
 </section>
 
-<section class="snap-start group approach"> 
+<section class="snap-start h-full relative approach"> 
   <canvas
   class="windmap-canvas absolute w-screen h-full left-0 z-[-1]"
-  data-num-streamlines="10"
+  data-num-streamlines="15"
   data-num-animated="0"
   data-num-colors="1"
-  data-opacity="0.2"
+  data-opacity="0.3"
   data-opacity-dark="0.75"
   data-scale="0.00015"
   ></canvas>
@@ -55,14 +57,29 @@ body-class: body-home
     </div>
   </div>
 </section>
-<section class="data-driven-approach min-h-[80dvh] py-10">
+
+<section class="data-driven-approach py-10">
   <div class="container mx-auto px-4 max-w-7xl">
     <h2 class="text-4xl mb-12 font-display">{{ site.data.homepage.data_driven_approach.title }}</h2>
-    <ol>
-      {% for step in site.data.homepage.data_driven_approach.steps %}
-        <li>{{ step }}</li>
-      {% endfor %}
-    </ol>
+      <div class="accordion" id="dataDrivenApproachAccordion">
+        {% for step in site.data.homepage.data_driven_approach.steps %}
+          <div class="accordion-item">
+            <input type="checkbox" id="collapse{{ forloop.index }}" class="hidden peer" />
+            <h2 class="accordion-header">
+              <label for="collapse{{ forloop.index }}" class="justify-between accordion-button cursor-pointer flex py-4 text-2xl">
+                <span class="align-left">{{ step.title }}</span>
+                <span class="ml-4 align-right">{{ step.description }} <i class="fa-light fa-circle-plus"></i></span>
+              </label>
+            </h2>
+            <div class="accordion-collapse hidden peer-checked:block" aria-labelledby="heading{{ forloop.index }}">
+              <div class="accordion-body block">
+                <p>{{ step.details }}</p>
+                <i class="fa-light text-8xl {{ step.icon }}"></i>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
   </div>
 </section>
 

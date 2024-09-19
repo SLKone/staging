@@ -72,6 +72,15 @@ class WindMapVisualization {
   
       // Start the visualization
       this.init();
+  
+      // Listen for color scheme changes
+      if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          this.isDarkMode = e.matches;
+          this.readParameters();
+          this.renderWindMap();
+        });
+      }
     }
   
     readParameters() {
@@ -83,7 +92,7 @@ class WindMapVisualization {
   
       // Helper function to read parameters with consideration of mode-specific attributes
       const getParam = (paramName, defaultValue) => {
-        const modeParam = dataset[paramName + modeSuffix];
+        const modeParam = dataset[`${paramName}${modeSuffix}`];
         if (modeParam !== undefined) {
           return modeParam;
         }
@@ -93,13 +102,13 @@ class WindMapVisualization {
   
       // Parse parameters, with default values if not specified
       this.animate = getParam('animate', 'true') !== 'false';
-      this.numStreamlines = parseInt(getParam('numStreamlines', 150));
-      this.numAnimated = parseInt(getParam('numAnimated', 5));
-      this.numColors = parseInt(getParam('numColors', 3));
+      this.numStreamlines = parseInt(getParam('numStreamlines', '150'), 10);
+      this.numAnimated = parseInt(getParam('numAnimated', '5'), 10);
+      this.numColors = parseInt(getParam('numColors', '3'), 10);
   
       const colorsParam = getParam('colors', null);
       this.colorValues = colorsParam
-        ? colorsParam.split(',').map(color => color.trim())
+        ? colorsParam.split(';').map(color => color.trim())
         : [
             'rgb(0, 101, 72)',    // emerald
             'rgb(55, 123, 191)',  // navy
@@ -112,7 +121,7 @@ class WindMapVisualization {
             'rgb(130, 7, 118)',   // plum
           ];
   
-      this.scale = parseFloat(getParam('scale', 0.00015));
+      this.scale = parseFloat(getParam('scale', '0.00015'));
   
       // Set background color
       this.backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparent background
@@ -130,6 +139,19 @@ class WindMapVisualization {
         this.streamlineOpacity = this.isDarkMode ? 0.8 : 0.4;
       }
   
+      // Set animation speed based on data attribute or default
+      const dataSpeed = getParam('speed', null);
+      if (dataSpeed !== null) {
+        this.speed = parseFloat(dataSpeed);
+        if (isNaN(this.speed) || this.speed <= 0) {
+          console.warn(`Invalid speed value: ${dataSpeed}. Using default speed.`);
+          this.speed = 0.005; // Default speed
+        }
+      } else {
+        // Default speed if not specified
+        this.speed = 0.005;
+      }
+  
       // Streamline parameters
       this.streamlineParams = {
         stepSize: 1,          // The step size for each integration step
@@ -144,7 +166,7 @@ class WindMapVisualization {
       // Randomly select colors
       this.selectedColors = this.getRandomColors(this.colorValues, this.numColors);
   
-      // Log selected parameters for debugging
+      // Debugging Logs
       console.log('Current Mode:', this.isDarkMode ? 'Dark' : 'Light');
       console.log('Animate:', this.animate);
       console.log('Number of Streamlines:', this.numStreamlines);
@@ -152,10 +174,26 @@ class WindMapVisualization {
       console.log('Selected Colors:', this.selectedColors);
       console.log('Scale:', this.scale);
       console.log('Opacity:', this.streamlineOpacity);
+      console.log('Speed:', this.speed);
     }
   
     getRandomColors(palette, numColors) {
-      const shuffled = palette.slice().sort(() => 0.5 - Math.random());
+      // Validate colors
+      const validColors = palette.filter(color => {
+        const s = new Option().style;
+        s.color = color;
+        if (s.color === '') {
+          console.warn(`Invalid color skipped: ${color}`);
+          return false;
+        }
+        return true;
+      });
+  
+      if (validColors.length < numColors) {
+        console.warn(`Requested ${numColors} colors, but only ${validColors.length} are valid. Using available colors.`);
+      }
+  
+      const shuffled = validColors.sort(() => 0.5 - Math.random());
       return shuffled.slice(0, numColors);
     }
   
@@ -168,6 +206,7 @@ class WindMapVisualization {
     }
   
     resizeCanvas() {
+      // Use clientWidth and clientHeight to get the displayed size
       this.canvas.width = this.canvas.clientWidth;
       this.canvas.height = this.canvas.clientHeight;
       this.staticCanvas.width = this.canvas.width;
@@ -193,8 +232,6 @@ class WindMapVisualization {
   
       // Randomly select some streamlines to draw
       const selectedStreamlines = this.selectRandomStreamlines(this.allStreamlines, this.numStreamlines);
-  
-      // Draw the selected streamlines with fade effect onto staticCtx
       this.drawStreamlines(this.staticCtx, selectedStreamlines);
   
       if (this.animate) {
@@ -202,9 +239,12 @@ class WindMapVisualization {
         this.animatedStreamlines = this.selectRandomStreamlines(this.allStreamlines, this.numAnimated).map(streamline => ({
           streamline,
           progress: Math.random(), // Start at a random progress
-          speed: 0.005 + Math.random() * 0.005, // Random speed
+          speed: this.speed,        // Use the speed parameter
           color: this.selectedColors[Math.floor(Math.random() * this.selectedColors.length)],
         }));
+      } else {
+        // If animation is disabled, clear any existing animated streamlines
+        this.animatedStreamlines = [];
       }
     }
   
@@ -316,7 +356,7 @@ class WindMapVisualization {
   
             // Compute opacity for fade effect
             let opacity;
-            let fadeLength = 1; // Fraction of the streamline to fade over (adjust as needed)
+            let fadeLength = 0.1; // Fraction of the streamline to fade over (adjust as needed)
             if (t < fadeLength) {
               opacity = t / fadeLength;
             } else if (t > 1 - fadeLength) {
@@ -328,6 +368,7 @@ class WindMapVisualization {
             // Combine the per-segment opacity with the overall streamline opacity
             let combinedAlpha = opacity * this.streamlineOpacity;
   
+            // Apply the combined alpha using globalAlpha
             ctx.globalAlpha = combinedAlpha;
   
             ctx.beginPath();
@@ -335,11 +376,11 @@ class WindMapVisualization {
             ctx.lineTo(end.x, end.y);
             ctx.stroke();
           }
+  
+          // Reset globalAlpha to 1 after drawing
+          ctx.globalAlpha = 1;
         }
       });
-  
-      // Reset globalAlpha to 1 after drawing
-      ctx.globalAlpha = 1;
     }
   
     selectRandomStreamlines(streamlines, numToSelect) {
@@ -352,6 +393,7 @@ class WindMapVisualization {
       const progress = animatedStreamline.progress;
       const windowSize = 0.2; // Adjust the window size for the gradient effect
       const color = animatedStreamline.color;
+      const speed = animatedStreamline.speed;
   
       if (streamline.length >= this.MIN_STREAMLINE_LENGTH) {
         ctx.lineWidth = 1.5; // Set line width for animated streamlines
@@ -383,6 +425,7 @@ class WindMapVisualization {
             // Combine the per-segment opacity with the overall streamline opacity
             let combinedAlpha = opacity * this.streamlineOpacity;
   
+            // Apply the combined alpha using globalAlpha
             ctx.globalAlpha = combinedAlpha;
   
             ctx.beginPath();
@@ -391,10 +434,10 @@ class WindMapVisualization {
             ctx.stroke();
           }
         }
-      }
   
-      // Reset globalAlpha to 1 after drawing
-      ctx.globalAlpha = 1;
+        // Reset globalAlpha to 1 after drawing
+        ctx.globalAlpha = 1;
+      }
     }
   
     animateLoop() {

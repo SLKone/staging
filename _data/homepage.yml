@@ -29,17 +29,53 @@ unique_points:
     icon: "fa-timeline-arrow"
 
 data_driven_approach:
-  title: "Our Data Driven Approach"
+  title: "Data Driven Approach"
   steps:
-    - title: "Strategic Ideation: Uncover unique opportunities"
+    - title: "Strategic Ideation"
+      description: "Uncover unique opportunities"
+      details: "We kickstart by unearthing novel prospects through our extensive sector expertise and cross-industry acumen. Our skilled professionals devise bespoke strategies aligned with your corporate ambitions, underpinned by sophisticated data examination. We push the boundaries of conventional wisdom to pinpoint groundbreaking solutions that foster a competitive edge."
+      sub_services:
+        - Performance Improvement
+        - Sales, Inventory, and Operations Planning
+        - Supply Chain Network Optimization
+        - Cost Management
+        - Financial Analytics
+        - Working Capital Management
       icon: "fa-lightbulb"
-    - title: "Data-Driven Decisions: Minimize risk, maximize impact"
+    - title: "Data-Driven Decisions"
+      description: "Minimize risk, maximize impact"
+      details: "Our methodology harnesses cutting-edge analytics to guide strategic decision-making. We dissect data to reveal patterns, uncover possibilities, and preempt risks, empowering you to make judicious choices. By merging qualitative discernment with quantitative scrutiny, we offer a panoramic view of your business terrain."
       icon: "fa-chart-line"
-    - title: "Hands-On Implementation: Turn strategies into reality"
+      sub_services:
+        - Pre-Transaction Readiness
+        - Post-Merger Integration
+        - Change Management
+        - Automation
+        - IT Roadmap
+        - Technology Landscape
+    - title: "Hands-On Implementation"
+      description: "Turn strategies into reality"
+      details: "We transcend mere consultation; we immerse ourselves in your operations, collaborating closely with your team to breathe life into strategies. Our execution-centric approach ensures plans are implemented effectively, adapting to real-world hurdles as they surface. We provide hands-on backing, from workflow redesign to transition management, to drive concrete results."
       icon: "fa-hammer"
-    - title: "Continuous Optimization: Ensure lasting success"
+      sub_services:
+        - Operating Model Design
+        - Process Design
+        - Organizational Structure Redesign
+        - Performance Management
+        - Strategic Planning and Execution
+        - Risk Mitigation
+    - title: "Continuous Optimization"
+      description: "Ensure lasting success"
+      details: "Our dedication extends beyond initial deployment. We concentrate on securing lasting triumph through ongoing surveillance and refinement. By instituting robust feedback mechanisms and leveraging real-time intelligence, we assist you in adapting to shifting market dynamics and sustaining your competitive advantage over time."
       icon: "fa-arrows-spin"
-  
+      sub_services:
+        - Predictive Model Development
+        - Data Enrichment
+        - Data Transformation and Management
+        - Process Setup and Optimization
+        - Organizational Design and Talent Building
+        - Technology Roadmap Development
+
 testimonials:
   - quote: "I found you to listen more intently and more genuinely than many other firms. Also, you pushed back and helped redirect when needed in a very professional manner."
   - quote: "Access and agility - Our work together epitomized a high performance team passing the ball to each other without having to look. Access to anyone at anytime on your team helped; and agility in terms of keeping the group small, we were able to adopt and move fast."
