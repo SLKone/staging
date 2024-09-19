@@ -32,4 +32,6 @@ why_choose:
   - "Rapid Deployment: Quick mobilization to support time-sensitive activities."
 cta: "Ready to maximize value across your private equity portfolio? Contact SLKone today to discover how our tailored solutions can accelerate performance and enhance returns."
 icon: "fa-solid fa-briefcase"
+color: "tangerine"
+image: "/assets/images/backgrounds/private-equity.webp"
 ---

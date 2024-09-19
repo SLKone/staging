@@ -5,6 +5,7 @@ title: "Data & Advanced Analytics"
 subtitle: "We leverage advanced open-source libraries and leading business tools to bridge operations and finance, looking into the future while deploying sound processes."
 intro: "At SLKone, we believe that data is a strategic asset that, when properly leveraged, can drive significant business value. Our Data & Advanced Analytics services help organizations harness the power of their data to gain insights, make better decisions, and drive business performance."
 approach: "We take a comprehensive approach to data and analytics, focusing on Predictive Model Development, Data Enrichment, and Data Transformation & Management. Our methodology ensures that your data is not only accurately collected and managed but also effectively analyzed to derive actionable insights."
+blurb-intro: "Harness the power of data to drive insights and elevate your business performance."
 impact_title: "Our Impact"
 impact_intro: "Leveraging advanced analytics can lead to significant business benefits, including:"
 impact:
@@ -26,4 +27,5 @@ why_choose:
 cta: "Ready to unlock the full potential of your data? Contact SLKone today to learn how our Data & Advanced Analytics services can drive insights, innovation, and informed decision-making for your business."
 icon: "fa-magnifying-glass-chart"
 color: "tangerine"
+image: "/assets/images/backgrounds/advanced-analytics.webp"
 ---

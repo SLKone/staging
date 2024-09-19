@@ -32,4 +32,6 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to accelerate your technology company's growth? Contact SLKone today to discover how our specialized services can enhance your operations and drive sustainable innovation."
 icon: "fa-solid fa-microchip"
+color: "forest"
+image: "/assets/images/backgrounds/technology.webp"
 ---

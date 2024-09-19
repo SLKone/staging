@@ -30,4 +30,5 @@ why_choose:
   - "Collaborative Approach: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to elevate your manufacturing operations? Contact SLKone today to learn how our specialized services can drive your operational excellence and sustainable growth."
 icon: "fa-solid fa-industry"
+color: "sand"
 ---

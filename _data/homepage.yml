@@ -5,7 +5,7 @@ hero:
   cta_link: "/services"
 
 approach:
-  title: "Our Approach"
+  title: "What we do"
   description: "Bridging Complexity to Clarity. At SLKone, we don't just provide solutions—we build the bridge between your challenges and measurable outcomes. Using data-driven insights and deep industry expertise, we create tailored strategies that span across industries and deliver lasting results."
 
 unique_points:
@@ -14,7 +14,7 @@ unique_points:
     icon: "fa-down-left-and-up-right-to-center"
   - title: "Beyond Advice to Action"
     description: "We implement alongside your team, ensuring real-world results"
-    icon: "fa-turn-up-right"
+    icon: "fa-person-running"
   - title: "Cross-Industry Insights"
     description: "Fresh perspectives that drive innovative solutions"
     icon: "fa-arrows-spin"

@@ -25,7 +25,7 @@
         </a>
         <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
         <div id="desktop-navigation-item-dropdown" class="transition-all duration-300 group-hover:block absolute left-0 top-full z-40 w-screen bg-white shadow-lg dark:bg-currant hidden">
-          <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="mx-auto max-w-7xl grid {{ grid_class }} auto-rows-auto gap-2 py-10">
+          <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="mx-auto max-w-7xl grid {{ grid_class }} auto-rows-auto gap-2 pb-10">
               {% for sub in sub_items %}
                 {% assign nested_items = "" %}
                 {% if item.url == '/services' %}
@@ -33,28 +33,26 @@
                 {% elsif item.url == '/industries' %}
                   {% assign nested_items = sub_sub_items | where: "parent", sub.title %}
                 {% endif %}
-                <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="transition-all duration-300 flex px-4 py-8 rounded hover:text-emerald hover:bg-emerald/10 text-xl dark:hover:text-forest" href="{{ sub.url | relative_url }}">
-                  {% if sub.icon %}
-                  <div class="flex-none">
-                    <i class="text-emerald dark:text-forest fa-sharp-duotone fa-solid {{ sub.icon }}"></i>
-                  </div>
-                  {% endif %}
-                  <div class="pl-4">
+                <div class="px-4 py-8">
+                  <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="hover:opacity-80 transition-all duration-300 text-xl text-{{ sub.color }}-700 dark:text-{{ sub.color }}-200" href="{{ sub.url | relative_url }}">
+                    {% if sub.icon %}
+                    <i class="text-{{ sub.color }} dark:text-{{ sub.color }}-300 fa-sharp-duotone fa-solid mb-2 {{ sub.icon }}"></i>
+                    {% endif %}
                     <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-title" class="text-xl mb-2">{{ sub.title }}</p>
-                    {% if sub.info %}
-                      <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-info" class="text-sm opacity-80">{{ sub.info }}</p>
-                    {% endif %}
-                    {% if nested_items != '' %}
-                      <ul class="list-none text-sm opacity-80">
-                        {% for nested in nested_items %}
-                          <li id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-nested-item-{{ forloop.index }}">
-                            {{ nested.title }}
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </div>
-                </a>
+                  </a>
+                  {% if sub.info %}
+                  <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-info" class="text-sm opacity-80">{{ sub.info }}</p>
+                  {% endif %}
+                  {% if nested_items != '' %}
+                  <ul>
+                    {% for nested in nested_items %}
+                      <li id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-nested-item-{{ forloop.index }}" class="py-1"> <!-- Increased padding for more spacing -->
+                        <a class="hover:text-{{ sub.color }}-700 dark:hover:text-{{ sub.color }}-200" href="{{ sub.url | relative_url }}#{{ nested.title | slugify }}">{{ nested.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </div>
               {% endfor %}
             </div>
           </div>
