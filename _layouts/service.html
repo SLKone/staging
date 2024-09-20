@@ -4,22 +4,27 @@ layout: default
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
 
 {% if page.approach %}
-<section class="approach">
-<h3>Our Approach</h3>
-<p>{{ page.approach }}</p>
+<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+  <div class="container mx-auto px-4 max-w-7xl md:text-3xl py-40">
+    <p class="max-w-prose">
+    <p>{{ page.approach }}</p>
+    </p>
+  </div>
 </section>
 {% endif %}
-
 {% include content-block-bullets.html bullet_title=page.impact_title bullet_intro=page.impact_intro bullets=page.impact bullet_conclusion=page.impact_conclusion %}
-
+<section>
 {% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
 {% if related_sub_services.size > 0 %}
-  <h3>{{page.title}} Services</h3>
+  <h2 class="text-4xl mb-12 font-display">{{page.title}} Services</h2>
     {% for sub-service in related_sub_services %}
+        {% if sub-service.title %}
+        <h3 id="{{ sub-service.title | slugify }}" class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
+        {% endif %}
         {% include sub-service-content.html sub_service=sub-service %}
     {% endfor %}
 {% endif %}
-
+</section>
 {% if page.why_choose %}
   {% capture why_choose_title %}Why Choose SLKone for {{ page.title }}{% endcapture %}
   {% include why-choose-slkone.html title=why_choose_title points=page.why_choose %}

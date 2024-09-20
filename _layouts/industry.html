@@ -6,15 +6,19 @@ layout: default
 {% include content-block-bullets.html bullet_title=page.approach-title bullet_intro=page.approach-intro bullets=page.approach bullet_conclusion=page.approach-conclusion %}
 
 {% include content-block-bullets.html bullet_title=page.landscape-title bullet_intro=page.landscape-intro bullets=page.landscape bullet_conclusion=page.landscape-conclusion %}
-
-{% assign related_sub_industries = site.sub-industries | where: "parent", page.title | sort:"order" %}
-{% if related_sub_industries.size > 0 %}
-  <h2>{{page.title}} Sub-Industries</h2>
-    {% for sub-industry in related_sub_industries %}
-        {% include sub-industry-content.html sub_industry=sub-industry %}
-    {% endfor %}
-{% endif %}
-
+<section>
+    <div class="container mx-auto px-4 max-w-7xl">
+        {% assign related_sub_industries = site.sub-industries | where: "parent", page.title | sort:"order" %}
+        {% if related_sub_industries.size > 0 %}
+            {% for sub-industry in related_sub_industries %}
+                {% if sub-industry.title %}
+                <h3 id="{{ sub-industry.title | slugify }}" class="pt-40 text-4xl mb-12 font-display">{{ sub-industry.title }}</h2>   
+                {% endif %}
+                {% include sub-industry-content.html sub_industry=sub-industry %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</section>
 {% if page.why_choose %}
   {% capture why_choose_title %}Why Choose SLKone for {{ page.title }}{% endcapture %}
   {% include why-choose-slkone.html title=why_choose_title points=page.why_choose %}

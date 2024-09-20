@@ -1,7 +1,8 @@
 {% if include.bullets %}
-  <section class="impact">
+  <section class="impact py-20 lg:py-40 min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+    <div class="container mx-auto px-4 max-w-7xl ">
     {% if include.bullet_title %}
-      <h3>{{ include.bullet_title }}</h3>
+      <h2 class="text-4xl mb-12 font-display">{{ include.bullet_title }}</h2>
     {% endif %}
     {% if include.bullet_intro %}
       <p>{{ include.bullet_intro }}</p>
@@ -16,5 +17,7 @@
     {% if include.bullet_conclusion %}
       <p>{{ include.bullet_conclusion }}</p>
     {% endif %}
+  </div>
   </section>
+  
 {% endif %}
