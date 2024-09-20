@@ -1,6 +1,21 @@
-<header class="page-header">
-  <h1>{{ include.title }}</h1>
-  {% if include.subtitle %}
-    <h2>{{ include.subtitle }}</h2>
-  {% endif %}
+<div class="absolute opacity-20 top-[-88px] left-0 w-full h-full z-[-1] bg-cover bg-center bg-no-repeat" {% if include.background_image %}style="background-image: url({{ include.background_image }})"{% endif %}>
+</div>
+<header class="page-header relative bg-gradient-to-b min-h-[60dvh] to-{% if include.color %}{{ include.color }}-100{% else %}white{% endif %} from-transparent dark:to-{% if include.color %}{{ include.color }}-700/50{% else %}currant{% endif %} flex flex-col justify-center items-center bg-cover bg-center">
+  <div class="container mx-auto px-4 max-w-7xl w-full">
+    <h1 class="text-4xl lg:text-8xl font-display">{{ include.title }}</h1>
+    {% if include.subtitle %}
+    <p class="text-xl my-12 lg:text-2xl max-w-prose">{{ include.subtitle }}</p>
+    {% endif %}
+  </div>
 </header>
+{% if include.streamlines %}
+<canvas
+  class="windmap-canvas absolute top-0 left-0 w-full min-h-[60dvh] z-[-1]"
+  data-num-streamlines="50"
+  data-num-animated="0"
+  data-num-colors="3"
+  data-opacity="0.2"
+  data-opacity-dark="0.5"
+  data-scale="0.00015"
+  ></canvas>
+{% endif %}

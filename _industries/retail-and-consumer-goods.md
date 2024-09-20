@@ -4,6 +4,7 @@ order: 4
 title: Retail and Consumer Goods
 subtitle: "In the dynamic retail and consumer goods sector, we help companies enhance operational agility, optimize supply chains, and leverage data-driven insights for superior customer experiences."
 intro: "SLKone empowers retail and consumer goods companies to thrive in an era of rapid change and evolving consumer expectations. We partner with organizations to enhance operational agility, optimize supply chains, and leverage data-driven insights for superior customer experiences."
+blurb-intro: "Enhance your retail and consumer goods strategy with SLKone's expert insights and innovative solutions for a rapidly changing market."
 landscape-title: "The Retail & Consumer Goods Landscape"
 landscape-intro: "The retail and consumer goods sector is undergoing significant transformation, driven by:"
 landscape:

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include page-header.html title=page.title subtitle=page.intro %}
+{% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
 
 {% include content-block-bullets.html bullet_title=page.approach-title bullet_intro=page.approach-intro bullets=page.approach bullet_conclusion=page.approach-conclusion %}
 
@@ -21,5 +21,8 @@ layout: default
 {% endif %}
 
 {% if page.cta %}
-<p>{{ page.cta }}</p>
+{% include contact-card.html 
+  background_image=site.data.homepage.contact.background-image 
+  description=page.cta 
+%}
 {% endif %}

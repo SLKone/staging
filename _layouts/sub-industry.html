@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include sub-service-content.html sub_service=page %}
+{% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
 
 {% if include.sub_industry.why_choose %}
 <h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
@@ -13,9 +13,8 @@ layout: default
 {% endif %}
 
 {% if page.cta %}
-<div class="cta-section">
-  <h3>Take the Next Step</h3>
-  <p>{{ page.cta }}</p>
-  <a href="/contact" class="cta-button">Contact Us</a>
-</div>
+{% include contact-card.html 
+  background_image=site.data.homepage.contact.background-image 
+  description=page.cta 
+%}
 {% endif %}

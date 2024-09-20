@@ -30,56 +30,32 @@ unique_points:
 
 data_driven_approach:
   title: "Data Driven Approach"
+  description: "Our process is centered around harnessing the power of data to provide clear, actionable insights that enable sound decision-making to drive your business forward."
   steps:
-    - title: "Strategic Ideation"
-      description: "Uncover unique opportunities"
-      details: "We kickstart by unearthing novel prospects through our extensive sector expertise and cross-industry acumen. Our skilled professionals devise bespoke strategies aligned with your corporate ambitions, underpinned by sophisticated data examination. We push the boundaries of conventional wisdom to pinpoint groundbreaking solutions that foster a competitive edge."
-      sub_services:
-        - Performance Improvement
-        - Sales, Inventory, and Operations Planning
-        - Supply Chain Network Optimization
-        - Cost Management
-        - Financial Analytics
-        - Working Capital Management
+    - title: "1. Strategic Analysis"
+      description: "Identify key opportunities"
+      details: "We analyze your business data and market trends to pinpoint areas for improvement and growth. Our team combines industry expertise with advanced analytics to develop targeted strategies that align with your specific goals."
       icon: "fa-lightbulb"
-    - title: "Data-Driven Decisions"
-      description: "Minimize risk, maximize impact"
-      details: "Our methodology harnesses cutting-edge analytics to guide strategic decision-making. We dissect data to reveal patterns, uncover possibilities, and preempt risks, empowering you to make judicious choices. By merging qualitative discernment with quantitative scrutiny, we offer a panoramic view of your business terrain."
+    - title: "2. Data-Backed Planning"
+      description: "Develop actionable plans"
+      details: "Using quantitative analysis and predictive modeling, we create detailed plans to address your business challenges. Our approach minimizes risks and maximizes potential returns by basing decisions on solid data rather than assumptions."
       icon: "fa-chart-line"
-      sub_services:
-        - Pre-Transaction Readiness
-        - Post-Merger Integration
-        - Change Management
-        - Automation
-        - IT Roadmap
-        - Technology Landscape
-    - title: "Hands-On Implementation"
-      description: "Turn strategies into reality"
-      details: "We transcend mere consultation; we immerse ourselves in your operations, collaborating closely with your team to breathe life into strategies. Our execution-centric approach ensures plans are implemented effectively, adapting to real-world hurdles as they surface. We provide hands-on backing, from workflow redesign to transition management, to drive concrete results."
+    - title: "3. Practical Execution"
+      description: "Implement solutions effectively"
+      details: "We work alongside your team to put plans into action. Our hands-on approach ensures smooth implementation, with continuous monitoring and adjustment to address any challenges that arise during execution."
       icon: "fa-hammer"
-      sub_services:
-        - Operating Model Design
-        - Process Design
-        - Organizational Structure Redesign
-        - Performance Management
-        - Strategic Planning and Execution
-        - Risk Mitigation
-    - title: "Continuous Optimization"
-      description: "Ensure lasting success"
-      details: "Our dedication extends beyond initial deployment. We concentrate on securing lasting triumph through ongoing surveillance and refinement. By instituting robust feedback mechanisms and leveraging real-time intelligence, we assist you in adapting to shifting market dynamics and sustaining your competitive advantage over time."
+    - title: "4. Ongoing Improvement"
+      description: "Sustain and enhance results"
+      details: "We establish systems for continuous monitoring and improvement. Using real-time data and analytics, we help you adapt to changing market conditions and maintain a competitive edge over time."
       icon: "fa-arrows-spin"
-      sub_services:
-        - Predictive Model Development
-        - Data Enrichment
-        - Data Transformation and Management
-        - Process Setup and Optimization
-        - Organizational Design and Talent Building
-        - Technology Roadmap Development
 
 testimonials:
   - quote: "I found you to listen more intently and more genuinely than many other firms. Also, you pushed back and helped redirect when needed in a very professional manner."
-  - quote: "Access and agility - Our work together epitomized a high performance team passing the ball to each other without having to look. Access to anyone at anytime on your team helped; and agility in terms of keeping the group small, we were able to adopt and move fast."
+    name: "COO at an Industrial Products Manufacturer"
+  - quote: "Access and agility - Our work together epitomized a high performance team passing the ball to each other without having to look. Access to anyone at anytime on your team helped; and agility in terms of keeping the group small, we were able to adapt and move fast."
+    name: "SVP of Global Excellence at Oil & Gas Company"
   - quote: "Deep expertise coupled with humility and ability to engage with and build consensus with all levels of management."
+    name: "Managing Director, Portfolio Support for Private Equity"
 
 join_team:
   title: "Join Our Team"
@@ -91,4 +67,5 @@ contact:
   title: "Contact Us"
   description: "Ready to transform your business? Let's connect and drive your business forward."
   cta_text: "Contact SLKone"
-  cta_link: "#contact-us"
+  cta_link: "/contact"
+  background-image: "/assets/images/backgrounds/contact.webp"

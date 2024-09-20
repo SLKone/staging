@@ -4,6 +4,7 @@ order: 2
 title: Healthcare
 subtitle: "In the ever-evolving healthcare landscape, we help providers, payers, and life sciences companies optimize operations, enhance patient outcomes, and navigate complex market dynamics."
 intro: "In the ever-evolving healthcare landscape, SLKone helps providers, payers, and life sciences companies optimize operations, enhance patient outcomes, and navigate complex market dynamics. Our deep industry knowledge, combined with our data-driven approach, enables us to deliver tangible results in this intricate sector."
+blurb-intro: "Navigate the healthcare landscape with SLKone's expert guidance and innovative solutions."
 landscape-title: "The Healthcare Landscape"
 landscape-intro: "The healthcare industry is undergoing rapid transformation, driven by:"
 landscape:

@@ -1,59 +1,70 @@
-<footer class="text-sm">
-  <div class="container mx-auto px-4">
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
-      <div class="col-span-4 md:col-span-2">
-        <h3 class="font-bold">Services</h3>
+<footer class="bg-gradient-to-b from-slate-50 to-transparent dark:from-currant-700">
+  <canvas
+  class="windmap-canvas absolute w-screen h-full md:h-[800px] left-0 -z-1"
+  data-num-streamlines="50"
+  data-num-animated="0"
+  data-num-colors="3"
+  data-opacity="0.2"
+  data-opacity-dark="0.5"
+  data-scale="0.00015"
+  ></canvas>
+  <div class="container relative mx-auto px-4 max-w-7xl z-20 pt-20 pb-10 border-b border-slate-200 dark:border-currant-300">
+    <div class="grid lg:grid-cols-4 md:grid-cols-4 gap-8">
+      <div class="md:col-span-2 lg:col-span-1 mb-4">
+        <h3 class="font-bold mb-4">Services</h3>
         <ul>
           {% for item in site.services | sort: 'order' %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
-      <div class="col-span-4 md:col-span-2">
-        <h3 class="font-bold">Industries</h3>
+      <div class="md:col-span-2 lg:col-span-1 mb-8">
+        <h3 class="font-bold mb-4">Industries</h3>
         <ul>
           {% for item in site.industries | sort: 'order' %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
-      <div class="col-span-4 md:col-span-2">
-        <h3 class="font-bold">Company</h3>
-        <ul>
-          {% for item in site.data.footer-navigation.Company %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      <div class="md:col-span-2 lg:col-span-1 mb-8">
+        <h3 class="font-bold mb-4">Company</h3>
+        <ul class="mb-8">
+          {% for item in site.data.footer.Company %}
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
-        <h3 class="font-bold">Read</h3>
-        <ul>
-          {% for item in site.data.footer-navigation.Read %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        <h3 class="font-bold mb-4">Read</h3>
+        <ul class="mb-8">
+          {% for item in site.data.footer.Read %}
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
-        <h3 class="font-bold">Brands</h3>
-        <ul>
-          {% for item in site.data.footer-navigation.Brands %}
-            <li><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></li>
+        <h3 class="font-bold mb-4">Brands</h3>
+        <ul class="mb-8">
+          {% for item in site.data.footer.Brands %}
+            <li class="mb-2"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
-      <div class="col-span-4 md:col-span-2">
-        <h3 class="font-bold">Contact</h3>
-        <ul>
-          {% for item in site.data.footer-navigation.Contact %}
+      <div class="md:col-span-2 lg:col-span-1 mb-8">
+        <h3 class="font-bold mb-4">Contact</h3>
+        <ul class="mb-8">
+          {% for item in site.data.footer.Contact %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
-        <h3 class="font-bold">Terms and Policies</h3>
-        <ul>
-          {% for item in site.data.footer-navigation.Terms-and-policies %}
+        <h3 class="font-bold mb-4">Terms and Policies</h3>
+        <ul class="mb-8">
+          {% for item in site.data.footer.Terms-and-policies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
     </div>
   </div>
-  <div class="container mx-auto px-4">
-    <p class="text-sm"></p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  <div class="container mx-auto px-4 py-5 lg:py-10 text-center">
+    <img src="{{ '/assets/images/mark_dark.svg' }}" alt="{{ site.title }}" class="h-16 w-auto mx-auto mb-10">
+    <p class="my-10 text-xl">{{ site.data.footer.Mission }}</p>
+    <p class="text-sm">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
   </div>
 </footer>

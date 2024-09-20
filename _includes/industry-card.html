@@ -1,0 +1,21 @@
+{% assign parent_color = include.card.color %}
+<div id="{{ include.card.slug }}" class="rounded-xl hover:shadow-lg transition-all duration-300 pt-40 block bg-cover bg-no-repeat bg-center text-currant cursor-pointer transform hover:scale-105" style="background-image: url({{site.baseurl}}{{ include.card.image }})" onclick="window.location='{{ include.card.url | relative_url }}'">
+    <div class="self-end p-6 bg-{{ parent_color }}-100 rounded-b-xl bg-opacity-90 h-full backdrop-blur-md">
+        <a href="{{ include.card.url | relative_url }}">
+        {% if include.card.title %}
+        <p class="text-xl font-display mb-2">{{ include.card.title }}</p>
+        {% endif %}
+        {% if include.card.intro %}
+        <p class="text-sm mb-2">{{ include.card.blurb-intro }}</p>
+        {% endif %}
+        </a>
+        {% assign related_sub_industries = site["sub-industries"] | where: "parent", include.card.title | sort:"order" %}
+        {% for item in related_sub_industries %}
+            {% assign item_slug = item.title | slugify %}
+            {% assign link_url = include.card.url | relative_url | append: '#' | append: item_slug %}
+            {% assign link_title = item.title %}
+            {% assign link_color = parent_color %}
+            {% include link-pill.html link=link_url link_title=link_title color=link_color %}
+        {% endfor %}
+    </div>
+</div>

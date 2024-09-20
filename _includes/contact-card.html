@@ -1,0 +1,15 @@
+<section class="contact mb-12 px-4">
+  <div class="container md:mx-auto max-w-6xl bg-cover bg-no-repeat bg-center rounded-xl text-currant" style="background-image: url('{{ include.background_image }}')">
+  <div class="backdrop-blur-lg px-4 md:px-10 py-10 md:py-20 bg-white/20 rounded-xl">
+      <div class="md:grid md:grid-cols-5">
+        <div class="md:col-span-3">
+          {% if include.title %}<h2 class="text-4xl md:text-6xl mb-12 font-display">{{ include.title }}</h2>{% endif %}
+          {% if include.description %}<p class="mt-4 text-xl max-w-prose">{{ include.description }}</p>{% endif %}
+        </div>
+        <div class="md:col-span-2 md:text-right flex items-center md:justify-end my-8">
+          <a class="bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500" href="{{ include.cta_link | default: '/contact' }}">{{ include.cta_text | default: "Contact SLKone" }} <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>

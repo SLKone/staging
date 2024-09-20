@@ -19,19 +19,19 @@ body-class: body-home
     <div class="max-w-prose text-left ">
       <p class="text-xl">{{ site.data.homepage.hero.description }}</p>
       <p class="text-xl mt-12 mb-12">
-        <a class="text-emerald dark:text-forest transition-all duration-300 [&>i]:ml-2 hover:[&>i]:ml-4" href="{{ site.data.homepage.hero.cta_link }}" class="btn">
+        <a class="bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500" href="{{ site.data.homepage.hero.cta_link }}">
           {{ site.data.homepage.hero.cta_text }} <i class="fas fa-arrow-right"></i>
         </a>
       </p>
     </div>
 </section>
 
-<section class="unique-points py-40 bg-slate-50 dark:bg-currant-500">
+<section class="unique-points py-20 lg:py-40 bg-slate-50 dark:bg-currant-500">
   <div class="container mx-auto px-4 max-w-7xl">
     <h2 class="text-4xl mb-12 font-display">What sets SLKone apart</h2>
     <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
     {% for point in site.data.homepage.unique_points %}
-      {% include icon-block.html title=point.title text=point.description icon=point.icon %}
+      {% include icon-block.html title=point.title text=point.description icon=point.icon links=point.links %}
     {% endfor %}
     </div>
   </div>
@@ -47,65 +47,30 @@ body-class: body-home
   data-opacity-dark="0.75"
   data-scale="0.00015"
   ></canvas>
-  <div class="container mx-auto px-4 py-40 max-w-7xl">
+  <div class="container mx-auto px-4 py-20 lg:py-40 max-w-7xl">
     <h2 class="text-4xl mb-12 font-display">{{ site.data.homepage.approach.title }}</h2>
     <p class="text-xl max-w-prose">{{ site.data.homepage.approach.description }}</p>
-    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {% for service in site.services | sort: 'order' %}
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% assign ordered-services = site.services | sort: 'order' %}
+      {% for service in ordered-services %}
           {% include service-card.html card=service %}
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="data-driven-approach py-10">
+<section class="data-driven-approach">
   <div class="container mx-auto px-4 max-w-7xl">
     <h2 class="text-4xl mb-12 font-display">{{ site.data.homepage.data_driven_approach.title }}</h2>
-      <div class="accordion" id="dataDrivenApproachAccordion">
-        {% for step in site.data.homepage.data_driven_approach.steps %}
-          <div class="accordion-item">
-            <input type="checkbox" id="collapse{{ forloop.index }}" class="hidden peer" />
-            <h2 class="accordion-header">
-              <label for="collapse{{ forloop.index }}" class="justify-between accordion-button cursor-pointer flex py-4 text-2xl">
-                <span class="align-left">{{ step.title }}</span>
-                <span class="ml-4 align-right">{{ step.description }} <i class="fa-light fa-circle-plus"></i></span>
-              </label>
-            </h2>
-            <div class="accordion-collapse hidden peer-checked:block" aria-labelledby="heading{{ forloop.index }}">
-              <div class="accordion-body block">
-                <p>{{ step.details }}</p>
-                <i class="fa-light text-8xl {{ step.icon }}"></i>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+    <p class="text-xl max-w-prose mb-12">{{ site.data.homepage.data_driven_approach.description }}</p>
   </div>
+  {% include accordion.html accordion_id="dataDrivenApproachAccordion" items=site.data.homepage.data_driven_approach.steps %}
 </section>
 
-<section class="testimonials min-h-[80dvh] py-10">
-  <div class="container mx-auto px-4 max-w-7xl">
-    <h2>What our Clients Say</h2>
-  {% for testimonial in site.data.homepage.testimonials %}
-      <blockquote>{{ testimonial.quote }}</blockquote>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="join-team min-h-[80dvh] py-10">
-  <div class="container mx-auto px-4 max-w-7xl">
-    <h2>{{ site.data.homepage.join_team.title }}</h2>
-    <p>{{ site.data.homepage.join_team.description }}</p>
-    <a href="{{ site.data.homepage.join_team.cta_link }}" class="btn">{{ site.data.homepage.join_team.cta_text }}</a>
-  </div>
-</section>
-
-<section class="contact min-h-[80dvh] py-10">
-  <div class="container mx-auto px-4 max-w-7xl">
-    <h2>{{ site.data.homepage.contact.title }}</h2>
-    <p>{{ site.data.homepage.contact.description }}</p>
-    <a href="{{ site.data.homepage.contact.cta_link }}" class="btn">{{ site.data.homepage.contact.cta_text }}</a>
-  </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>
+{% include contact-card.html 
+  background_image=site.data.homepage.contact.background-image 
+  title=site.data.homepage.contact.title 
+  description=site.data.homepage.contact.description 
+  cta_link=site.data.homepage.contact.cta_link 
+  cta_text=site.data.homepage.contact.cta_text 
+%}

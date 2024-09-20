@@ -4,6 +4,7 @@ order: 3
 title: Manufacturing
 subtitle: "In the rapidly evolving manufacturing sector, we help companies optimize operations, embrace Industry 4.0, and drive sustainable growth."
 intro: "At SLKone, we empower manufacturers to thrive in an era of rapid technological advancement and shifting global dynamics. Our expertise spans operational excellence, supply chain optimization, and digital transformation, enabling our clients to achieve operational efficiency, market responsiveness, and sustainable growth."
+blurb-intro: "Transform your manufacturing journey with SLKone's insightful expertise and cutting-edge solutions."
 landscape-title: "The Manufacturing Landscape"
 landscape-intro: "The manufacturing industry is experiencing significant transformation, driven by:"
 landscape:

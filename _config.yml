@@ -17,7 +17,7 @@ plugins:
 collections:
   services:
     output: true
-  sub-services: 
+  sub-services:
     output: true
   careers:
     output: true
@@ -28,7 +28,7 @@ collections:
   industries:
     output: true
   sub-industries:
-    output: true 
+    output: true
 
 # Defaults
 defaults:
@@ -47,7 +47,7 @@ defaults:
       type: "sub-services"
     values:
       layout: "sub-service"
-      permalink: "/:parent/:title/"  # Added permalink structure for sub-services
+      permalink: "/:parent/:title/"
   - scope:
       path: "/industries/"
       type: "industries"
@@ -58,7 +58,7 @@ defaults:
       type: "sub-industries"
     values:
       layout: "sub-industry"
-      permalink: "/:parent/:title/"  # Added permalink structure for sub-industries
+      permalink: "/:parent/:title/"
   - scope:
       path: "/careers/"
       type: "careers"
@@ -88,10 +88,12 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - assets/css/tailwind.css
+  - postcss.config.js
 
-# Add these lines to your existing _config.yml
+# Sass settings
 sass:
-  sass_dir: _sass
   style: compressed
-  load_paths:
-    - node_modules/tailwindcss
+
+# Include processed CSS
+include:
+  - assets/css/main.css
