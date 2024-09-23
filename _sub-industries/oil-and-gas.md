@@ -33,7 +33,9 @@ why_choose:
   - "Supply Chain Resilience: Building robust and flexible supply networks."
   - "Lifecycle Management: Ensuring product sustainability and profitability."
   - "Collaborative Partnership: Working closely with your team for tailored solutions."
-cta: "Ready to optimize your Oil and Gas operations? Contact SLKone today to discover how our specialized services can drive your production efficiency and supply chain resilience."
+cta-title: "Ready to optimize your Oil and Gas operations?"
+cta: "Contact SLKone today to discover how our specialized services can drive your production efficiency and supply chain resilience."
 icon: "fa-oil-well"
 color: "plum"
+image: "/assets/images/backgrounds/oil-and-gas.webp"
 ---

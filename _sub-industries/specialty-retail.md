@@ -40,8 +40,9 @@ why_choose:
   - "Omnichannel Strategy: Developing seamless integration across online and offline channels."
   - "Personalization Focus: Enhancing customer experiences through tailored strategies."
   - "Collaborative Partnership: Working closely with your team to deliver customized and impactful solutions."
-  
-cta: "Ready to elevate your Specialty Retail operations? Contact SLKone today to discover how our specialized services can enhance your inventory management and customer engagement strategies."
+cta-title: "Ready to elevate your Specialty Retail operations?"
+cta: "Contact SLKone today to discover how our specialized services can enhance your inventory management and customer engagement strategies."
 icon: "fa-store"
 color: "cinnabar"
+image: "/assets/images/backgrounds/specialty-retail.webp"
 ---

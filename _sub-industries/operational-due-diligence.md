@@ -41,7 +41,9 @@ why_choose:
   - "Strategic Alignment: Ensuring operational strategies align with your investment objectives."
   - "Proven Methodologies: Employing tested frameworks for accurate and reliable assessments."
   
-cta: "Need a detailed operational analysis for your next acquisition? Contact SLKone today to discover how our Operational Due Diligence services can provide the insights you need for informed investment decisions."
+cta-title: "Need a detailed operational analysis for your next acquisition?"
+cta: "Contact SLKone today to discover how our Operational Due Diligence services can provide the insights you need for informed investment decisions."
 icon: "fa-magnifying-glass"
 color: "tangerine"
+image: "/assets/images/backgrounds/operational-due-diligence.webp"
 ---

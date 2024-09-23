@@ -37,8 +37,9 @@ why_choose:
   - "Data-Driven Approach: Utilizing advanced analytics to inform strategic decisions and performance optimization."
   - "Comprehensive Services: Covering all aspects from performance improvement to strategic growth planning."
   - "Collaborative Partnership: Working closely with your portfolio companies to deliver customized and impactful solutions."
-  
-cta: "Ready to accelerate value creation and drive growth in your portfolio companies? Contact SLKone today to discover how our specialized services can enhance performance and expand your market presence."
+cta-title: "Ready to accelerate value creation and drive growth in your portfolio companies?"
+cta: "Contact SLKone today to discover how our specialized services can enhance performance and expand your market presence."
 icon: "fa-arrow-up-right-dots"
 color: "tangerine"
+image: "/assets/images/backgrounds/value-creation-growth.webp"
 ---

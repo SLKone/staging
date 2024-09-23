@@ -37,7 +37,9 @@ why_choose:
   - "Revenue Optimization: Enhancing unit economics and revenue recognition practices."
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
   
-cta: "Ready to accelerate your SaaS growth and optimize your operations? Contact SLKone today to discover how our specialized services can drive your customer acquisition and retention strategies."
+cta-title: "Ready to accelerate your SaaS growth and optimize your operations?"
+cta: "Contact SLKone today to discover how our specialized services can drive your customer acquisition and retention strategies."
 icon: "fa-cloud"
 color: "forest"
+image: "/assets/images/backgrounds/saas.webp"
 ---

@@ -41,7 +41,9 @@ why_choose:
   - "Strategic Roadmapping: Developing clear and actionable roadmaps to support post-exit growth."
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective exit strategies."
   
-cta: "Ready to maximize the value of your exit strategy? Contact SLKone today to learn how our Exit Readiness services can ensure a profitable and seamless transition to new ownership."
+cta-title: "Ready to maximize the value of your exit strategy?"
+cta: "Contact SLKone today to learn how our Exit Readiness services can ensure a profitable and seamless transition to new ownership."
 icon: "fa-right-from-bracket"
 color: "tangerine"
+image: "/assets/images/backgrounds/exit-readiness.webp"
 ---

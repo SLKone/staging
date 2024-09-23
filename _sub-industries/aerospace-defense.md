@@ -36,7 +36,9 @@ why_choose:
   - "Supply Chain Resilience: Building robust and flexible supply networks."
   - "Lifecycle Management: Ensuring product sustainability and profitability."
   - "Collaborative Partnership: Working closely with your team for tailored solutions."
-cta: "Ready to optimize your Aerospace & Defense operations? Contact SLKone today to discover how our specialized services can drive your production efficiency and supply chain resilience."
+cta-title: "Ready to optimize your Aerospace & Defense operations?"
+cta: "Contact SLKone today to discover how our specialized services can drive your production efficiency and supply chain resilience."
 icon: "fa-rocket"
 color: "sand"
+image: "/assets/images/backgrounds/aerospace-defense.webp"
 ---

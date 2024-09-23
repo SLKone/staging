@@ -25,8 +25,8 @@ layout: default
             <div class="bg-fixed bg-no-repeat bg-cover bg-center h-full w-full" style="background-image: url({{ sub-service.image }})"></div>
           </div>
           
-          <div class="cols-span-1">
-          <div class="mx-auto px-10 max-w-7xl py-20 md:py-40">
+          <div class="cols-span-1 {% if page.color %}bg-{{ page.color }}-200/10{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200/10{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+          <div class="mx-auto px-4 md:px-20 max-w-7xl py-20 md:my-20 lg:my-40">
               {% if sub-service.title %}
               <h3 class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
               {% endif %}
@@ -45,6 +45,7 @@ layout: default
 {% if page.cta %}
 {% include contact-card.html 
   background_image=site.data.homepage.contact.background-image 
+  title=page.cta_title
   description=page.cta 
 %}
 {% endif %}

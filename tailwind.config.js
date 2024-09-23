@@ -212,6 +212,10 @@ module.exports = {
         pattern: /(grid-cols-2|grid-cols-3|grid-cols-4|grid-cols-5)/,
         variants: ['md', 'sm', 'lg'],
       },
+      {
+        pattern: /(px-10|px-20|px-40)/,
+        variants: ['md', 'sm', 'lg'],
+      },
     ],
     plugins: [],
 }

@@ -64,8 +64,8 @@ join_team:
   cta_link: "/careers"
 
 contact:
-  title: "Contact Us"
-  description: "Ready to transform your business? Let's connect and drive your business forward."
+  title: "Ready to transform your business?"
+  description: "Let's connect and drive your business forward."
   cta_text: "Contact SLKone"
   cta_link: "/contact"
   background-image: "/assets/images/backgrounds/contact.webp"

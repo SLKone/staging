@@ -41,7 +41,9 @@ why_choose:
   - "Operational Efficiency: Streamlining processes and integrating advanced technologies for improved efficiency."
   - "Collaborative Approach: Partnering with your team to deliver customized and impactful solutions."
   
-cta: "Ready to enhance your technology offerings and optimize your operations? Contact SLKone today to learn how our specialized services can drive your product development and go-to-market strategies."
+cta-title: "Ready to enhance your technology offerings and optimize your operations?"
+cta: "Contact SLKone today to learn how our specialized services can drive your product development and go-to-market strategies."
 icon: "fa-microchip"
 color: "forest"
+image: "/assets/images/backgrounds/technology-providers.webp"
 ---

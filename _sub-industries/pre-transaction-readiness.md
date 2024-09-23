@@ -41,7 +41,9 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
   - "Proven Track Record: Demonstrated success in preparing firms for profitable acquisitions."
   
-cta: "Ready to prepare your next acquisition for success? Contact SLKone today to learn how our Pre-Transaction Readiness services can ensure a smooth and value-driven acquisition process."
+cta-title: "Ready to prepare your next acquisition for success?"
+cta: "Contact SLKone today to learn how our Pre-Transaction Readiness services can ensure a smooth and value-driven acquisition process."
 icon: "fa-list"
 color: "tangerine"
+image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
 ---

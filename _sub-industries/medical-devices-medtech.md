@@ -37,7 +37,9 @@ why_choose:
   - "Strategic Market Access: Developing effective go-to-market strategies to maximize product adoption."
   - "Operational Efficiency: Streamlining manufacturing processes to boost productivity and reduce costs."
   - "Collaborative Approach: Partnering with your team to ensure customized and impactful solutions."
-cta: "Ready to enhance your Medical Devices & MedTech operations? Contact SLKone today to discover how our specialized services can drive your product development and market success."
+cta-title: "Ready to enhance your Medical Devices & MedTech operations?"
+cta: "Contact SLKone today to discover how our specialized services can drive your product development and market success."
 icon: "fa-microscope"
 color: "coral"
+image: "/assets/images/backgrounds/medical-devices-medtech.webp"
 ---

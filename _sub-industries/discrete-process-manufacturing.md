@@ -41,7 +41,9 @@ why_choose:
   - "Operational Optimization: Streamlining processes to boost productivity and reduce costs."
   - "Collaborative Approach: Partnering with your team to deliver customized and impactful solutions."
 
-cta: "Ready to streamline your Discrete & Process Manufacturing operations? Contact SLKone today to learn how our specialized services can enhance your productivity and operational efficiency."
+cta-title: "Ready to streamline your Discrete & Process Manufacturing operations?"
+cta: "Contact SLKone today to learn how our specialized services can enhance your productivity and operational efficiency."
 icon: "fa-conveyor-belt-boxes"
 color: "sand"
+image: "/assets/images/backgrounds/discrete-process-manufacturing.webp"
 ---
