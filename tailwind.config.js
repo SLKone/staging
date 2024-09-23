@@ -206,10 +206,12 @@ module.exports = {
     safelist: [
       {
         pattern: /(bg|text|border|to|from)-(emerald|forest|navy|currant|tangerine|mustard|cinnabar|coral|blush|plum|viola|sand|amalgam|abyss)-(100|200|300|400|500|600|700|DEFAULT)/,
-        variants: ['hover', 'dark', 'dark:hover'],
+        variants: ['hover', 'dark', 'dark:hover', 'md', 'sm', 'lg'],
       },
-      'grid-cols-3',
-      'grid-cols-4',
+      {
+        pattern: /(grid-cols-2|grid-cols-3|grid-cols-4|grid-cols-5)/,
+        variants: ['md', 'sm', 'lg'],
+      },
     ],
     plugins: [],
 }

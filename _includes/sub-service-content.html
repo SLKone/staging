@@ -1,16 +1,15 @@
 {% if include.sub_service.description %}
-<p class="text-2xl">{{ include.sub_service.description }}</p>
+<p class="md:text-2xl text-xl mb-4">{{ include.sub_service.description }}</p>
 {% endif %}
 
 {% if include.sub_service.approach %}
-<h3>Our Approach</h3>
-<p>{{ include.sub_service.approach }}</p>
+<p class="md:text-2xl text-xl mb-4">{{ include.sub_service.approach }}</p>
 {% endif %}
 
 {% if include.sub_service.focus_areas %}
-<h3>Focus Areas</h3>
+<h3 class="md:text-2xl text-xl mt-8 mb-4 font-bold">Focus Areas</h3>
 {% for area in include.sub_service.focus_areas %}
-  <h4>{{ area.title }}</h4>
-  <p>{{ area.content }}</p>
+  <p class="md:text-2xl text-xl mb-2">{{ area.title }}</p>
+  <p class="md:text-lg mb-4">{{ area.content }}</p>
 {% endfor %}
 {% endif %}

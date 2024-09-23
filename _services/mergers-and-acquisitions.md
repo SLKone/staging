@@ -15,8 +15,6 @@ impact:
     description: "in integration costs"
   - metric: "30-40% improvement"
     description: "in employee retention during transitions"
-  - metric: "25-35% enhancement"
-    description: "in stakeholder satisfaction"
 impact_conclusion: "Our clients experience smoother transitions, faster realization of synergies, and enhanced organizational performance post-M&A, ensuring that mergers and acquisitions contribute effectively to their strategic growth and market position."
 why_choose:
   - point: "End-to-End Expertise"

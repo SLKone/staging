@@ -1,7 +1,7 @@
 ---
 layout: sub-service
 order: 3
-title: "Sales, Inventory & Operations Planning"
+title: "Sales, Inventory, and Operations Planning"
 parent: "Operational Excellence"
 description: "We help organizations synchronize their sales forecasts with inventory levels and operational capabilities, enabling swift responses to market demands and optimizing supply chain efficiency."
 approach: "We adopt a collaborative approach, working closely with your sales, inventory, and operations teams to develop integrated planning processes. Utilizing advanced analytics and forecasting tools, we ensure accurate demand predictions and optimal inventory management."
@@ -27,4 +27,5 @@ why_choose:
 cta: "Ready to synchronize your sales, inventory, and operations? Contact SLKone today to learn how our SIOP services can transform your business processes and drive sustainable growth."
 icon: "fa-shelves"
 color: "blush"
+image: "/assets/images/backgrounds/siop.webp"
 ---

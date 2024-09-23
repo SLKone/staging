@@ -20,7 +20,7 @@ layout: default
   {% if related_sub_services.size > 0 %}
       {% for sub-service in related_sub_services %}
       {% assign mod = forloop.index0 | modulo: 2 %}
-      <div class="grid md:grid-cols-2">
+      <div id="{{ sub-service.title | slugify }}" class="grid md:grid-cols-2">
           <div class="relative {% if mod == 0 %}md:order-last{% endif %} h-full cols-span-1 bg-center h-full overflow-hidden">
             <div class="bg-fixed bg-no-repeat bg-cover bg-center h-full w-full" style="background-image: url({{ sub-service.image }})"></div>
           </div>
@@ -28,7 +28,7 @@ layout: default
           <div class="cols-span-1">
           <div class="mx-auto px-10 max-w-7xl py-20 md:py-40">
               {% if sub-service.title %}
-              <h3 id="{{ sub-service.title | slugify }}" class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
+              <h3 class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
               {% endif %}
               {% include sub-service-content.html sub_service=sub-service %}
             </div>
@@ -38,8 +38,8 @@ layout: default
   {% endif %}
 </section>
 {% if page.why_choose %}
-  {% capture why_choose_title %}Why Choose SLKone for {{ page.title }}{% endcapture %}
-  {% include why-choose-slkone.html title=why_choose_title points=page.why_choose %}
+  {% assign points = page.why_choose %}
+  {% include why-choose-slkone.html title="What Sets SLKone Apart" points=points %}
 {% endif %}
 
 {% if page.cta %}

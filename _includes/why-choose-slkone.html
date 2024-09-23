@@ -1,15 +1,10 @@
-<h2>
-  {% if include.title %}
-    {{ include.title }}
-  {% else %}
-    Why Choose SLKone
-  {% endif %}
-</h2>
-
-{% if include.points %}
-  <ul>
+<section class="py-20 lg:py-40 bg-gradient-to-b from-slate-50 to-transparent dark:from-currant-500 dark:to-transparent">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <h2 class="text-4xl mb-12 font-display">What sets SLKone apart</h2>
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
     {% for point in include.points %}
-      <li>{{ point }}</li>
+      {% include icon-block.html title=point.point text=point.description icon=point.icon %}
     {% endfor %}
-  </ul>
-{% endif %}
+    </div>
+  </div>
+</section>
