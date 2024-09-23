@@ -16,7 +16,7 @@ layout: default
     <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
       {% assign ordered-industries = site.industries | sort: "order" %}
       {% for industry in ordered-industries %}
-          {% include industry-card.html card=industry %}
+          {% include industry-card-big.html card=industry %}
       {% endfor %}
     </div>
   </div>

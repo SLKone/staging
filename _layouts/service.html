@@ -5,10 +5,10 @@ layout: default
 {% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
 
 {% if page.approach %}
-<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
-  <div class="container mx-auto px-4 max-w-7xl md:text-3xl py-40">
+<section id="approach" class="big-paragraph justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+  <div class="container mx-auto px-8 max-w-7xl md:text-xl py-40">
     <p class="max-w-prose">
-    <p>{{ page.approach }}</p>
+    {{ page.approach }}
     </p>
   </div>
 </section>
@@ -20,19 +20,21 @@ layout: default
   {% if related_sub_services.size > 0 %}
       {% for sub-service in related_sub_services %}
       {% assign mod = forloop.index0 | modulo: 2 %}
-      <div id="{{ sub-service.title | slugify }}" class="grid md:grid-cols-2">
-          <div class="relative {% if mod == 0 %}md:order-last{% endif %} h-full cols-span-1 bg-center h-full overflow-hidden">
-            <div class="bg-fixed bg-no-repeat bg-cover bg-center h-full w-full" style="background-image: url({{ sub-service.image }})"></div>
-          </div>
-          
-          <div class="cols-span-1 {% if page.color %}bg-{{ page.color }}-200/10{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200/10{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
-          <div class="mx-auto px-4 md:px-20 max-w-7xl py-20 md:my-20 lg:my-40">
-              {% if sub-service.title %}
-              <h3 class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
-              {% endif %}
-              {% include sub-service-content.html sub_service=sub-service %}
+      <div class="container mx-auto max-w-7x my-20">
+        <div id="{{ sub-service.title | slugify }}" class="grid md:grid-cols-2">
+            <div class="relative {% if mod == 0 %}md:order-last{% endif %} h-full cols-span-1 bg-center h-full overflow-hidden">
+              <div class="bg-no-repeat bg-cover bg-center h-full w-full" style="background-image: url({{ sub-service.image }})"></div>
             </div>
-          </div>
+            
+            <div class="cols-span-1 {% if page.color %}bg-{{ page.color }}-200/10{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200/10{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+            <div class="block mx-auto px-8 md:px-20 max-w-7xl py-20">
+                {% if sub-service.title %}
+                <h3 class="text-2xl mb-12 font-display">{{ sub-service.title }}</h2>
+                {% endif %}
+                {% include sub-service-content.html sub_service=sub-service %}
+              </div>
+            </div>
+        </div>
       </div>
       {% endfor %}
   {% endif %}

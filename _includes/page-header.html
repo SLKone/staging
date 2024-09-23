@@ -1,12 +1,12 @@
 <header class="page-header relative flex flex-col justify-center items-center bg-cover bg-center">
-  <div class="container mx-auto px-4 py-20 max-w-7xl w-full">
+  <div class="container mx-auto px-8 py-20 max-w-7xl w-full">
     {% if page.layout == "industry" or page.layout == "sub-industry" or page.layout == "service" or page.layout == "sub-service" or page.layout == "insights" or page.layout == "case-study" %}
-    <h2 class="text-xl mb-6 font-display">{{ page.layout | capitalize }}</h2>
+    <h2 class="text-xl mb-6 font-display md:hidden">{{ page.layout | capitalize }}</h2>
     {% endif %}
     <h1 class="text-3xl lg:text-7xl font-display">{{ include.title }}</h1>
     
     {% if include.subtitle %}
-    <p class="my-12 md:text-xl lg:text-2xl max-w-prose">{{ include.subtitle }}</p>
+    <p class="my-12 md:text-xl max-w-prose">{{ include.subtitle }}</p>
     {% endif %}
   </div>
   {% if include.background_image %}

@@ -1,10 +1,20 @@
 <div id="desktop-navigation" class="hidden lg:flex flex items-center">
   {% for item in site.data.header-navigation.main %}
+    {% assign is_current_page_flag = false %}
+    {% if page.url == item.url %}
+    {% assign is_current_page_flag = true %}
+    {% endif %}
     {% assign sub_items = "" %}
     {% if item.url == '/services' %}
+      {% if page.layout == "services" or page.layout == "service" or page.layout == "sub-service" %}
+        {% assign is_current_page_flag = true %}
+      {% endif %}
       {% assign sub_items = site.services | sort: 'order' %}
       {% assign sub_sub_items = site['sub-services'] | sort: 'order' %}
     {% elsif item.url == '/industries' %}
+      {% if page.layout == "industries" or page.layout == "industry" or page.layout == "sub-industry" %}
+        {% assign is_current_page_flag = true %}
+      {% endif %}
       {% assign sub_items = site.industries | sort: 'order' %}
       {% assign sub_sub_items = site['sub-industries'] | sort: 'order' %}
     {% elsif item.sub %}
@@ -23,7 +33,7 @@
           <span class="z-50">{{ item.title }}</span>
           <i class="ml-2 z-50 fa-sharp fa-solid fa-angle-down"></i>
         </a>
-        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
+        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 z-50 -mb-2 mx-6 {% unless is_current_page_flag %}hidden{% endunless %}"></span>
         <div id="desktop-navigation-item-dropdown" class="transition-all duration-300 group-hover:block absolute left-0 top-full z-40 w-screen bg-white shadow-lg dark:bg-currant hidden">
           <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="mx-auto max-w-7xl grid {{ grid_class }} auto-rows-auto gap-2 pb-10">
               {% for sub in sub_items %}
@@ -62,7 +72,7 @@
         <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 flex items-center justify-between hover:text-emerald dark:hover:text-forest" aria-expanded="false">
           {{ item.title }}
         </a>
-        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
+        <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 z-50 -mb-2 mx-6 {% unless is_current_page_flag %}hidden{% endunless %}"></span>
       </div>
     {% endif %}
   {% endfor %}

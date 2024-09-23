@@ -1,5 +1,5 @@
 <header id="header" class="scroll sticky top-0 left-0 z-40 bg-transparent transition-all duration-300 bg-transparent bg-gradient-to-t to-white from-transparent dark:to-currant dark:from-transparent hover:bg-white hover:shadow-lg dark:hover:bg-currant" data-scrolled="false">
-  <nav class="container px-4 mx-auto max-w-7xl flex items-center justify-between">
+  <nav class="container px-8 mx-auto max-w-7xl flex items-center justify-between">
     
     <!-- Logo Section -->
     <div class="flex lg:flex-1 z-50">
@@ -24,7 +24,7 @@
           <a id="desktop-navigation-item-{{ forloop.index }}-button" href="{{ item.url }}" class="z-50 p-6 flex items-center justify-between hover:text-emerald dark:hover:text-forest" aria-expanded="false">
             {{ item.title }}
           </a>
-          <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 hidden z-50 -mb-2 mx-6"></span>
+          <span id="hover-indicator" class="relative bg-emerald dark:bg-forest group-hover:block w-auto rounded block h-1 mt-1 {% unless page.url == '/contact' %}hidden{% endunless %} z-50 -mb-2 mx-6"></span>
         </div>
       {% endfor %}
     </div>
