@@ -23,4 +23,5 @@ why_choose:
 cta: "Contact us to discover how our Exit Preparation & Readiness services can maximize the value of your organization and facilitate a smooth transition to your next venture."
 icon: "fa-door-closed"
 color: "forest"
+image: "/assets/images/backgrounds/exit-preparation-readiness.webp"
 ---

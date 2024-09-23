@@ -42,4 +42,5 @@ why_choose:
 
 cta: "Ready to optimize your Industrial Services operations? Contact SLKone today to discover how our specialized services can enhance your service delivery and customer satisfaction."
 icon: "fa-container"
+color: "sand"
 ---

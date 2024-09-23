@@ -25,5 +25,6 @@ why_choose:
   - "Collaborative Approach"
 cta: "Ready to optimize your working capital management? Contact SLKone today to discover how our specialized services can drive your financial performance."
 icon: "fa-money-bills-simple"
-color: "emerald"
+color: "mustard"
+image: "/assets/images/backgrounds/working-capital-management.webp"
 ---

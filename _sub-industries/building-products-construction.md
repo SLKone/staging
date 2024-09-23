@@ -36,4 +36,5 @@ why_choose:
   - "Collaborative Approach: Partnering with your team to deliver customized and impactful solutions."
 cta: "Ready to enhance your Building Products & Construction operations? Contact SLKone today to learn how our specialized services can drive your operational efficiency and sustainable growth."
 icon: "fa-building"
+color: "sand"
 ---

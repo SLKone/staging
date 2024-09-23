@@ -43,4 +43,5 @@ why_choose:
   
 cta: "Ready to elevate your Specialty Retail operations? Contact SLKone today to discover how our specialized services can enhance your inventory management and customer engagement strategies."
 icon: "fa-store"
+color: "cinnabar"
 ---

@@ -25,5 +25,6 @@ why_choose:
   - "Procurement and Vendor Optimization"
 cta: "Contact us to learn how our Corporate Finance services can enhance your financial operations and drive sustainable business growth."
 icon: "fa-chart-mixed-up-circle-dollar"
-color: "tangerine"
+color: "mustard"
+image: "/assets/images/backgrounds/financial-analytics.webp"
 ---

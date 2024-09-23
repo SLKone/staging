@@ -24,5 +24,6 @@ why_choose:
   - "Minimized Disruption and Enhanced Efficiency"
 cta: "Contact us to discover how our Post-Merger Integration services can ensure a seamless merger and maximize the value of your acquisition."
 icon: "fa-object-intersect"
-color: "tangerine"
+color: "forest"
+image: "/assets/images/backgrounds/post-merger-integration.webp"
 ---

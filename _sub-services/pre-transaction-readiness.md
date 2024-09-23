@@ -25,4 +25,5 @@ why_choose:
 cta: "Contact us to learn how our Pre-Transaction Readiness services can prepare your organization for successful mergers and acquisitions."
 icon: "fa-check-double"
 color: "forest"
+image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
 ---

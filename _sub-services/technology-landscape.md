@@ -26,5 +26,6 @@ why_choose:
   - "Supportive Digital Transformation Planning"
 cta: "Contact us to navigate the technology landscape and adopt the innovations that will drive your business forward."
 icon: "fa-image-landscape"
-color: "currant"
+color: "plum"
+image: "/assets/images/backgrounds/technology-landscape.webp"
 ---

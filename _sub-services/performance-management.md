@@ -24,5 +24,6 @@ why_choose:
   - "Continuous Improvement: Fostering a culture of ongoing performance enhancement."
 cta: "Contact us to learn how our Performance Management services can align your team's efforts with your strategic goals and drive organizational excellence."
 icon: "fa-objects-align-right"
-color: "coral"
+color: "viola"
+image: "/assets/images/backgrounds/performance-management.webp"
 ---

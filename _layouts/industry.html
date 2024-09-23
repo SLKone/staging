@@ -3,7 +3,18 @@ layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
 
-{% include content-block-bullets.html bullet_title=page.approach-title bullet_intro=page.approach-intro bullets=page.approach bullet_conclusion=page.approach-conclusion %}
+<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+    <div class="container mx-auto px-4 max-w-7xl text-xl md:text-3xl py-40">
+      <p class="max-w-prose">
+      <p>{{ page.approach-intro }}</p>
+      <ul class="py-8">
+      {% for point in page.approach %}
+        <li class="py-4 flex"><i class="fa-solid fa-check mx-4"></i> <span>{{ point }}</span></li> 
+      {% endfor %}
+    </ul>
+      <p>{{ page.approach-conclusion }}</p>
+    </div>
+  </section>
 
 {% include content-block-bullets.html bullet_title=page.landscape-title bullet_intro=page.landscape-intro bullets=page.landscape bullet_conclusion=page.landscape-conclusion %}
 <section>

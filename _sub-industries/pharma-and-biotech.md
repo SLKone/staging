@@ -38,5 +38,6 @@ why_choose:
   - "Cross-Functional Approach: Integrating R&D, operations, and commercial strategies."
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to accelerate your Pharma & Biotech operations? Contact SLKone today to learn how our specialized services can drive your operational excellence and market success."
-icon: "fa-flask"
+icon: "fa-flask" 
+color: "coral"
 ---

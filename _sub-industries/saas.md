@@ -39,4 +39,5 @@ why_choose:
   
 cta: "Ready to accelerate your SaaS growth and optimize your operations? Contact SLKone today to discover how our specialized services can drive your customer acquisition and retention strategies."
 icon: "fa-cloud"
+color: "forest"
 ---

@@ -24,5 +24,6 @@ why_choose:
   - "Focus on Sustained Organizational Success"
 cta: "Contact us to learn how our Change Management services can help your organization navigate transformations smoothly and achieve lasting success."
 icon: "fa-list-check"
-color: "navy"
+color: "forest"
+image: "/assets/images/backgrounds/change-management.webp"
 ---

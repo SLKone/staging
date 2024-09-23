@@ -14,12 +14,3 @@
   <p>{{ area.content }}</p>
 {% endfor %}
 {% endif %}
-
-{% if include.sub_service.why_choose %}
-<h3>Why Choose SLKone for {{ include.sub_service.title }}?</h3>
-<ul>
-{% for reason in include.sub_service.why_choose %}
-  <li>{{ reason }}</li>
-{% endfor %}
-</ul>
-{% endif %}

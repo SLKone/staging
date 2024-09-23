@@ -39,4 +39,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to deliver tailored and effective solutions."
 cta: "Ready to transform your Health Tech operations? Contact SLKone today to learn how our specialized services can enhance your technology integration and drive patient-centric innovations."
 icon: "fa-monitor-waveform"
+color: "coral"
 ---

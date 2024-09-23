@@ -35,4 +35,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team for tailored solutions."
 cta: "Ready to optimize your Oil and Gas operations? Contact SLKone today to discover how our specialized services can drive your production efficiency and supply chain resilience."
 icon: "fa-oil-well"
+color: "plum"
 ---

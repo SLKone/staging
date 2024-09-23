@@ -43,4 +43,5 @@ why_choose:
   
 cta: "Ready to drive growth and innovation in your Consumer Goods & Services operations? Contact SLKone today to learn how our specialized services can enhance your product development and supply chain strategies."
 icon: "fa-basket-shopping"
+color: "cinnabar"
 ---

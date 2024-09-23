@@ -2,9 +2,10 @@
 layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
+{% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
 
 {% if page.approach %}
-<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
   <div class="container mx-auto px-4 max-w-7xl md:text-3xl py-40">
     <p class="max-w-prose">
     <p>{{ page.approach }}</p>
@@ -12,18 +13,29 @@ layout: default
   </div>
 </section>
 {% endif %}
-{% include content-block-bullets.html bullet_title=page.impact_title bullet_intro=page.impact_intro bullets=page.impact bullet_conclusion=page.impact_conclusion %}
-<section>
-{% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
-{% if related_sub_services.size > 0 %}
-  <h2 class="text-4xl mb-12 font-display">{{page.title}} Services</h2>
-    {% for sub-service in related_sub_services %}
-        {% if sub-service.title %}
-        <h3 id="{{ sub-service.title | slugify }}" class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
-        {% endif %}
-        {% include sub-service-content.html sub_service=sub-service %}
-    {% endfor %}
+{% if page.impact_title or page.impact_intro or page.impact or page.impact_conclusion %}
+  {% include impact-card.html title=page.impact_title intro=page.impact_intro bullets=page.impact conclusion=page.impact_conclusion %}
 {% endif %}
+<section>
+  {% if related_sub_services.size > 0 %}
+      {% for sub-service in related_sub_services %}
+      {% assign mod = forloop.index0 | modulo: 2 %}
+      <div class="grid md:grid-cols-2">
+          <div class="relative {% if mod == 0 %}md:order-last{% endif %} h-full cols-span-1 bg-center h-full overflow-hidden">
+            <div class="bg-fixed bg-no-repeat bg-cover bg-center h-full w-full" style="background-image: url({{ sub-service.image }})"></div>
+          </div>
+          
+          <div class="cols-span-1">
+          <div class="mx-auto px-10 max-w-7xl py-20 md:py-40">
+              {% if sub-service.title %}
+              <h3 id="{{ sub-service.title | slugify }}" class="text-4xl mb-12 font-display">{{ sub-service.title }}</h2>
+              {% endif %}
+              {% include sub-service-content.html sub_service=sub-service %}
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+  {% endif %}
 </section>
 {% if page.why_choose %}
   {% capture why_choose_title %}Why Choose SLKone for {{ page.title }}{% endcapture %}

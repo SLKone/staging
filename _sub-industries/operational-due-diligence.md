@@ -43,4 +43,5 @@ why_choose:
   
 cta: "Need a detailed operational analysis for your next acquisition? Contact SLKone today to discover how our Operational Due Diligence services can provide the insights you need for informed investment decisions."
 icon: "fa-magnifying-glass"
+color: "tangerine"
 ---

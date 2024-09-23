@@ -26,4 +26,5 @@ why_choose:
 cta: "Contact us to explore how our Automation services can transform your business processes and drive operational excellence."
 icon: "fa-robot"
 color: "plum"
+image: "/assets/images/backgrounds/automation.webp"
 ---

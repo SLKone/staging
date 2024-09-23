@@ -43,4 +43,5 @@ why_choose:
   
 cta: "Ready to enhance your technology offerings and optimize your operations? Contact SLKone today to learn how our specialized services can drive your product development and go-to-market strategies."
 icon: "fa-microchip"
+color: "forest"
 ---

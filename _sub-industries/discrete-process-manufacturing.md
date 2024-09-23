@@ -43,4 +43,5 @@ why_choose:
 
 cta: "Ready to streamline your Discrete & Process Manufacturing operations? Contact SLKone today to learn how our specialized services can enhance your productivity and operational efficiency."
 icon: "fa-conveyor-belt-boxes"
+color: "sand"
 ---

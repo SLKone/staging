@@ -25,5 +25,6 @@ why_choose:
   - "Comprehensive Quality Management Integration"
 cta: "Contact us to establish efficient processes that drive your organization's success and operational excellence."
 icon: "fa-play"
-color: "blush"
+color: "coral"  # Updated to match parent service color
+image: "/assets/images/backgrounds/process-setup-and-optimization.webp"
 ---

@@ -26,5 +26,6 @@ why_choose:
   - "Proven Track Record in Technology Strategy"
 cta: "Contact us to develop a strategic Technology Roadmap that supports your business growth and technological advancement."
 icon: "fa-map"
-color: "blush"
+color: "coral"
+image: "/assets/images/backgrounds/technology-roadmap-development.webp"
 ---

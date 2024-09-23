@@ -39,4 +39,5 @@ why_choose:
   - "Collaborative Approach: Partnering with your team to ensure customized and impactful solutions."
 cta: "Ready to enhance your Medical Devices & MedTech operations? Contact SLKone today to discover how our specialized services can drive your product development and market success."
 icon: "fa-microscope"
+color: "coral"
 ---

@@ -24,5 +24,6 @@ why_choose:
   - "Proven Track Record in Process Improvement"
 cta: "Contact us to optimize your business processes and achieve operational excellence."
 icon: "fa-arrow-progress"
-color: "blush"
+color: "cinnabar"
+image: "/assets/images/backgrounds/process-design.webp"
 ---

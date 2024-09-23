@@ -39,4 +39,5 @@ why_choose:
   - "Collaborative Partnership: Working closely with your team to ensure tailored and effective solutions."
 cta: "Ready to enhance your practice management and operational efficiency? Contact SLKone today to discover how our specialized services can drive your healthcare organization's success."
 icon: "fa-hospital"
+color: "coral"
 ---

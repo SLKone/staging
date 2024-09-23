@@ -40,4 +40,5 @@ why_choose:
   
 cta: "Ready to accelerate value creation and drive growth in your portfolio companies? Contact SLKone today to discover how our specialized services can enhance performance and expand your market presence."
 icon: "fa-arrow-up-right-dots"
+color: "tangerine"
 ---

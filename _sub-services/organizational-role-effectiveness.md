@@ -24,5 +24,6 @@ why_choose:
   - "Experienced in Enhancing Role Effectiveness"
 cta: "Contact us to enhance the effectiveness of roles within your organization and drive your business goals."
 icon: "fa-user-shield"
-color: "currant"
+color: "cinnabar"
+image: "/assets/images/backgrounds/organizational-role-effectiveness.webp"
 ---

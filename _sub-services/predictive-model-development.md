@@ -24,5 +24,6 @@ why_choose:
   - "Expert Data Scientists and Analysts"
 cta: "Contact us to explore how our Predictive Model Development services can enhance your forecasting capabilities and drive strategic growth."
 icon: "fa-bars-progress"
-color: "mustard"
+color: "tangerine"
+image: "/assets/images/backgrounds/predictive-model-development.webp"
 ---

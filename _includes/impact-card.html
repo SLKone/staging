@@ -1,0 +1,19 @@
+  <section class="md:text-center impact block relative justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-400{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-400{% else %}dark:bg-currant {% endif %} pb-40 ">
+    <div class="container md:mx-auto -mt-20  max-w-6xl bg-cover bg-no-repeat bg-center rounded-xl p-4 md:p-10 {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+    <div class="md:text-2xl">
+      {% if include.intro %}
+      <p class="my-8">{{ include.intro }}</p>
+    {% endif %}
+    {% if include.bullets %}
+      <ul class="grid md:grid-cols-{{ include.bullets | size }} gap-4 md:divide-x divide-currant/10">
+        {% for bullet_item in include.bullets %}
+          <li class="cols-span-1 block p-4"><span class="font-display md:text-3xl font-bold md:w-full md:block md:mb-4">{{ bullet_item.metric }}</span> <span class="md:block">{{ bullet_item.description }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if include.conclusion %}
+      <p class="my-8 font-bold">{{ include.conclusion }}</p>
+    {% endif %}
+  </div>
+  </div>
+  </section>

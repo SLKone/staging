@@ -25,5 +25,6 @@ why_choose:
   - "Continuous Risk Monitoring and Improvement"
 cta: "Contact us to discover how our Risk Mitigation services can safeguard your organization against potential threats and ensure long-term strategic success."
 icon: "fa-shield-halved"
-color: "mustard"
+color: "viola"
+image: "/assets/images/backgrounds/risk-mitigation.webp"
 ---

@@ -25,5 +25,6 @@ why_choose:
   - "Ongoing Support for Implementation Success"
 cta: "Contact us to develop a strategic IT Roadmap that supports your business growth and technology needs."
 icon: "fa-road"
-color: "blush"
+color: "plum"
+image: "/assets/images/backgrounds/it-roadmap.webp"
 ---

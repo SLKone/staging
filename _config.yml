@@ -8,7 +8,6 @@ github_username: SLKone
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -37,11 +36,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: "/:title/"
   - scope:
       path: "/services/"
       type: "services"
     values:
       layout: "service"
+      permalink: "/:title/"
   - scope:
       path: "/sub-services/"
       type: "sub-services"
@@ -53,6 +54,7 @@ defaults:
       type: "industries"
     values:
       layout: "industry"
+      permalink: "/:title/"
   - scope:
       path: "/sub-industries/"
       type: "sub-industries"
@@ -64,16 +66,19 @@ defaults:
       type: "careers"
     values:
       layout: "career"
+      permalink: "/:title/"
   - scope:
       path: "/case-studies/"
       type: "case_studies"
     values:
       layout: "case_study"
+      permalink: "/:title/"
   - scope:
       path: "/expertise/"
       type: "expertise"
     values:
       layout: "expertise"
+      permalink: "/:title/"
   - scope:
       path: ""
     values:

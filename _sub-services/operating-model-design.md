@@ -24,5 +24,6 @@ why_choose:
   - "Proven Methodologies for Successful Implementation"
 cta: "Contact us to design an Operating Model that drives your strategic objectives and enhances organizational performance."
 icon: "fa-object-group"
-color: "emerald"
+color: "cinnabar"
+image: "/assets/images/backgrounds/operating-model-design.webp"
 ---

@@ -41,4 +41,5 @@ why_choose:
   
 cta: "Ready to optimize your Logistics & Distribution operations? Contact SLKone today to discover how our specialized services can enhance your delivery efficiency and supply chain resilience."
 icon: "fa-truck-fast"
+color: "cinnabar"
 ---

@@ -24,5 +24,6 @@ why_choose:
   - "Measurable, bottom-line results"
 cta: "Contact us to learn how our Performance Improvement services can transform your operations and drive sustainable growth."
 icon: "fa-gauge-simple-max"
-color: "plum"
+color: "blush"
+image: "/assets/images/backgrounds/performance-improvement.webp"
 ---

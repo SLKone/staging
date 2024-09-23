@@ -25,5 +25,6 @@ why_choose:
   - "Proven Track Record in GenAI Integration"
 cta: "Contact us to prepare your organization for the transformative impact of Generative AI and drive innovation through GenAI Readiness."
 icon: "fa-brain-circuit"
-color: "cinnabar"
+color: "plum"
+image: "/assets/images/backgrounds/genai-readiness.webp"
 ---

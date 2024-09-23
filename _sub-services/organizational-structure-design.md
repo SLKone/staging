@@ -24,5 +24,6 @@ why_choose:
   - "Proven Success in Organizational Restructuring"
 cta: "Contact us to design an Organizational Structure that drives your strategic objectives and enhances operational efficiency."
 icon: "fa-sitemap"
-color: "blush"
+color: "cinnabar"
+image: "/assets/images/backgrounds/organizational-structure-design.webp"
 ---
