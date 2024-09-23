@@ -34,30 +34,35 @@ defaults:
   - scope:
       path: "/insights/"
       type: "posts"
+      permalink: "/:title/"
     values:
       layout: "post"
       permalink: "/:title/"
   - scope:
       path: "/services/"
       type: "services"
+      permalink: "/:title/"
     values:
       layout: "service"
       permalink: "/:title/"
   - scope:
       path: "/sub-services/"
       type: "sub-services"
+      permalink: "/:title/"
     values:
       layout: "sub-service"
       permalink: "/:parent/:title/"
   - scope:
       path: "/industries/"
       type: "industries"
+      permalink: "/:title/"
     values:
       layout: "industry"
       permalink: "/:title/"
   - scope:
       path: "/sub-industries/"
       type: "sub-industries"
+      permalink: "/:title/"
     values:
       layout: "sub-industry"
       permalink: "/:parent/:title/"
