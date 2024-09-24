@@ -1,17 +1,15 @@
-  <section class="impact block relative justify-center items-center flex pb-40 ">
+  <section class="pb-20 impact block relative text-center">
     <div class="container md:mx-auto max-w-7xl bg-cover bg-no-repeat bg-center rounded-xl p-8 md:p-10 md:text-xl">
-          {% if include.intro %}
-            <p class="my-8 max-w-prose ">{{ include.intro }}</p>
-        {% endif %}
+      <h3 class="text-4xl md:text-4xl mb-12 font-display text-center">Targeted Impact</h3>
         {% if include.bullets %}
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-row gap-4 justify-center">
             {% for bullet_item in include.bullets %}
-                <div class="{% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %} rounded p-4 mx-auto w-auto"><span class="font-display md:text-xl font-bold md:block md:mb-4">{{ bullet_item.metric }}</span> <span class="md:block">{{ bullet_item.description }}</span></div>
+                <div class="{% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %} rounded p-4"><span class="font-display md:text-xl font-bold md:block md:mb-4">{{ bullet_item.metric }}</span> <span class="md:block">{{ bullet_item.description }}</span></div>
               {% endfor %}
           </div>
         {% endif %}
         {% if include.conclusion %}
-          <p class="my-8 font-bold max-w-prose ">{{ include.conclusion }}</p>
+          <p class="my-8 font-bold max-w-prose mx-auto">{{ include.conclusion }}</p>
         {% endif %}
   </div>
 </section>
