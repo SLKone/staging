@@ -1,0 +1,56 @@
+
+{% for item in site.data.header-navigation.main %}
+    {% assign is_current_page_flag = false %}
+    {% if page.url == item.url %}
+    {% assign is_current_page_flag = true %}
+    {% endif %}
+    {% assign sub_items = "" %}
+    {% assign nested_items = "" %}
+
+    {% if item.url == '/services' %}
+    {% if page.layout == "services" or page.layout == "service" or page.layout == "sub-service" %}
+        {% assign is_current_page_flag = true %}
+        {% assign nested_items = site['sub-services'] | where: "parent", page.title | sort: 'order' %}
+    {% endif %}
+    {% assign sub_items = site.services | sort: 'order' %}
+    {% elsif item.url == '/industries' %}
+    {% if page.layout == "industries" or page.layout == "industry" or page.layout == "sub-industry" %}
+        {% assign is_current_page_flag = true %}
+        {% assign nested_items = site['sub-industries'] | where: "parent", page.title | sort: 'order' %}
+    {% endif %}
+    {% assign sub_items = site.industries | sort: 'order' %}
+    {% elsif item.sub %}
+    {% assign sub_items = item.sub %}
+    {% endif %}
+
+    {% if sub_items != '' %}
+    {% assign num_sub_items = sub_items | size %}
+    {% if num_sub_items >= 4 %}
+        {% assign grid_num = 4 %}
+    {% else %}
+        {% assign grid_num = num_sub_items %}
+    {% endif %}
+    {% assign grid_class = "grid-cols-" | append: grid_num %}
+    {% if is_current_page_flag and nested_items != '' %}
+    <section id="subnav" class="sticky top-[88px] z-30 bg-white shadow-md dark:bg-currant w-full flex transition-all duration-300 group-hover:block absolute left-0 top-full w-screen bg-white shadow-lg dark:bg-currant content-start">
+        <div class="container max-w-7xl mx-auto px-4">
+        <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="flex auto-rows-auto gap-2">
+        {% for nested in nested_items %}
+            <div class="py-8 mr-4">
+            <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="hover:opacity-80 transition-all duration-300 text-{{ nested.color }}-700 dark:text-{{ nested.color }}-200" href="#{{ nested.title | slugify}}">
+                {% if nested.icon %}
+                <i class="text-{{ nested.color }} dark:text-{{ nested.color }}-300 fa-sharp-duotone fa-solid mr-2 {{ nested.icon }}"></i>
+                {% endif %}
+                {{ nested.title }}
+            </a>
+            {% if nested.info %}
+                <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-info" class="text-sm opacity-80">{{ nested.info }}</p>
+            {% endif %}
+            </div>
+        {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    {% endif %}
+{% endfor %}

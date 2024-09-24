@@ -3,7 +3,7 @@ layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
 
-<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex text-currant {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
+<section id="approach" class="big-paragraph min-h-[60dvh] justify-center items-center flex {% if page.color %}bg-{{ page.color }}-200{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200{% else %}dark:bg-currant-500 dark:text-white{% endif %}">
     <div class="container mx-auto px-4 max-w-7xl text-xl md:text-3xl py-40">
       <p class="max-w-prose">
       <p>{{ page.approach-intro }}</p>

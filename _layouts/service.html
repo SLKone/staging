@@ -5,10 +5,10 @@ layout: default
 {% assign related_sub_services = site["sub-services"] | where: "parent", page.title | sort:"order" %}
 
 {% if page.approach %}
-<section id="approach" class="py-20 text-currant">
-  <h3 class="text-4xl md:text-4xl mb-12 font-display text-center">Our Approach</h3>
-  <div class="container mx-auto text-center px-8 max-w-7xl md:text-xl">
-    <p class="max-w-prose mx-auto">
+<section id="approach" class="py-20">
+  <div class="container mx-auto px-8 max-w-7xl md:text-xl">
+    <h3 class="text-4xl md:text-4xl mb-12 font-display">Our Approach</h3>
+    <p class="max-w-prose">
     {{ page.approach }}
     </p>
   </div>
@@ -17,24 +17,43 @@ layout: default
 {% if page.impact_title or page.impact_intro or page.impact or page.impact_conclusion %}
   {% include impact-card.html title=page.impact_title intro=page.impact_intro bullets=page.impact conclusion=page.impact_conclusion %}
 {% endif %}
-<section class="py-20 {% if page.color %}bg-{{ page.color }}-200/50{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-200/20{% else %}dark:bg-currant-500 dark:text-white{% endif %} ">
+<section class="py-20 {% if page.color %}bg-{{ page.color }}-200/50{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-400/10{% else %}dark:bg-currant-500 dark:text-white{% endif %} ">
   {% if related_sub_services.size > 0 %}
-      {% for sub-service in related_sub_services %}
-      {% assign mod = forloop.index0 | modulo: 2 %}
-      <div id="{{ sub-service.title | slugify }}" class="container mx-auto max-w-7xl my-20">
-        {% if sub-service.title %}
-        <h3 class="text-4xl mb-12 font-display text-center">{{ sub-service.title }}</h2>
+      {% for sub_service in related_sub_services %}
+      <div 
+      id="{{ sub_service.title | slugify }}" class="container mx-auto max-w-7xl px-8 my-20">
+        {% if sub_service.title %}
+        <h3 class="text-4xl font-display mb-12">{{ sub_service.title }}</h2>
         {% endif %}
-        <div class="grid md:grid-cols-2 rounded bg-white dark:bg-currant-500">
-            <div class="relative {% if mod == 0 %}md:order-last{% endif %} h-full cols-span-1 bg-center h-full overflow-hidden">
-              <div class="bg-no-repeat bg-cover bg-center h-full w-full rounded" style="background-image: url({{ sub-service.image }})"></div>
+        <div class="grid md:grid-cols-2 rounded-xl bg-white dark:bg-currant-500">
+            <div class="relative min-h-96 h-full cols-span-1 bg-center h-full overflow-hidden">
+              <div class="bg-no-repeat bg-cover bg-center h-full w-full rounded-xl" style="background-image: url({{ sub_service.image }})">
+                
+              </div>
             </div>
             <div class="cols-span-1">
             <div class="block mx-auto px-8 md:px-20 max-w-7xl py-20">
-                {% include sub-service-content.html sub_service=sub-service %}
+              {% if sub_service.description %}
+              <p class="md:text-xl mb-4 max-w-prose">{{ sub_service.description }}</p>
+              {% endif %}
+              
+              {% if sub_service.approach %}
+              <p class="md:text-xl mb-4 max-w-prose">{{ sub_service.approach }}</p>
+              {% endif %}
               </div>
             </div>
         </div>
+        {% if sub_service.focus_areas %}
+        <h3 class="md:text-xl text-xl mt-8 mb-4 font-bold">Focus Areas</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+        {% for area in sub_service.focus_areas %}
+        <div class="cols-span-1">
+          <p class="md:text-xl text-xl mb-2 max-w-prose">{{ area.title }}</p>
+          <p class="mb-4 max-w-prose">{{ area.content }}</p>
+        </div>
+        {% endfor %}
+      </div>
+        {% endif %}
       </div>
       {% endfor %}
   {% endif %}
