@@ -6,7 +6,7 @@ layout: default
 {% assign authors = page.authors | join: ", " %}
 {% include page-header.html title=page.title subtitle=subtitle streamlines=page.streamlines background_image=background_image authors=authors %}
 <section class="container mx-auto px-8 max-w-7xl py-16">
-    <article class="mx-auto prose dark:prose:text-white lg:prose-xl prose-headings:text-xl lg:prose-headings:text-2xl prose-img:rounded-xl dark:prose-headings:text-white dark:prose-h1:text-white dark:prose-h2:text-white dark:prose-h3:text-white dark:prose-h4:text-white dark:prose-h5:text-white dark:prose-h6:text-white dark:prose-li:text-white dark:prose-ol:text-white dark:prose-ul:text-white prose-a:text-emerald-400 prose-a:font-semibold dark:text-white dark:prose-a:text-forest-400 dark:prose-b:text-white col-span-2 max-w-prose">
+    <article class="mx-auto prose lg:prose-xl prose-headings:text-xl lg:prose-headings:text-2xl dark:prose-invert prose-a:text-emerald-400 prose-a:font-semibold dark:prose-a:text-forest-400 col-span-2 max-w-prose">
         {% include social-buttons.html %}
         {{ content }}
         Share this post: {% include social-buttons.html %}
