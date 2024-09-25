@@ -2,30 +2,61 @@
 layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.subtitle streamlines=page.streamlines background_image=page.background %} 
-<section id="insights" class="container mx-auto px-8 max-w-7xl grid grid-cols-1 sm:grid-cols-2 gap-8">
-  {% for post in paginator.posts %}
-    {% assign mod8 = forloop.index | modulo: 8 %}
-    <div class="transition-all duration-300 min-h-40 flex flex-col bg-white dark:bg-currant-500 rounded-xl shadow-lg {% if mod8 == 1 or mod8 == 5 %}row-span-2{% endif %} bg-cover bg-center cursor-pointer transform hover:scale-105" style="background-image: url(/assets/images/{{ post.heroimage }});" onclick="window.location='{{ post.url | relative_url }}'">
-      <div class="grow flex flex-col rounded-xl p-8 backdrop-blur-sm w-full bg-currant-500/10 backdrop-brightness-50">
-        <div class="text-sm w-full flex-nowrap mb-16">
-          {% for author in post.authors %}
-            <span class="text-sm mr-4">{{ author }}</span>
-          {% endfor %}
-        </div>
-        <div class="self-end w-full flex-row mt-auto">
-          <a href="{{ post.url }}"><h3 class="text-2xl font-display">{{ post.title }}</h3></a>
-        </div>
-      </div>
+
+<section id="insights" class="container mx-auto px-8 max-w-7xl grid grid-cols-1 sm:grid-cols-2 gap-8 pb-20">
+    {% assign insights = site.insights | sort: 'date' | reverse %}
+    {% assign total_posts = insights.size %}
+    {% assign posts_per_page = 16 %}
+    {% assign current_page = 1 %}
+    
+    <div id="hidden-insights" style="display: none;">
+        {% for post in insights %}
+        {% assign mod8 = forloop.index | modulo: 8 %}
+        {% assign size-class = "" %}
+        {% if mod8 == 1 or mod8 == 5 %}
+          {% assign size-class = "row-span-2" %}
+        {% endif %}
+        {% include post-card.html size-class=size-class %}
+        {% endfor %}
     </div>
-  {% endfor %}
-  
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="btn">Previous</a>
+    
+    {% for post in insights limit: posts_per_page %}
+    {% assign mod8 = forloop.index | modulo: 8 %}
+    {% assign size-class = "" %}
+    {% if mod8 == 1 or mod8 == 5 %}
+      {% assign size-class = "row-span-2" %}
     {% endif %}
-    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="btn">Next</a>
-    {% endif %}
-  </div>
+    {% include post-card.html size-class=size-class %}
+    {% endfor %}
+    
 </section>
+<div class="container mx-auto px-8 max-w-7xl pb-20">
+    <div class="col-span-2 text-center">
+        <button id="load-more" class="bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500">Load More</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentPage = 1;
+        const postsPerPage = {{ posts_per_page }};
+        const insightsContainer = document.getElementById('insights');
+        const hiddenInsights = document.getElementById('hidden-insights').children;
+        
+        document.getElementById('load-more').addEventListener('click', loadMorePosts);
+        
+        function loadMorePosts() {
+            const start = currentPage * postsPerPage;
+            const end = start + postsPerPage;
+            
+            for (let i = start; i < end && i < hiddenInsights.length; i++) {
+                insightsContainer.appendChild(hiddenInsights[i].cloneNode(true));
+            }
+            
+            currentPage++;
+            if (start >= hiddenInsights.length) {
+                document.getElementById('load-more').style.display = 'none';
+            }
+        }
+    });
+</script>

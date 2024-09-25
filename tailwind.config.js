@@ -162,6 +162,10 @@ module.exports = {
         typography: (theme) => ({
           DEFAULT: {
             css: {
+              a: {
+                color: theme('colors.emerald.400'),
+                textDecoration: 'underline',
+              },
               h1: {
                 fontSize: theme('fontSize.4xl'),
                 fontWeight: theme('fontWeight.bold'),
@@ -217,5 +221,7 @@ module.exports = {
         variants: ['md', 'sm', 'lg'],
       },
     ],
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/typography'),
+    ],
 }

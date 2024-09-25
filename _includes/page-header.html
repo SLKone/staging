@@ -4,7 +4,9 @@
     <h2 class="text-xl mb-6 font-display md:hidden">{{ page.layout | capitalize }}</h2>
     {% endif %}
     <h1 class="text-3xl lg:text-7xl font-display">{{ include.title }}</h1>
-    
+    {% if include.authors %}
+    <p class="my-12 text-xl md:text-2xl max-w-prose">By {{ include.authors }}</p>
+    {% endif %} 
     {% if include.subtitle %}
     <p class="my-12 md:text-xl max-w-prose">{{ include.subtitle }}</p>
     {% endif %}

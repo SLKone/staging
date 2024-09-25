@@ -11,14 +11,15 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
 
-  # Pagination settings
-paginate: 10 # Number of posts per page
-paginate_path: "/insights/page:num/" # Path for paginated pages
+plugins: [jekyll-paginate]
+paginate: 9
+paginate_path: "insights/page:num/" ##"page:num"
 
 # Collections
 collections:
+  insights:
+    output: true
   services:
     output: true
   sub-services:
@@ -37,18 +38,18 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: "/insights/"
-      type: "posts"
-      permalink: "/insights/:title/"
-    values:
-      layout: "post"
-      permalink: "/insights/:title/"
-  - scope:
       path: "/services/"
       type: "services"
       permalink: "/:title/"
     values:
       layout: "service"
+      permalink: "/:title/"
+  - scope:
+      path: "/insights/"
+      type: "insights"
+      permalink: "/:title/"
+    values:
+      layout: "post"
       permalink: "/:title/"
   - scope:
       path: "/sub-services/"
