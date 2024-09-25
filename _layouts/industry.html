@@ -40,11 +40,11 @@ layout: default
         {% assign related_sub_industries = site.sub-industries | where: "parent", page.title | sort:"order" %}
         {% if related_sub_industries.size > 0 %}
             {% for sub-industry in related_sub_industries %}
-            <div class="bg-white dark:bg-currant-500 rounded-xl mb-12">
+            <div id="{{ sub-industry.title | slugify }}" class="bg-white dark:bg-currant-500 rounded-xl mb-12">
               <div class="flex flex-col md:flex-row md:grid md:grid-cols-3 rounded-t-xl bg-black/5 dark:bg-currant-500 w-full grow min-h-80 md:min-h-96 bg-cover bg-center bg-no-repeat" style="background-image: url({{ sub-industry.image }})"></div>
               <div class="p-8">
                 {% if sub-industry.title %}
-                <h3 id="{{ sub-industry.title | slugify }}" class="text-4xl font-display"><i class="mr-4 fa-sharp-duotone {{ sub-industry.icon }}"></i> {{ sub-industry.title }}</h3>   
+                <h3 class="text-4xl font-display"><i class="mr-4 fa-sharp-duotone {{ sub-industry.icon }}"></i> {{ sub-industry.title }}</h3>   
                 {% endif %}
               </div>
               <div class="grid md:grid-cols-3 gap-4 px-8 pb-16">
