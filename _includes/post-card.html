@@ -1,4 +1,4 @@
-<div id="{{ post.id }}" class="post transition-all duration-300 min-h-40 flex flex-col bg-white dark:bg-currant-500 rounded-xl shadow-lg {{ include.size-class }} bg-cover bg-center cursor-pointer transform hover:scale-105" style="background-image: url(/assets/images/{{ post.background }});" onclick="window.location='{{ post.url | relative_url }}'">
+<div id="{{ post.id }}" class="text-white post transition-all duration-300 min-h-40 flex flex-col bg-white dark:bg-currant-500 rounded-xl shadow-lg {{ include.size-class }} bg-cover bg-center cursor-pointer transform hover:scale-105" style="background-image: url(/assets/images/{{ post.background }});" onclick="window.location='{{ post.url | relative_url }}'">
     <div class="grow flex flex-col rounded-xl p-8 backdrop-blur-sm w-full bg-currant-500/10 backdrop-brightness-50">
     <div class="text-sm w-full flex-nowrap mb-16">
         {% for author in post.authors %}
