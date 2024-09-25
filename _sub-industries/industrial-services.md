@@ -45,4 +45,5 @@ cta: "Contact SLKone today to discover how our specialized services can enhance 
 icon: "fa-container"
 color: "sand"
 image: "/assets/images/backgrounds/industrial-services.webp"
+permalink: /industries/manufacturing/industrial-services
 ---

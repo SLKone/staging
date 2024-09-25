@@ -24,4 +24,5 @@ cta: "Contact us to discover how our Exit Preparation & Readiness services can m
 icon: "fa-door-closed"
 color: "forest"
 image: "/assets/images/backgrounds/exit-preparation-readiness.webp"
+permalink: /services/mergers-and-acquisitions/exit-preparation-readiness
 ---

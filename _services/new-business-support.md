@@ -30,4 +30,5 @@ cta: "Contact SLKone today to discover how our New Business Support services can
 icon: "fa-rocket"
 color: "coral"
 image: "/assets/images/backgrounds/new-business-support.webp"
+permalink: /services/new-business-support
 ---

@@ -26,4 +26,5 @@ cta: "Contact us to learn how our Performance Management services can align your
 icon: "fa-objects-align-right"
 color: "viola"
 image: "/assets/images/backgrounds/performance-management.webp"
+permalink: /services/strategy/performance-management
 ---

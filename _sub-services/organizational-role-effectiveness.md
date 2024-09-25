@@ -26,4 +26,5 @@ cta: "Contact us to enhance the effectiveness of roles within your organization 
 icon: "fa-user-shield"
 color: "cinnabar"
 image: "/assets/images/backgrounds/organizational-role-effectiveness.webp"
+permalink: /services/organizational-design-and-alignment/organizational-role-effectiveness
 ---

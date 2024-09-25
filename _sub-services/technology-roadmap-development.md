@@ -28,4 +28,5 @@ cta: "Contact us to develop a strategic Technology Roadmap that supports your bu
 icon: "fa-map"
 color: "coral"
 image: "/assets/images/backgrounds/technology-roadmap-development.webp"
+permalink: /services/digital-strategy-and-technology/technology-roadmap-development
 ---

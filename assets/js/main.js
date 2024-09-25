@@ -1,5 +1,67 @@
-// Toggle mobile menu
+const desktopOffset = 200;
+const mobileOffset = 88;
 
+/**
+ * Applies smooth scrolling with an offset for anchor links.
+ */
+function handleAnchorClick(e) {
+    const targetId = e.target.getAttribute('href');
+    
+    if (targetId && targetId.startsWith('#')) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const offset = window.innerWidth >= 768 ? desktopOffset : mobileOffset;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+/**
+ * Uses event delegation to handle anchor clicks globally.
+ */
+function offsetAnchorLinks() {
+    document.body.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
+            handleAnchorClick(e);
+        }
+    });
+}
+
+/**
+ * Adjusts the scroll position on page load if there's an anchor in the URL.
+ */
+function offsetScrollOnPageLoad() {
+    if (window.location.hash) {
+        const targetId = window.location.hash;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Run this after the page content is fully loaded
+            const offset = window.innerWidth >= 768 ? desktopOffset : mobileOffset;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+// Call the functions after DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    offsetAnchorLinks();
+    offsetScrollOnPageLoad();
+});
+
+
+// Toggle mobile menu
 function toggleMobileMenu() {
     const menu = document.getElementById('mobile-navigation');
     const menuIcon = document.getElementById('menu-icon');

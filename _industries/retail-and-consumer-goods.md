@@ -38,13 +38,13 @@ why_choose:
     icon: "fa-solid fa-check"
   - point: "Omnichannel Strategies"
     description: "Seamlessly integrating online and offline experiences."
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Supply Chain Excellence"
     description: "Enhancing resilience and efficiency in your supply networks."
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Data-Driven Insights"
     description: "Leveraging analytics to inform strategic decisions."
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Customer-Centric Solutions"
     description: "Personalizing interactions to improve customer satisfaction."
     icon: "fa-solid fa-check"
@@ -62,4 +62,5 @@ cta: "Contact SLKone today to learn how our specialized services can enhance you
 icon: "fa-solid fa-store"
 color: "cinnabar"
 image: "/assets/images/backgrounds/retail-and-consumer-goods.webp"
+permalink: /industries/retail-and-consumer-goods
 ---

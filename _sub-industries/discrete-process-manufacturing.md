@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our specialized services can enhance you
 icon: "fa-conveyor-belt-boxes"
 color: "sand"
 image: "/assets/images/backgrounds/discrete-process-manufacturing.webp"
+permalink: /industries/manufacturing/discrete-process-manufacturing
 ---

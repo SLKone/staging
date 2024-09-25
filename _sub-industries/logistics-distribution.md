@@ -44,4 +44,5 @@ cta: "Contact SLKone today to discover how our specialized services can enhance 
 icon: "fa-truck-fast"
 color: "cinnabar"
 image: "/assets/images/backgrounds/logistics-distribution.webp"
+permalink: /industries/retail-and-consumer-goods/logistics-distribution
 ---

@@ -26,4 +26,5 @@ cta: "Contact us to learn how our Pre-Transaction Readiness services can prepare
 icon: "fa-check-double"
 color: "forest"
 image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
+permalink: /services/mergers-and-acquisitions/pre-transaction-readiness
 ---

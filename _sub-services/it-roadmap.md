@@ -27,4 +27,5 @@ cta: "Contact us to develop a strategic IT Roadmap that supports your business g
 icon: "fa-road"
 color: "plum"
 image: "/assets/images/backgrounds/it-roadmap.webp"
+permalink: /services/digital-strategy-and-technology/it-roadmap
 ---

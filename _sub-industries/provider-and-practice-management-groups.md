@@ -42,4 +42,5 @@ cta: "Contact SLKone today to discover how our specialized services can drive yo
 icon: "fa-hospital"
 color: "coral"
 image: "/assets/images/backgrounds/provider-and-practice-management-groups.webp"
+permalink: /industries/healthcare/provider-and-practice-management-groups
 ---

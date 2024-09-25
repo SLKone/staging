@@ -26,4 +26,5 @@ cta: "Contact us to optimize your business processes and achieve operational exc
 icon: "fa-arrow-progress"
 color: "cinnabar"
 image: "/assets/images/backgrounds/process-design.webp"
+permalink: /services/organizational-design-and-alignment/process-design
 ---

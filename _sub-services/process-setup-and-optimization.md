@@ -27,4 +27,5 @@ cta: "Contact us to establish efficient processes that drive your organization's
 icon: "fa-play"
 color: "coral"  # Updated to match parent service color
 image: "/assets/images/backgrounds/process-setup-and-optimization.webp"
+permalink: /services/organizational-design-and-alignment/process-setup-and-optimization
 ---

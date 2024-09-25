@@ -26,4 +26,5 @@ cta: "Contact us to learn how our Change Management services can help your organ
 icon: "fa-list-check"
 color: "forest"
 image: "/assets/images/backgrounds/change-management.webp"
+permalink: /services/mergers-and-acquisitions/change-management
 ---

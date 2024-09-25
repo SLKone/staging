@@ -27,4 +27,5 @@ cta: "Contact us to prepare your organization for the transformative impact of G
 icon: "fa-brain-circuit"
 color: "plum"
 image: "/assets/images/backgrounds/genai-readiness.webp"
+permalink: /services/digital-strategy-and-technology/genai-readiness
 ---

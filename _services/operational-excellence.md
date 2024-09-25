@@ -42,4 +42,5 @@ cta: "Contact SLKone today to learn how we can help you optimize your operations
 icon: "fa-head-side-gear"
 color: "blush"
 image: "/assets/images/backgrounds/operational-excellence.webp"
+permalink: /services/operational-excellence
 ---

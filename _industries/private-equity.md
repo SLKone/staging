@@ -62,4 +62,5 @@ cta: "Contact SLKone today to discover how our tailored solutions can accelerate
 icon: "fa-solid fa-briefcase"
 color: "tangerine"
 image: "/assets/images/backgrounds/private-equity.webp"
+permalink: /industries/private-equity
 ---

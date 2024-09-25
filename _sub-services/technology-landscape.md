@@ -28,4 +28,5 @@ cta: "Contact us to navigate the technology landscape and adopt the innovations 
 icon: "fa-image-landscape"
 color: "plum"
 image: "/assets/images/backgrounds/technology-landscape.webp"
+permalink: /services/digital-strategy-and-technology/technology-landscape
 ---

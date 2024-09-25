@@ -42,4 +42,5 @@ cta: "Contact SLKone today to discover how our specialized services can drive yo
 icon: "fa-microscope"
 color: "coral"
 image: "/assets/images/backgrounds/medical-devices-medtech.webp"
+permalink: /industries/healthcare/medical-devices-medtech
 ---

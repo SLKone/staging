@@ -27,4 +27,5 @@ cta: "Contact us to design an organizational structure and talent strategy that 
 icon: "fa-people-group"
 color: "coral"
 image: "/assets/images/backgrounds/organizational-design-and-talent-building.webp"
+permalink: /services/organizational-design-and-alignment/organizational-design-and-talent-building
 ---

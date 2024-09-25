@@ -26,4 +26,5 @@ cta: "Contact us to discover how our Post-Merger Integration services can ensure
 icon: "fa-object-intersect"
 color: "forest"
 image: "/assets/images/backgrounds/post-merger-integration.webp"
+permalink: /services/mergers-and-acquisitions/post-merger-integration
 ---

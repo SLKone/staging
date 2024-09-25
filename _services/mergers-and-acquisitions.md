@@ -40,4 +40,5 @@ cta: "Contact SLKone today to learn how our M&A services can help you maximize t
 icon: "fa-handshake"
 color: "forest"
 image: "/assets/images/backgrounds/mergers-and-acquisitions.webp"
+permalink: /services/mergers-and-acquisitions
 ---

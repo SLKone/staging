@@ -27,4 +27,5 @@ cta: "Contact us to learn how our Corporate Finance services can enhance your fi
 icon: "fa-chart-mixed-up-circle-dollar"
 color: "mustard"
 image: "/assets/images/backgrounds/financial-analytics.webp"
+permalink: /services/corporate-finance-and-revenue-management/financial-analytics
 ---

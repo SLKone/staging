@@ -42,4 +42,5 @@ cta: "Contact SLKone today to discover how our specialized services can drive yo
 icon: "fa-cloud"
 color: "forest"
 image: "/assets/images/backgrounds/saas.webp"
+permalink: /industries/technology/saas
 ---

@@ -26,4 +26,5 @@ cta: "Contact us to learn how our Performance Improvement services can transform
 icon: "fa-gauge-simple-max"
 color: "blush"
 image: "/assets/images/backgrounds/performance-improvement.webp"
+permalink: /services/operational-excellence/performance-improvement
 ---

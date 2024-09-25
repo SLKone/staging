@@ -56,4 +56,5 @@ cta: "Contact SLKone today to learn how our specialized services can drive your 
 icon: "fa-solid fa-industry"
 color: "sand"
 image: "/assets/images/backgrounds/manufacturing.webp"
+permalink: /industries/manufacturing
 ---

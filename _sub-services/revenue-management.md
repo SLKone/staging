@@ -26,4 +26,5 @@ cta: "Contact us to discover how our Revenue Management services can maximize yo
 icon: "fa-money-bill-transfer"
 color: "mustard"
 image: "/assets/images/backgrounds/revenue-management.webp"
+permalink: /services/corporate-finance-and-revenue-management/revenue-management
 ---

@@ -46,4 +46,5 @@ cta: "Contact SLKone today to discover how our Operational Due Diligence service
 icon: "fa-magnifying-glass"
 color: "tangerine"
 image: "/assets/images/backgrounds/operational-due-diligence.webp"
+permalink: /industries/private-equity/operational-due-diligence
 ---

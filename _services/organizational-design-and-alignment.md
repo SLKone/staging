@@ -40,4 +40,5 @@ cta: "Contact SLKone today to learn how our Organizational Design & Alignment se
 icon: "fa-sitemap"
 color: "cinnabar"
 image: "/assets/images/backgrounds/organizational-design-and-alignment.webp"
+permalink: /services/organizational-design-and-alignment
 ---

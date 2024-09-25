@@ -30,4 +30,5 @@ cta: "Contact SLKone today to discover how our Digital Strategy and Technology s
 icon: "fa-computer"
 color: "plum"
 image: "/assets/images/backgrounds/digital-strategy.webp"
+permalink: /services/digital-strategy-and-technology
 ---

@@ -38,4 +38,5 @@ cta: "Contact SLKone today to learn how our Data & Advanced Analytics services c
 icon: "fa-magnifying-glass-chart"
 color: "tangerine"
 image: "/assets/images/backgrounds/advanced-analytics.webp"
+permalink: /services/data-and-advanced-analytics
 ---

@@ -26,4 +26,5 @@ cta: "Contact us to learn how our Data Enrichment services can enhance the value
 icon: "fa-database"
 color: "tangerine"
 image: "/assets/images/backgrounds/data-enrichment.webp"
+permalink: /services/data-and-advanced-analytics/data-enrichment
 ---

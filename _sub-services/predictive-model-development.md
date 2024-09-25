@@ -26,4 +26,5 @@ cta: "Contact us to explore how our Predictive Model Development services can en
 icon: "fa-bars-progress"
 color: "tangerine"
 image: "/assets/images/backgrounds/predictive-model-development.webp"
+permalink: /services/data-and-advanced-analytics/predictive-model-development
 ---

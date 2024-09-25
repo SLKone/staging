@@ -42,4 +42,5 @@ cta: "Contact SLKone today to learn how our specialized services can drive your 
 icon: "fa-flask" 
 color: "coral"
 image: "/assets/images/backgrounds/pharma-and-biotech.webp"
+permalink: /industries/healthcare/pharma-and-biotech
 ---

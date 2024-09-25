@@ -32,24 +32,17 @@
     {% endif %}
     {% assign grid_class = "grid-cols-" | append: grid_num %}
     {% if is_current_page_flag and nested_items != '' %}
-    <section id="subnav" class="hidden md:block sticky top-[88px] z-30 bg-white shadow-md dark:bg-currant w-full flex transition-all duration-300 group-hover:block absolute left-0 top-full w-screen bg-white shadow-lg dark:bg-currant content-start">
-        <div class="container max-w-7xl mx-auto px-8">
-        <div id="desktop-navigation-item-{{ forloop.index }}-dropdown-content" class="flex auto-rows-auto gap-2">
+    <section id="subnav" class="hidden 2xl:block sticky top-[120px] z-30 bg-white shadow-md dark:bg-currant transition-all duration-300 left-0 top-full bg-white shadow-lg dark:bg-currant content-start rounded-xl max-w-[240px]">
         {% for nested in nested_items %}
-            <div class="py-8 mr-4">
+        <li>
             <a id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}" class="hover:opacity-80 transition-all duration-300 text-{{ nested.color }}-700 dark:text-{{ nested.color }}-200" href="#{{ nested.title | slugify}}">
                 {% if nested.icon %}
                 <i class="text-{{ nested.color }} dark:text-{{ nested.color }}-300 fa-sharp-duotone fa-solid mr-2 {{ nested.icon }}"></i>
                 {% endif %}
-                {{ nested.title }}
+                <span>{{ nested.title }}</span>
             </a>
-            {% if nested.info %}
-                <p id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-info" class="text-sm opacity-80">{{ nested.info }}</p>
-            {% endif %}
-            </div>
+        </li>
         {% endfor %}
-            </div>
-        </div>
     </section>
     {% endif %}
     {% endif %}

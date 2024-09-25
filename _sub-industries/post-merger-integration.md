@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our Post-Merger Integration services can
 icon: "fa-merge"
 color: "tangerine"
 image: "/assets/images/backgrounds/post-merger-integration.webp"
+permalink: /industries/private-equity/post-merger-integration
 ---

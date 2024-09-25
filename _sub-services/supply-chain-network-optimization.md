@@ -28,4 +28,5 @@ cta: "Looking to optimize your supply chain network? Contact SLKone today to dis
 icon: "fa-chart-network"
 color: "blush"
 image: "/assets/images/backgrounds/supply-chain-network-optimization.webp"
+permalink: /services/operational-excellence/supply-chain-network-optimization
 ---

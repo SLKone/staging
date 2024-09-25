@@ -45,4 +45,5 @@ cta: "Contact SLKone today to discover how our specialized services can enhance 
 icon: "fa-store"
 color: "cinnabar"
 image: "/assets/images/backgrounds/specialty-retail.webp"
+permalink: /industries/retail-and-consumer/specialty-retail
 ---

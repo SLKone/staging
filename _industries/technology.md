@@ -61,4 +61,5 @@ cta: "Contact SLKone today to discover how our specialized services can enhance 
 icon: "fa-solid fa-microchip"
 color: "forest"
 image: "/assets/images/backgrounds/technology.webp"
+permalink: /industries/technology
 ---

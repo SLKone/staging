@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our Exit Readiness services can ensure a
 icon: "fa-right-from-bracket"
 color: "tangerine"
 image: "/assets/images/backgrounds/exit-readiness.webp"
+permalink: /industries/private-equity/exit-readiness
 ---

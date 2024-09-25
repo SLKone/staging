@@ -41,4 +41,5 @@ cta: "Contact SLKone today to discover how our specialized services can drive yo
 icon: "fa-rocket"
 color: "sand"
 image: "/assets/images/backgrounds/aerospace-defense.webp"
+permalink: /industries/manufacturing/aerospace-defense
 ---

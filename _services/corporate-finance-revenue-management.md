@@ -42,4 +42,5 @@ cta: "Contact SLKone today to discover how our Corporate Finance & Revenue Manag
 icon: "fa-chart-line"
 color: "mustard"
 image: "/assets/images/backgrounds/corp-finance-bg.webp"
+permalink: /services/corporate-finance-and-revenue-management
 ---

@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our specialized services can drive your 
 icon: "fa-microchip"
 color: "forest"
 image: "/assets/images/backgrounds/technology-providers.webp"
+permalink: /industries/technology/technology-providers
 ---

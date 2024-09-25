@@ -26,7 +26,7 @@ body-class: body-home
     </div>
 </section>
 
-<section class="unique-points py-20 lg:py-40 bg-slate-50 dark:bg-currant-500">
+<section id="unique-points" class="py-20 lg:py-40 bg-slate-50 dark:bg-currant-500">
   <div class="container mx-auto px-8 max-w-7xl">
     <h2 class="text-4xl mb-12 font-display">What sets SLKone apart</h2>
     <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -37,7 +37,7 @@ body-class: body-home
   </div>
 </section>
 
-<section class="snap-start h-full relative approach"> 
+<section id="approach" class="snap-start h-full relative"> 
   <canvas
   class="windmap-canvas absolute w-screen h-full left-0 z-[-1]"
   data-num-streamlines="15"
@@ -59,12 +59,14 @@ body-class: body-home
   </div>
 </section>
 
-<section class="data-driven-approach">
-  <div class="container mx-auto px-8 max-w-7xl">
-    <h2 class="text-4xl mb-12 font-display">{{ site.data.homepage.data_driven_approach.title }}</h2>
-    <p class="text-xl max-w-prose mb-12">{{ site.data.homepage.data_driven_approach.description }}</p>
+<section id="data-driven-approach">
+  <div class="container mx-auto px-8 max-w-7xl ">
+    <div class="bg-black/5 dark:bg-currant-500 rounded-xl">
+      <h2 class="text-4xl font-display p-8">{{ site.data.homepage.data_driven_approach.title }}</h2>
+      <p class="text-xl max-w-prose mb-4 px-8">{{ site.data.homepage.data_driven_approach.description }}</p>
+      {% include accordion.html accordion_id="dataDrivenApproachAccordion" items=site.data.homepage.data_driven_approach.steps %}
+    </div>
   </div>
-  {% include accordion.html accordion_id="dataDrivenApproachAccordion" items=site.data.homepage.data_driven_approach.steps %}
 </section>
 
 {% include contact-card.html 

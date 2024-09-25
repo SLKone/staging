@@ -27,4 +27,5 @@ cta: "Contact us to learn how our Corporate Finance services can enhance your fi
 icon: "fa-wallet"
 color: "mustard" 
 image: "/assets/images/backgrounds/cost-management.webp"
+permalink: /services/corporate-finance-and-revenue-management/cost-management
 ---

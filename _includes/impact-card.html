@@ -2,9 +2,9 @@
     <div class="container md:mx-auto max-w-7xl bg-cover bg-no-repeat bg-center rounded-xl p-8 md:p-10 md:text-xl">
       <h3 class="text-4xl md:text-4xl mb-12 font-display">Targeted Impact</h3>
         {% if include.bullets %}
-          <div class="flex flex-row gap-4">
+          <div class="md:flex md:flex-row gap-4">
             {% for bullet_item in include.bullets %}
-                <div class="text-currant {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %} rounded p-4"><span class="font-display md:text-xl font-bold md:block md:mb-4">{{ bullet_item.metric }}</span> <span class="md:block">{{ bullet_item.description }}</span></div>
+                <div class="w-[50%] mb-4 md:mb-0 text-currant {% if page.color %}bg-{{ page.color }}-300{% else %}bg-slate-50{% endif %} {% if page.color %}dark:bg-{{ page.color }}-300{% else %}dark:bg-currant-500 dark:text-white{% endif %} rounded p-4"><span class="font-display md:text-xl font-bold md:block md:mb-4">{{ bullet_item.metric }}</span> <span class="md:block">{{ bullet_item.description }}</span></div>
               {% endfor %}
           </div>
         {% endif %}

@@ -42,4 +42,5 @@ cta: "Contact SLKone today to learn how our specialized services can enhance you
 icon: "fa-monitor-waveform"
 color: "coral"
 image: "/assets/images/backgrounds/health-tech.webp"
+permalink: /industries/healthcare/health-tech
 ---

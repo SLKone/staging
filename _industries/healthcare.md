@@ -19,19 +19,19 @@ approach-intro: "SLKone takes a holistic view of healthcare organizations, addre
 approach:
   - point: "Advanced Data Analytics"
     description: "Harnessing the power of healthcare data to drive informed decision-making"
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Process Optimization"
     description: "Streamlining operations to improve efficiency and reduce costs"
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Strategic Planning"
     description: "Developing robust strategies to navigate market changes and drive growth"
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Change Management"
     description: "Ensuring successful implementation and adoption of new initiatives"
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
   - point: "Financial Performance Improvement"
     description: "Optimizing revenue cycles and cost structures"
-    icon: "fa-solid fa-chart-line"
+    icon: "fa-solid fa-check"
 why_choose:
   - point: "Industry Expertise"
     description: "Deep understanding of healthcare ecosystem dynamics and interdependencies"
@@ -59,4 +59,5 @@ cta: "Contact SLKone today to learn how our tailored solutions can help you navi
 icon: "fa-solid fa-heart"
 color: "coral"
 image: "/assets/images/backgrounds/healthcare.webp"
+permalink: /industries/healthcare
 ---

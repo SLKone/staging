@@ -39,4 +39,5 @@ cta: "Contact SLKone today to learn how our specialized services can drive your 
 icon: "fa-building"
 color: "sand"
 image: "/assets/images/backgrounds/building-products-construction.webp"
+permalink: /industries/manufacturing/building-products-construction
 ---

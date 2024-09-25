@@ -38,4 +38,5 @@ cta: "Contact SLKone today to discover how our specialized services can drive yo
 icon: "fa-oil-well"
 color: "plum"
 image: "/assets/images/backgrounds/oil-and-gas.webp"
+permalink: /industries/energy-and-resources/oil-and-gas
 ---

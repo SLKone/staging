@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our Pre-Transaction Readiness services c
 icon: "fa-list"
 color: "tangerine"
 image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
+permalink: /industries/private-equity/pre-transaction-readiness
 ---

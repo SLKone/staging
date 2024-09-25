@@ -46,4 +46,5 @@ cta: "Contact SLKone today to learn how our specialized services can enhance you
 icon: "fa-basket-shopping"
 color: "cinnabar"
 image: "/assets/images/backgrounds/consumer-goods-services.webp"
+permalink: /industries/retail-and-consumer-goods/consumer-goods-services
 ---
