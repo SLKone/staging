@@ -1,5 +1,8 @@
 ---
 layout: page
 title: Insights
-permalink: /insights
+layout: insights
+subtitle: "Thought leadership from the SLKone team"
+paginate: 10
+permalink: /insights/
 ---

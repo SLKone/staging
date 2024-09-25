@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% include page-header.html title=page.title subtitle=page.subtitle streamlines=page.streamlines background_image=page.background %} 
+<section id="insights" class="container mx-auto px-8 max-w-7xl grid grid-cols-1 sm:grid-cols-2 gap-8">
+  {% for post in paginator.posts %}
+    {% assign mod8 = forloop.index | modulo: 8 %}
+    <div class="transition-all duration-300 min-h-40 flex flex-col bg-white dark:bg-currant-500 rounded-xl shadow-lg {% if mod8 == 1 or mod8 == 5 %}row-span-2{% endif %} bg-cover bg-center cursor-pointer transform hover:scale-105" style="background-image: url(/assets/images/{{ post.heroimage }});" onclick="window.location='{{ post.url | relative_url }}'">
+      <div class="grow flex flex-col rounded-xl p-8 backdrop-blur-sm w-full bg-currant-500/10 backdrop-brightness-50">
+        <div class="text-sm w-full flex-nowrap mb-16">
+          {% for author in post.authors %}
+            <span class="text-sm mr-4">{{ author }}</span>
+          {% endfor %}
+        </div>
+        <div class="self-end w-full flex-row mt-auto">
+          <a href="{{ post.url }}"><h3 class="text-2xl font-display">{{ post.title }}</h3></a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="btn">Previous</a>
+    {% endif %}
+    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="btn">Next</a>
+    {% endif %}
+  </div>
+</section>
