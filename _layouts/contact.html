@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign background_image = page.background %}
+{% include page-header.html title=page.title background_image=background_image %}
+<div class="container mx-auto px-8 max-w-7xl grid md:grid-cols-2 py-20 gap-8">
+    <div id="contact-form" class="order-1 md:order-2 md:col-span-1">
+        <form method="POST" action="https://formspree.io/mnqbqrpg">
+            <label for="Name">Name</label>
+            <input name="Name" placeholder="What's your name?" type="name" class="w-full mb-4 p-2 border border-gray-300 rounded">
+            <label for="Email">Email</label>
+            <input name="Email" placeholder="What's your email address?" type="email" class="w-full mb-4 p-2 border border-gray-300 rounded">
+            <label for="phone">Phone</label>
+            <input name="Phone" placeholder="What's your phone number?" type="tel" class="w-full mb-4 p-2 border border-gray-300 rounded">
+            <label for="message">Details</label>
+            <textarea rows="6" name="message" placeholder="What can SLKone do for you?" class="w-full mb-4 p-2 border border-gray-300 rounded"></textarea>
+            <button type="submit" class="bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500">Send</button>
+        </form>
+    </div>
+    <div class="order-2 md:order-1 prose dark:prose-invert md:col-span-1">
+        {{ content }}
+    </div>
+</div>

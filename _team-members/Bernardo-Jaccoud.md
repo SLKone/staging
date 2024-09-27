@@ -9,4 +9,5 @@ skills:
 - Business & Transformational Events
 team-image: Bernardo-Jaccoud.jpg
 has-bio: N
+partner: N
 ---

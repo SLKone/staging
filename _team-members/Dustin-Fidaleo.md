@@ -10,4 +10,5 @@ skills:
 - Revenue & Sales
 team-image: Dustin-Fidaleo.jpg
 has-bio: N
+partner: N
 ---

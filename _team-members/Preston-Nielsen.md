@@ -9,4 +9,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Preston-Nielsen.jpg
 has-bio: N
+partner: N
 ---

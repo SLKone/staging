@@ -9,4 +9,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Bo-Wicker.jpg
 has-bio: N
+partner: N
 ---

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign subtitle = page.intro %}
+{% assign background_image = "/assets/images/" | append: page.heroimage %}
+{% include page-header.html title=page.title subtitle=subtitle streamlines=page.streamlines background_image=background_image %}
+<section class="container mx-auto px-8 max-w-7xl py-16">
+    <article class="mx-auto prose lg:prose-xl prose-headings:text-xl lg:prose-headings:text-2xl dark:prose-invert prose-a:text-emerald-400 prose-a:font-semibold dark:prose-a:text-forest-400 col-span-2 max-w-prose">
+        {{ content }}
+    </article>
+</section>

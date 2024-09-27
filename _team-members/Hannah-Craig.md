@@ -7,4 +7,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Hannah-Craig.png
 has-bio: N
+partner: N
 ---

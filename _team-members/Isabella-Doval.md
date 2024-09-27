@@ -10,4 +10,5 @@ skills:
 - Hiring & Recruiting
 team-image: Isabella-Doval.jpg
 has-bio: N
+partner: N
 ---

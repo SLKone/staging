@@ -2,7 +2,7 @@
 layout: sub-service
 order: 6
 title: "Risk Mitigation"
-parent: "Strategy"
+parent: "Strategy Operationalization"
 description: "SLKone's Risk Mitigation services identify, assess, and address potential risks to ensure your organization remains resilient and capable of achieving its strategic objectives."
 approach: "We employ a proactive approach to risk mitigation, utilizing comprehensive risk assessments and strategic planning to identify potential threats. Our solutions are tailored to your specific business needs, ensuring robust defenses and contingency plans are in place to minimize impact and ensure business continuity."
 intro: "SLKone's Risk Mitigation services ensure resilience by identifying and addressing potential risks to achieve strategic objectives."

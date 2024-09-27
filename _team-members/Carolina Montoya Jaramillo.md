@@ -9,4 +9,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Carolina-Montoya.jpg
 has-bio: N
----
+partner: N
+--- 

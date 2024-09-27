@@ -10,4 +10,5 @@ skills:
 - Leadership & Strategy
 team-image: Alex-Grazier.jpg
 has-bio: N
+partner: N
 ---

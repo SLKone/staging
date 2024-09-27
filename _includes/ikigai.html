@@ -1,17 +1,32 @@
-<div class="relative w-80 h-80">
-    <div class="absolute inset-0 bg-red-200 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:animate-[pulse_1s_ease-in-out_infinite] flex items-center justify-center">
-        <span class="text-red-800 font-bold">Passion</span>
+<div class="relative w-full aspect-square w-4xl mx-auto p-4 lg:text-2xl">
+    <!-- What you love (Top) -->
+    <div class="absolute top-[15%] left-1/2 transform -translate-x-1/2 w-[45%] h-[45%] border-4 border-dashed border-emerald/20 rounded-full flex items-center justify-center hover:border-emerald/50">
+        <div class="absolute top-[-25%] md:top-[5%] text-emerald dark:text-forest text-center"><i class="hidden md:block lg:block fa-sharp-duotone text-3xl fa-square-heart text-emerald dark:text-forest"></i><span class="block">What you love</span></div>
     </div>
-    <div class="absolute inset-0 bg-blue-200 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:animate-[pulse_1s_ease-in-out_infinite] flex items-center justify-center" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);">
-        <span class="text-blue-800 font-bold">Mission</span>
+    
+    <!-- What you're good at (Left) -->
+    <div class="absolute top-1/2 left-[15%] transform -translate-y-1/2 w-[45%] h-[45%] border-4 border-dashed border-emerald/20 rounded-full flex items-center justify-center">
+        <div class="absolute left-[-75%] md:left-[-10%] text-emerald dark:text-forest text-center transform rotate-[-90deg]"><i class="hidden md:block lg:block rotate-90 transform fa-sharp-duotone text-3xl fa-user-tie text-emerald dark:text-forest"></i><span class="block">What you're good at</span></div>
     </div>
-    <div class="absolute inset-0 bg-green-200 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:animate-[pulse_1s_ease-in-out_infinite] flex items-center justify-center" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-        <span class="text-green-800 font-bold">Profession</span>
+    
+    <!-- What the world needs (Right) -->
+    <div class="absolute top-1/2 right-[15%] transform -translate-y-1/2 w-[45%] h-[45%] border-4 border-dashed border-emerald/20 rounded-full flex items-center justify-center">
+        <div class="absolute right-[-75%] md:right-[-10%] text-emerald dark:text-forest text-center transform rotate-90"><i class="hidden md:block lg:block rotate-[-90deg] transform fa-sharp-duotone text-3xl fa-globe text-emerald dark:text-forest"></i><span class="block">What the world needs</span></div>
     </div>
-    <div class="absolute inset-0 bg-yellow-200 rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:animate-[pulse_1s_ease-in-out_infinite] flex items-center justify-center" style="clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);">
-        <span class="text-yellow-800 font-bold">Vocation</span>
+    
+    <!-- What you can be paid for (Bottom) -->
+    <div class="absolute bottom-[15%] left-1/2 transform -translate-x-1/2 w-[45%] h-[45%] border-4 border-dashed border-emerald/20 rounded-full flex items-center justify-center">
+        <div class="absolute bottom-[-25%] md:bottom-[5%] text-emerald dark:text-forest text-center"><span class="block">What you can be paid for</span><i class="hidden md:block lg:block fa-sharp-duotone text-3xl fa-money-bill text-emerald dark:text-forest"></i></div>
     </div>
+    
+    <!-- Intersection labels -->
+    <div class="absolute top-[32%] left-[32%] text-emerald dark:text-mustard hidden md:block lg:block">Passion</div>
+    <div class="absolute top-[32%] right-[32%] text-emerald dark:text-mustard hidden md:block lg:block">Mission</div>
+    <div class="absolute bottom-[32%] left-[32%] text-emerald dark:text-mustard hidden md:block lg:block ">Profession</div>
+    <div class="absolute bottom-[32%] right-[32%] text-emerald dark:text-mustard hidden md:block lg:block ">Vocation</div>
+    
+    <!-- Center IKIGAI text -->
     <div class="absolute inset-0 flex items-center justify-center">
-        <span class="text-gray-800 font-bold text-xl">IKIGAI</span>
+        <span class="text-white font-display text-2xl md:text-3xl lg:text-6xl z-10">Ikigai</span>
     </div>
 </div>

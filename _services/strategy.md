@@ -1,9 +1,9 @@
 ---
 layout: service
 order: 6
-title: "Strategy"
+title: "Strategy Operationalization"
 subtitle: "We help business leaders make tough decisions on which customers, products, services, and/or markets they should compete in to maximize their stated financial goals."
-blurb-intro: "Unlock strategic clarity to drive impactful decisions for your business."
+blurb-intro: "Realize strategic plans into actionable steps that drive measurable results and align with your business objectives."
 intro: "At SLKone, we understand that effective strategy is crucial for long-term business success. Our approach to strategy combines deep industry knowledge with advanced analytics to develop actionable plans that drive sustainable growth and competitive advantage."
 approach: "We take a comprehensive approach to strategy development and execution, focusing on Performance Management, Strategic Planning & Execution, and Risk Mitigation. Our methodology ensures that your strategy is not only well-crafted but also effectively implemented and monitored for success."
 impact_title: "Our Impact"

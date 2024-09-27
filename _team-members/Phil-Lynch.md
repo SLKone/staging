@@ -12,6 +12,8 @@ skills:
 - Business & Transformational Events
 team-image: Phil-Lynch.jpg
 has-bio: Y
+partner: Y
+short-bio: "Phil Lynch leverages his diverse background in continuous improvement, operations, manufacturing, distribution, logistics, salesforce effectiveness, organizational design, change management, mergers, integrations, and finance to address clients' critical challenges with unique perspectives and a keen attention to detail."
 ---
 Phil Lynch is a founding partner of SLKone and currently serves as the Chief Operating Officer.  
 

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% include page-header.html title=page.title subtitle=page.subtitle background_image=page.background_image %}
+
+{% if page.brands %}
+<section class="snap-start h-full relative approach py-20"> 
+  <div class="container mx-auto px-8 max-w-7xl">
+      {% for brand in page.brands %}
+        <div id="brand-card" class="pb-40">
+            <h2 class="text-4xl font-display mb-4">{{ brand.title }}</h2>
+            <p class="text-xl max-w-prose mb-8">{{ brand.subtitle }}</p>
+            <div class="bg-no-repeat bg-cover bg-center h-[40dvh] w-full rounded-xl" style="background-image: url({{ brand.image }});"></div>
+            <div class="flex gap-8 pt-8 pb-20">
+                {% for section in brand.sections %}
+                <div class="section mt-4">
+                    <h3 class="text-xl font-semibold mb-2">{{ section.title }}</h3>
+                    {% if section.content %}
+                    <p class="text-xl prose dark:prose-invert">{{ section.content }}</p>
+                    {% endif %}
+                    {% if section.items %}
+                    <ul class="list-disc list-inside prose dark:prose-invert">
+                        {% for item in section.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <a href="{{ brand.link }}" class="my-20 bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500">{{ brand['link-text'] }}</a>
+        </div>
+        {% endfor %}
+  </div>
+</section>
+{% endif %}
+{{ content }}

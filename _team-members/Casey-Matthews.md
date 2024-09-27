@@ -9,6 +9,8 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Casey-Matthews.jpg
 has-bio: Y
+partner: Y
+short-bio: "Casey Matthews leverages his expertise in finance, organizational design, and business transformation to deliver data-driven solutions and actionable recommendations for clients, resulting in significant improvements and high returns across various industries."
 ---
 Casey Matthews is a Partner of SLKone. He helps solve clients’ most critical problems with a multifaceted approach, rooted in data-driven insights, to create bespoke solutions, and actionable recommendations.
 

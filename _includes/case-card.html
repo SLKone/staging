@@ -1,0 +1,11 @@
+<div id="{{ post.id }}" class="text-white post transition-all duration-300 min-h-40 flex flex-col bg-white dark:bg-currant-500 rounded-xl shadow-lg {{ include.size-class }} bg-cover bg-center cursor-pointer transform hover:scale-105" style="background-image: url(/assets/images/{{ include.hero-image }});" onclick="window.location='{{ include.url }}'">
+    <div class="grow flex flex-col rounded-xl p-8 backdrop-blur-sm w-full bg-currant-500/10 backdrop-brightness-50">
+    <div class="text-sm w-full flex-nowrap mb-16">
+        <span class="text-sm mr-4">Case Study</span>
+    </div>
+    <div class="self-end w-full flex-row mt-auto">
+        <a href="{{ include.url }}"><h3 class="text-2xl font-display">{{ include.title }}</h3></a>
+        <p>{{ include.intro }}</p>
+    </div>
+    </div>
+</div>

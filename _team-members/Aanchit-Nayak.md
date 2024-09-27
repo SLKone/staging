@@ -8,4 +8,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Aanchit-Nayak.jpg
 has-bio: N
+partner: N
 ---

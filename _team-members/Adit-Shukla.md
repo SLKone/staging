@@ -12,4 +12,5 @@ skills:
 - Product Design & Management
 team-image: Adit-Shukla.jpg
 has-bio: N
+partner: N
 ---

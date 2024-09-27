@@ -26,13 +26,15 @@ collections:
     output: true
   careers:
     output: true
-  case_studies:
+  case-studies:
     output: true
   expertise:
     output: true
   industries:
     output: true
   sub-industries:
+    output: true
+  team-members:
     output: true
 
 # Defaults

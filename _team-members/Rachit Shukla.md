@@ -10,4 +10,5 @@ skills:
 - Leadership & Strategy
 team-image: Rachit-Shukla.jpg
 has-bio: N
+partner: N
 ---

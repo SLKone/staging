@@ -2,7 +2,7 @@
 layout: sub-service
 order: 5
 title: "Performance Management"
-parent: "Strategy"
+parent: "Strategy Operationalization"
 description: "SLKone's Performance Management services help your organization align individual and team performance with strategic goals, driving continuous improvement and achieving operational excellence."
 intro: "Aligning individual and team performance with strategic goals to drive continuous improvement and operational excellence."
 approach: "We develop and implement robust performance management systems that track, measure, and enhance performance across your organization. Our data-driven approach ensures that performance metrics are aligned with your strategic objectives, enabling informed decision-making and fostering a culture of continuous improvement."

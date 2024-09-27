@@ -7,4 +7,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Hardeep.png
 has-bio: N
+partner: N
 ---

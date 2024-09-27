@@ -9,4 +9,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Michael-Rziha.JPG
 has-bio: N
+partner: N
 ---

@@ -7,4 +7,5 @@ skills:
 - Data, Analytics, & Information Technology
 team-image: Aryn-Lovell.jpg
 has-bio: N
+partner: N
 ---

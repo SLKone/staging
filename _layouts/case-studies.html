@@ -1,0 +1,62 @@
+---
+layout: default
+---
+{% include page-header.html title=page.title subtitle=page.subtitle streamlines=page.streamlines background_image=page.background %} 
+
+<section id="insights" class="container mx-auto px-8 max-w-7xl grid grid-cols-1 sm:grid-cols-2 gap-8 pb-20">
+    {% assign case-studies = site.case-studies | sort: 'date' | reverse %}
+    {% assign total_posts = case-studies.size %}
+    {% assign posts_per_page = 16 %}
+    {% assign current_page = 1 %}
+    
+    <div id="hidden-insights" style="display: none;">
+        {% for case-study in case-studies %}
+        {% assign mod8 = forloop.index | modulo: 8 %}
+        {% assign size-class = "" %}
+        {% if mod8 == 1 or mod8 == 5 %}
+          {% assign size-class = "row-span-2" %}
+        {% endif %}
+        {% include case-card.html size-class=size-class title=case-study.title intro=case-study.intro hero-image=case-study.heroimage url=case-study.url %}
+        {% endfor %}
+    </div>
+    
+    {% for case-study in case-studies limit: posts_per_page %}
+    {% assign mod8 = forloop.index | modulo: 8 %}
+    {% assign size-class = "" %}
+    {% if mod8 == 1 or mod8 == 5 %}
+      {% assign size-class = "row-span-2" %}
+    {% endif %}
+    {% include case-card.html size-class=size-class title=case-study.title intro=case-study.intro hero-image=case-study.heroimage url=case-study.url %}
+    {% endfor %}
+    
+</section>
+<div class="container mx-auto px-8 max-w-7xl pb-20">
+    <div class="col-span-2 text-center">
+        <button id="load-more" class="bg-emerald dark:bg-forest text-white dark:text-currant text-2xl transition-all p-4 rounded-full px-8 duration-300 hover:bg-emerald-500 dark:hover:bg-forest-500">Load More</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentPage = 1;
+        const postsPerPage = {{ posts_per_page }};
+        const insightsContainer = document.getElementById('insights');
+        const hiddenInsights = document.getElementById('hidden-insights').children;
+        
+        document.getElementById('load-more').addEventListener('click', loadMorePosts);
+        
+        function loadMorePosts() {
+            const start = currentPage * postsPerPage;
+            const end = start + postsPerPage;
+            
+            for (let i = start; i < end && i < hiddenInsights.length; i++) {
+                insightsContainer.appendChild(hiddenInsights[i].cloneNode(true));
+            }
+            
+            currentPage++;
+            if (start >= hiddenInsights.length) {
+                document.getElementById('load-more').style.display = 'none';
+            }
+        }
+    });
+</script>
