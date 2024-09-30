@@ -42,6 +42,6 @@ cta: "Contact SLKone today to discover how our specialized services can enhance 
 icon: "fa-arrow-up-right-dots"
 color: "tangerine"
 image: "/assets/images/backgrounds/value-creation-growth.webp"
-permalink: /industries/private-equity/value-creation-growth
-redirect_to: /industries/private-equity#value-creation-growth
+permalink: /industries/private-equity/value-creation-and-growth
+redirect_to: /industries/private-equity#value-creation-and-growth
 ---
