@@ -28,5 +28,5 @@ icon: "fa-road"
 color: "plum"
 image: "/assets/images/backgrounds/it-roadmap.webp"
 permalink: /services/digital-strategy-and-technology/it-roadmap
-redirect: "/services/digital-strategy-and-technology/it-roadmap"
+redirect_to: /services/digital-strategy-and-technology#it-roadmap
 ---

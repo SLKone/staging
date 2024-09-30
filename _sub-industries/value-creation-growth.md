@@ -43,5 +43,5 @@ icon: "fa-arrow-up-right-dots"
 color: "tangerine"
 image: "/assets/images/backgrounds/value-creation-growth.webp"
 permalink: /industries/private-equity/value-creation-growth
-redirect: "/industries/private-equity/value-creation-growth"
+redirect_to: /industries/private-equity#value-creation-growth
 ---

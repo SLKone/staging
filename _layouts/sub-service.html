@@ -2,16 +2,30 @@
 layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
+<section class="py-20">
+  <div class="col-span-2 w-full">
+  <div class="block mx-auto px-8 md:px-20 max-w-7xl py-20">
+    {% if page.description %}
+    <p class="md:text-xl mb-4 max-w-prose">{{ page.description }}</p>
+    {% endif %}
+    
+    {% if page.approach %}
+    <p class="md:text-xl max-w-prose">{{ page.approach }}</p>
+    {% endif %}
+    </div>
+  </div>
+</div>
+{% if page.focus_areas %}
 
-{% if include.sub_industry.why_choose %}
-<h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
-<ul>
-{% for reason in include.sub_industry.why_choose %}
-  <li>{{ reason }}</li>
+<div class="grid md:grid-cols-3 gap-4 mt-4">
+{% for area in page.focus_areas %}
+<div class="cols-span-1 bg-black/5 dark:bg-currant-500 rounded-xl p-8">
+<div class="flex justify-between"><p class="text-sm mb-2 max-w-prose opacity-50 uppercase font-bold">Solution</p>{% if area.icon %}<i class="-top-1 relative text-2xl fa-sharp-duotone {{ area.icon }}"></i>{% endif %}</div>
+<p class="md:text-xl text-xl mb-2 font-display">{{ area.title }}</p>
+<p class="mb-4">{{ area.content }}</p>
+</div>
 {% endfor %}
-</ul>
-{% endif %}
-
+</section>
 {% if page.cta %}
 {% include contact-card.html 
   background_image=site.data.homepage.contact.background-image 

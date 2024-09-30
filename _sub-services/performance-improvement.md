@@ -27,5 +27,5 @@ icon: "fa-gauge-simple-max"
 color: "blush"
 image: "/assets/images/backgrounds/performance-improvement.webp"
 permalink: /services/operational-excellence/performance-improvement
-redirect: "/services/operational-excellence/performance-improvement"
+redirect_to: /services/operational-excellence#performance-improvement
 ---

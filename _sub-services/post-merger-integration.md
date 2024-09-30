@@ -27,5 +27,5 @@ icon: "fa-object-intersect"
 color: "forest"
 image: "/assets/images/backgrounds/post-merger-integration.webp"
 permalink: /services/mergers-and-acquisitions/post-merger-integration
-redirect: "/services/mergers-and-acquisitions/post-merger-integration"
+redirect_to: /services/mergers-and-acquisitions#post-merger-integration
 ---

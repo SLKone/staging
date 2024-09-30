@@ -47,5 +47,5 @@ icon: "fa-microchip"
 color: "forest"
 image: "/assets/images/backgrounds/technology-providers.webp"
 permalink: /industries/technology/technology-providers
-redirect: "/industries/technology/technology-providers"
+redirect_to: /industries/technology#technology-providers
 ---

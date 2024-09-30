@@ -28,5 +28,5 @@ icon: "fa-shield-halved"
 color: "viola"
 image: "/assets/images/backgrounds/risk-mitigation.webp"
 permalink: /services/strategy-operationalization/risk-mitigation
-redirect: /services/strategy-operationalization/risk-mitigation
+redirect_to: /services/strategy-operationalization#risk-mitigation
 ---

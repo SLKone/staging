@@ -43,5 +43,5 @@ icon: "fa-monitor-waveform"
 color: "coral"
 image: "/assets/images/backgrounds/health-tech.webp"
 permalink: /industries/healthcare/health-tech
-redirect: "/industries/healthcare/health-tech"
+redirect_to: /industries/healthcare#health-tech
 ---

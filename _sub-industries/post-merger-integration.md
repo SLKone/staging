@@ -47,5 +47,5 @@ icon: "fa-merge"
 color: "tangerine"
 image: "/assets/images/backgrounds/post-merger-integration.webp"
 permalink: /industries/private-equity/post-merger-integration
-redirect: "/industries/private-equity/post-merger-integration"
+redirect_to: /industries/private-equity#post-merger-integration
 ---

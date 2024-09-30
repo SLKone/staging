@@ -27,5 +27,5 @@ icon: "fa-arrow-progress"
 color: "cinnabar"
 image: "/assets/images/backgrounds/process-design.webp"
 permalink: /services/organizational-design-and-alignment/process-design
-redirect: "/services/organizational-design-and-alignment/process-design"
+redirect_to: /services/organizational-design-and-alignment#process-design
 ---

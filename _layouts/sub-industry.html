@@ -2,16 +2,41 @@
 layout: default
 ---
 {% include page-header.html title=page.title subtitle=page.intro streamlines=page.streamlines background_image=page.image color=page.color %} 
-
-{% if include.sub_industry.why_choose %}
-<h3>Why Choose SLKone for {{ include.sub_industry.title }}?</h3>
-<ul>
-{% for reason in include.sub_industry.why_choose %}
-  <li>{{ reason }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-
+<section class="py-20">
+<div class="grid lg:grid-cols-3 gap-8 py-8 w-full">
+  <div class="col-span-1 prose dark:prose-invert bg-white dark:bg-currant-500 rounded-xl p-8 w-full">
+    <h4 class="text-2xl font-display mb-4">Challenges We Tackle</h4>
+    <ul>
+    {% for challenge in page.challenges %}
+    <li>{{ challenge }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="col-span-1 prose dark:prose-invert bg-white dark:bg-currant-500 rounded-xl p-8 w-full">
+    <h4 class="text-2xl font-display mb-4">Solutions We Build</h4>
+    <ul>
+    {% for solution in page.solutions %}
+    <li><strong>{{ solution.title }}</strong></li>
+    {% if solution.content %}
+    <ul>
+    {% for content in solution.content %}
+    <li>{{ content }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="col-span-1 prose dark:prose-invert bg-white dark:bg-currant-500 rounded-xl p-8 w-full">
+    <h4 class="text-2xl font-display mb-4">Outcomes We Target</h4>
+    <ul>
+    {% for outcome in page.outcomes %}
+    <li>{{ outcome }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+</section>
 {% if page.cta %}
 {% include contact-card.html 
   background_image=site.data.homepage.contact.background-image 

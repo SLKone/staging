@@ -46,5 +46,5 @@ icon: "fa-store"
 color: "cinnabar"
 image: "/assets/images/backgrounds/specialty-retail.webp"
 permalink: /industries/retail-and-consumer-goods/specialty-retail
-redirect: "/industries/retail-and-consumer-goods/specialty-retail"
+redirect_to: /industries/retail-and-consumer-goods#specialty-retail
 ---

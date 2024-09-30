@@ -27,5 +27,5 @@ icon: "fa-objects-align-right"
 color: "viola"
 image: "/assets/images/backgrounds/performance-management.webp"
 permalink: /services/strategy-operationalization/performance-management
-redirect: "/services/strategy-operationalization/performance-management"
+redirect_to: /services/strategy-operationalization#performance-management
 ---

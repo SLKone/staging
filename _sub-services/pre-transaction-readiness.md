@@ -27,5 +27,5 @@ icon: "fa-check-double"
 color: "forest"
 image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
 permalink: /services/mergers-and-acquisitions/pre-transaction-readiness
-redirect: "/services/mergers-and-acquisitions/pre-transaction-readiness"
+redirect_to: /services/mergers-and-acquisitions#pre-transaction-readiness
 ---

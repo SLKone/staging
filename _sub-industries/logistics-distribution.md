@@ -45,5 +45,5 @@ icon: "fa-truck-fast"
 color: "cinnabar"
 image: "/assets/images/backgrounds/logistics-distribution.webp"
 permalink: /industries/retail-and-consumer-goods/logistics-distribution
-redirect: "/industries/retail-and-consumer-goods/logistics-distribution"
+redirect_to: /industries/retail-and-consumer-goods#logistics-distribution
 ---

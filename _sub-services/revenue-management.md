@@ -27,5 +27,5 @@ icon: "fa-money-bill-transfer"
 color: "mustard"
 image: "/assets/images/backgrounds/revenue-management.webp"
 permalink: /services/corporate-finance-and-revenue-management/revenue-management
-redirect: "/services/corporate-finance-and-revenue-management/revenue-management"
+redirect_to: /services/corporate-finance-and-revenue-management#revenue-management
 ---

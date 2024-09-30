@@ -43,5 +43,5 @@ icon: "fa-flask"
 color: "coral"
 image: "/assets/images/backgrounds/pharma-and-biotech.webp"
 permalink: /industries/healthcare/pharma-and-biotech
-redirect: "/industries/healthcare/pharma-and-biotech"
+redirect_to: /industries/healthcare#pharma-and-biotech
 ---

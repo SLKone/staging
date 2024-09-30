@@ -47,5 +47,5 @@ icon: "fa-magnifying-glass"
 color: "tangerine"
 image: "/assets/images/backgrounds/operational-due-diligence.webp"
 permalink: /industries/private-equity/operational-due-diligence
-redirect: "/industries/private-equity/operational-due-diligence"
+redirect_to: /industries/private-equity#operational-due-diligence
 ---

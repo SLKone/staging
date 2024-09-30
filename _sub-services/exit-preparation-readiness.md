@@ -25,5 +25,5 @@ icon: "fa-door-closed"
 color: "forest"
 image: "/assets/images/backgrounds/exit-preparation-readiness.webp"
 permalink: /services/mergers-and-acquisitions/exit-preparation-readiness
-redirect: "/services/mergers-and-acquisitions/exit-preparation-readiness"
+redirect_to: /services/mergers-and-acquisitions#exit-preparation-readiness
 ---

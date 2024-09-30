@@ -39,5 +39,5 @@ icon: "fa-oil-well"
 color: "plum"
 image: "/assets/images/backgrounds/oil-and-gas.webp"
 permalink: /industries/energy-and-resources/oil-and-gas
-redirect: "/industries/energy-and-resources/oil-and-gas"
+redirect_to: /industries/energy-and-resources#oil-and-gas
 ---

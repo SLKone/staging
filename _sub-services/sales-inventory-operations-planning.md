@@ -29,5 +29,5 @@ icon: "fa-shelves"
 color: "blush"
 image: "/assets/images/backgrounds/siop.webp"
 permalink: /services/operational-excellence/sales-inventory-operations-planning
-redirect: /services/operational-excellence/sales-inventory-operations-planning
+redirect_to: /services/operational-excellence#sales-inventory-operations-planning
 ---
