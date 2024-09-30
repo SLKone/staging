@@ -47,4 +47,5 @@ icon: "fa-right-from-bracket"
 color: "tangerine"
 image: "/assets/images/backgrounds/exit-readiness.webp"
 permalink: /industries/private-equity/exit-readiness
+redirect: "/industries/private-equity/exit-readiness"
 ---

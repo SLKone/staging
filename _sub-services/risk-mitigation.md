@@ -27,5 +27,6 @@ cta: "Contact us to discover how our Risk Mitigation services can safeguard your
 icon: "fa-shield-halved"
 color: "viola"
 image: "/assets/images/backgrounds/risk-mitigation.webp"
-permalink: /services/strategy/risk-mitigation
+permalink: /services/strategy-operationalization/risk-mitigation
+redirect: /services/strategy-operationalization/risk-mitigation
 ---

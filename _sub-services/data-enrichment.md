@@ -27,4 +27,5 @@ icon: "fa-database"
 color: "tangerine"
 image: "/assets/images/backgrounds/data-enrichment.webp"
 permalink: /services/data-and-advanced-analytics/data-enrichment
+redirect: "/services/data-and-advanced-analytics/data-enrichment"
 ---

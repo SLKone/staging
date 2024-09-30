@@ -43,4 +43,5 @@ icon: "fa-hospital"
 color: "coral"
 image: "/assets/images/backgrounds/provider-and-practice-management-groups.webp"
 permalink: /industries/healthcare/provider-and-practice-management-groups
+redirect: "/industries/healthcare/provider-and-practice-management-groups"
 ---

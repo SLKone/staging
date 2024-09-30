@@ -33,4 +33,5 @@ icon: "fa-robot"
 color: "plum"
 image: "/assets/images/backgrounds/automation.webp"
 permalink: /services/digital-strategy-and-technology/automation
+redirect: "/services/digital-strategy-and-technology/automation"
 ---

@@ -28,4 +28,5 @@ icon: "fa-money-bills-simple"
 color: "mustard"
 image: "/assets/images/backgrounds/working-capital-management.webp"
 permalink: /services/corporate-finance-and-revenue-management/working-capital-management
+redirect: /services/corporate-finance-and-revenue-management/working-capital-management
 ---

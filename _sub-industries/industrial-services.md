@@ -46,4 +46,5 @@ icon: "fa-container"
 color: "sand"
 image: "/assets/images/backgrounds/industrial-services.webp"
 permalink: /industries/manufacturing/industrial-services
+redirect: "/industries/manufacturing/industrial-services"
 ---

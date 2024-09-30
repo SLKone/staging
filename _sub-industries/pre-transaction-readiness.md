@@ -47,4 +47,5 @@ icon: "fa-list"
 color: "tangerine"
 image: "/assets/images/backgrounds/pre-transaction-readiness.webp"
 permalink: /industries/private-equity/pre-transaction-readiness
+redirect: "/industries/private-equity/pre-transaction-readiness"
 ---

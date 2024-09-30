@@ -43,4 +43,5 @@ icon: "fa-microscope"
 color: "coral"
 image: "/assets/images/backgrounds/medical-devices-medtech.webp"
 permalink: /industries/healthcare/medical-devices-medtech
+redirect: "/industries/healthcare/medical-devices-medtech"
 ---

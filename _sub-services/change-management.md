@@ -27,4 +27,5 @@ icon: "fa-list-check"
 color: "forest"
 image: "/assets/images/backgrounds/change-management.webp"
 permalink: /services/mergers-and-acquisitions/change-management
+redirect: "/services/mergers-and-acquisitions/change-management"
 ---

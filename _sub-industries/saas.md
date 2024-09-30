@@ -43,4 +43,5 @@ icon: "fa-cloud"
 color: "forest"
 image: "/assets/images/backgrounds/saas.webp"
 permalink: /industries/technology/saas
+redirect: "/industries/technology/saas"
 ---

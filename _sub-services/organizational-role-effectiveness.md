@@ -27,4 +27,5 @@ icon: "fa-user-shield"
 color: "cinnabar"
 image: "/assets/images/backgrounds/organizational-role-effectiveness.webp"
 permalink: /services/organizational-design-and-alignment/organizational-role-effectiveness
+redirect: "/services/organizational-design-and-alignment/organizational-role-effectiveness"
 ---

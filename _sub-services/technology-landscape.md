@@ -29,4 +29,5 @@ icon: "fa-image-landscape"
 color: "plum"
 image: "/assets/images/backgrounds/technology-landscape.webp"
 permalink: /services/digital-strategy-and-technology/technology-landscape
+redirect: /services/digital-strategy-and-technology/technology-landscape
 ---

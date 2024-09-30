@@ -27,4 +27,5 @@ icon: "fa-bars-progress"
 color: "tangerine"
 image: "/assets/images/backgrounds/predictive-model-development.webp"
 permalink: /services/data-and-advanced-analytics/predictive-model-development
+redirect: "/services/data-and-advanced-analytics/predictive-model-development"
 ---

@@ -27,4 +27,5 @@ icon: "fa-sitemap"
 color: "cinnabar"
 image: "/assets/images/backgrounds/organizational-structure-design.webp"
 permalink: /services/organizational-design-and-alignment/organizational-structure-design
+redirect: "/services/organizational-design-and-alignment/organizational-structure-design"
 ---

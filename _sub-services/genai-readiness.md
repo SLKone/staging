@@ -28,4 +28,5 @@ icon: "fa-brain-circuit"
 color: "plum"
 image: "/assets/images/backgrounds/genai-readiness.webp"
 permalink: /services/digital-strategy-and-technology/genai-readiness
+redirect: "/services/digital-strategy-and-technology/genai-readiness"
 ---
