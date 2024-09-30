@@ -57,7 +57,7 @@
                   <ul>
                     {% for nested in nested_items %}
                       <li id="desktop-navigation-item-{{ forloop.index }}-dropdown-item-{{ forloop.index }}-nested-item-{{ forloop.index }}" class="py-1"> <!-- Increased padding for more spacing -->
-                        <a class="hover:text-{{ sub.color }}-700 dark:hover:text-{{ sub.color }}-200" href="{{ sub.url }}#{{ nested.title | slugify }}">{{ nested.title }}</a>
+                        <a class="hover:text-{{ sub.color }}-700 dark:hover:text-{{ sub.color }}-200" href="{{ nested.url }}">{{ nested.title }}</a>
                       </li>
                     {% endfor %}
                   </ul>

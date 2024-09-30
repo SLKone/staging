@@ -42,4 +42,5 @@ icon: "fa-rocket"
 color: "sand"
 image: "/assets/images/backgrounds/aerospace-defense.webp"
 permalink: /industries/manufacturing/aerospace-defense
+redirect_to: /industries/manufacturing#aerospace-defense
 ---

@@ -50,13 +50,13 @@
         <h3 class="font-bold mb-4">Contact</h3>
         <ul class="mb-8">
           {% for item in site.data.footer.Contact %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
         <h3 class="font-bold mb-4">Terms and Policies</h3>
         <ul class="mb-8">
           {% for item in site.data.footer.Terms-and-policies %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            <li class="mb-2"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>

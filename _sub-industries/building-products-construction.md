@@ -40,4 +40,5 @@ icon: "fa-building"
 color: "sand"
 image: "/assets/images/backgrounds/building-products-construction.webp"
 permalink: /industries/manufacturing/building-products-construction
+redirect_to: /industries/manufacturing#building-products-construction
 ---

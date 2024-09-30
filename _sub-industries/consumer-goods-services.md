@@ -47,4 +47,5 @@ icon: "fa-basket-shopping"
 color: "cinnabar"
 image: "/assets/images/backgrounds/consumer-goods-services.webp"
 permalink: /industries/retail-and-consumer-goods/consumer-goods-services
+redirect_to: /industries/retail-and-consumer-goods#consumer-goods-services
 ---

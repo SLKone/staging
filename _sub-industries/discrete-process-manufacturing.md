@@ -47,4 +47,5 @@ icon: "fa-conveyor-belt-boxes"
 color: "sand"
 image: "/assets/images/backgrounds/discrete-process-manufacturing.webp"
 permalink: /industries/manufacturing/discrete-process-manufacturing
+redirect_to: /industries/manufacturing#discrete-process-manufacturing
 ---
