@@ -28,6 +28,6 @@ cta: "Ready to synchronize your sales, inventory, and operations? Contact SLKone
 icon: "fa-shelves"
 color: "blush"
 image: "/assets/images/backgrounds/siop.webp"
-permalink: /services/operational-excellence/sales-inventory-operations-planning
-redirect_to: /services/operational-excellence#sales-inventory-operations-planning
+permalink: /services/operational-excellence/sales-inventory-and-operations-planning
+redirect_to: /services/operational-excellence#sales-inventory-and-operations-planning
 ---
